@@ -21,4 +21,34 @@ Movie.create title:"Grandma's Boy", category:"comedy"
 Movie.create title:"Django", category:"drama"
 
 pp Movie.all
+
+back in terminal
 rails g migration AddMovieLengthToMovie
+
+rails app migration file
+def change
+add_column :movies, :movie_length, :time
+<!-- save file! -->
+
+terminal
+rails db:migrate
+
+rails g migration RenameCategoryColumnName
+
+rails app migration file
+def change
+rename_column :movies, :category, :genre
+<!-- save file! -->
+
+terminal
+rails db:migrate
+
+rails g migration ChangeMovieLengthColumns
+
+def change
+    change_table :movies do |t|
+      t.remove :movie_length
+      t.string :movie_time
+    end
+
+rails db:migrate 
