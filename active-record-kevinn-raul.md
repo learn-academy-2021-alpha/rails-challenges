@@ -9,6 +9,37 @@ Created database 'rolodex_development'
 Created database 'rolodex_test'
 
 
+****************************************************
+Minas commands ran 
+rails c
+Dog.all
+Dog.create name:'Churro', breed: 'Mixed', age:1
+
+pp - pretty printing 
+pp Dog.all
+
+Dog.methods - shows all mehtods you can call on dog
+
+Dog.all all of them 
+Dog.first first instance
+Dog.last Last instance
+Dog.find 3 find a dog with primary key
+Dog.where age: 30  SQL query - will return an array 
+Dog.where "age > 10" conditional is a string all dogs over the age of 10
+
+churro = Dog.find 1 set it as a variable
+churro.name
+churro.age
+churro.breed
+churro.age = 15 => updated instance
+churro.save => update database 
+
+air_bud = Dog.find 3 
+air_bud.destroy = deletes from database
+
+*****************************************************
+
+
 Generate a Person model with a first_name, last_name, and phone. All fields should be strings.
 
 - $ rails generate model Person name:string last_name:string phone:integer
