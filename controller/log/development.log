@@ -1,0 +1,805 @@
+  [1m[35m (712.6ms)[0m  [1m[35mCREATE DATABASE "controller_development" ENCODING = 'unicode'[0m
+  [1m[35m (349.9ms)[0m  [1m[35mCREATE DATABASE "controller_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2021-03-16 10:47:52 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 13.7ms | Allocations: 522)
+Completed 200 OK in 58ms (Views: 25.8ms | ActiveRecord: 0.0ms | Allocations: 4215)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:00:26 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 21.3ms | Allocations: 415)
+Completed 200 OK in 58ms (Views: 32.3ms | ActiveRecord: 0.0ms | Allocations: 3086)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:00:33 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 12.7ms | Allocations: 219)
+Completed 200 OK in 20ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 954)
+
+
+Started GET "/hello" for ::1 at 2021-03-16 11:01:21 -0700
+Processing by MainController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 33)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 713)
+
+
+Started GET "/question" for ::1 at 2021-03-16 11:09:17 -0700
+Processing by MainController#question as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:8)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:8)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:8)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:8)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:8)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:8)
+Completed 500 Internal Server Error in 16ms (Allocations: 3142)
+
+
+  
+ActionView::MissingTemplate (Missing template main/question.html.erb, application/question.html.erb with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actiontext-6.1.3/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actionmailbox-6.1.3/app/views"
+):
+  
+app/controllers/main_controller.rb:8:in `question'
+Started GET "/question" for ::1 at 2021-03-16 11:11:34 -0700
+Processing by MainController#question as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:8)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:8)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:8)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:8)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:8)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:8)
+Completed 500 Internal Server Error in 11ms (Allocations: 2439)
+
+
+  
+ActionView::MissingTemplate (Missing template main/question.html.erb, application/question.html.erb with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actiontext-6.1.3/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actionmailbox-6.1.3/app/views"
+):
+  
+app/controllers/main_controller.rb:8:in `question'
+Started GET "/question" for ::1 at 2021-03-16 11:12:36 -0700
+Processing by MainController#question as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:8)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:8)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:8)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:8)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:8)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:8)
+Completed 500 Internal Server Error in 7ms (Allocations: 2440)
+
+
+  
+ActionView::MissingTemplate (Missing template main/question.html.erb, application/question.html.erb with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actiontext-6.1.3/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actionmailbox-6.1.3/app/views"
+):
+  
+app/controllers/main_controller.rb:8:in `question'
+Started GET "/question" for ::1 at 2021-03-16 11:13:33 -0700
+Processing by MainController#question as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.3ms | Allocations: 27)
+Completed 200 OK in 4ms (Views: 3.4ms | Allocations: 524)
+
+
+Started GET "/hello" for ::1 at 2021-03-16 11:13:40 -0700
+Processing by MainController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 2ms (Views: 1.0ms | Allocations: 322)
+
+
+Started GET "/hello" for ::1 at 2021-03-16 11:14:06 -0700
+Processing by MainController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 27)
+Completed 200 OK in 5ms (Views: 3.8ms | Allocations: 496)
+
+
+Started GET "/question" for ::1 at 2021-03-16 11:14:14 -0700
+Processing by MainController#question as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 2ms (Views: 0.9ms | Allocations: 322)
+
+
+Started GET "/question" for ::1 at 2021-03-16 11:18:39 -0700
+Processing by MainController#question as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:8)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:8)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:8)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:8)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:8)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:8)
+Completed 500 Internal Server Error in 5ms (Allocations: 2446)
+
+
+  
+ActionView::MissingTemplate (Missing template main/question.html.erb, application/question.html.erb with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actiontext-6.1.3/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actionmailbox-6.1.3/app/views"
+):
+  
+app/controllers/main_controller.rb:8:in `question'
+Started GET "/question" for ::1 at 2021-03-16 11:20:32 -0700
+Processing by MainController#question as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 500 Internal Server Error in 2ms (Views: 1.2ms | Allocations: 929)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/main_controller.rb:8:in `question'
+Started GET "/hello" for ::1 at 2021-03-16 11:20:38 -0700
+Processing by MainController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 1ms (Views: 0.7ms | Allocations: 321)
+
+
+Started GET "/hello" for ::1 at 2021-03-16 11:22:55 -0700
+Processing by MainController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 1ms (Views: 1.0ms | Allocations: 525)
+
+
+Started GET "/question" for ::1 at 2021-03-16 11:23:01 -0700
+Processing by MainController#question as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:8)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:8)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:8)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:8)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:8)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:8)
+Completed 500 Internal Server Error in 8ms (Allocations: 2265)
+
+
+  
+ActionView::MissingTemplate (Missing template main/question.html.erb, application/question.html.erb with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actiontext-6.1.3/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actionmailbox-6.1.3/app/views"
+):
+  
+app/controllers/main_controller.rb:8:in `question'
+Started GET "/" for ::1 at 2021-03-16 11:33:47 -0700
+Processing by MainController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 2ms (Views: 1.1ms | Allocations: 505)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:34:13 -0700
+Processing by MainController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 2ms (Views: 0.9ms | Allocations: 321)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:34:23 -0700
+Processing by MainController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 27)
+Completed 200 OK in 2ms (Views: 0.9ms | Allocations: 321)
+
+
+Started GET "/question" for ::1 at 2021-03-16 11:35:32 -0700
+Processing by MainController#question as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:9)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:9)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:9)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:9)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:9)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:9)
+Completed 500 Internal Server Error in 15ms (Allocations: 2440)
+
+
+  
+ActionView::MissingTemplate (Missing template main/question.html.erb, application/question.html.erb with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actiontext-6.1.3/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actionmailbox-6.1.3/app/views"
+):
+  
+app/controllers/main_controller.rb:9:in `question'
+Started GET "/question" for ::1 at 2021-03-16 11:36:06 -0700
+Processing by MainController#question as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 27)
+Completed 200 OK in 2ms (Views: 1.0ms | Allocations: 505)
+
+
+Started GET "/question" for ::1 at 2021-03-16 11:37:13 -0700
+Processing by MainController#question as HTML
+Completed 500 Internal Server Error in 2ms (Allocations: 929)
+
+
+  
+ActionView::MissingTemplate (Missing template main/question.html.erb, application/question.html.erb with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actiontext-6.1.3/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actionmailbox-6.1.3/app/views"
+):
+  
+app/controllers/main_controller.rb:9:in `question'
+Started GET "/question" for ::1 at 2021-03-16 11:38:20 -0700
+Processing by MainController#question as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:9)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:9)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:9)
+Completed 500 Internal Server Error in 3ms (Allocations: 1708)
+
+
+  
+ActionView::MissingTemplate (Missing template main/question.html.erb with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actiontext-6.1.3/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actionmailbox-6.1.3/app/views"
+):
+  
+app/controllers/main_controller.rb:9:in `question'
+Started GET "/question" for ::1 at 2021-03-16 11:39:01 -0700
+Processing by MainController#question as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:9)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:9)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:9)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:9)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:9)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:9)
+Completed 500 Internal Server Error in 7ms (Allocations: 2446)
+
+
+  
+ActionView::MissingTemplate (Missing template main/question.html.erb, application/question.html.erb with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actiontext-6.1.3/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actionmailbox-6.1.3/app/views"
+):
+  
+app/controllers/main_controller.rb:9:in `question'
+Started GET "/question" for ::1 at 2021-03-16 11:39:50 -0700
+Processing by MainController#question as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:9)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:9)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:9)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:9)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:9)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:9)
+Completed 500 Internal Server Error in 10ms (Allocations: 2434)
+
+
+  
+ActionView::MissingTemplate (Missing template main/question.html.erb, application/question.html.erb with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actiontext-6.1.3/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actionmailbox-6.1.3/app/views"
+):
+  
+app/controllers/main_controller.rb:9:in `question'
+Started GET "/" for ::1 at 2021-03-16 11:39:56 -0700
+Processing by MainController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 2ms (Views: 0.9ms | Allocations: 322)
+
+
+Started GET "/question" for ::1 at 2021-03-16 11:41:52 -0700
+Processing by MainController#question as HTML
+Completed 500 Internal Server Error in 2ms (Allocations: 760)
+
+
+  
+ActionView::MissingTemplate (Missing template main/question.html.erb, application/question.html.erb with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actiontext-6.1.3/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actionmailbox-6.1.3/app/views"
+):
+  
+app/controllers/main_controller.rb:9:in `question'
+Started GET "/question" for ::1 at 2021-03-16 11:42:30 -0700
+Processing by MainController#question as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:9)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:9)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:9)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:9)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:9)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/question.html.erb (called from question at /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/controllers/main_controller.rb:9)
+Completed 500 Internal Server Error in 89ms (ActiveRecord: 0.0ms | Allocations: 4424)
+
+
+  
+ActionView::MissingTemplate (Missing template main/question.html.erb, application/question.html.erb with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/learnacademy/Desktop/LEARN/rails-challenges/controller/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actiontext-6.1.3/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actionmailbox-6.1.3/app/views"
+):
+  
+app/controllers/main_controller.rb:9:in `question'
+Started GET "/question" for ::1 at 2021-03-16 11:42:58 -0700
+Processing by MainController#question as HTML
+Completed 406 Not Acceptable in 21ms (ActiveRecord: 0.0ms | Allocations: 1856)
+
+
+  
+ActionController::MissingExactTemplate (MainController#question is missing a template for request formats: text/html):
+  
+actionpack (6.1.3) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.1.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.3) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.3) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.3) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.3) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.3) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.3) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.3) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.3) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.3) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.3) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.3) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.3) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.3) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.3) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.3) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.3) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.3) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/question" for ::1 at 2021-03-16 11:44:04 -0700
+Processing by MainController#question as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/question.html.erb within layouts/application
+  Rendered main/question.html.erb within layouts/application (Duration: 9.4ms | Allocations: 129)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/learnacademy/Desktop/LEARN/rails-challenges/controller/public/packs
+[Webpacker] Hash: e332c6419728fac579d5
+Version: webpack 4.46.0
+Time: 4924ms
+Built at: 03/16/2021 11:44:16 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-f826770d917d8a37c1d8.js    125 KiB  application  [emitted] [immutable]  application
+js/application-f826770d917d8a37c1d8.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-f826770d917d8a37c1d8.js js/application-f826770d917d8a37c1d8.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 12257.5ms | Allocations: 14703)
+Completed 200 OK in 12268ms (Views: 12265.8ms | ActiveRecord: 0.0ms | Allocations: 15936)
+
+
+Started GET "/question" for ::1 at 2021-03-16 11:45:34 -0700
+Processing by MainController#question as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/question.html.erb within layouts/application
+  Rendered main/question.html.erb within layouts/application (Duration: 0.8ms | Allocations: 130)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.6ms | Allocations: 3768)
+Completed 200 OK in 36ms (Views: 32.5ms | ActiveRecord: 0.0ms | Allocations: 5033)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:48:15 -0700
+Processing by MainController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 31)
+Completed 200 OK in 17ms (Views: 16.8ms | ActiveRecord: 0.0ms | Allocations: 2532)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:49:37 -0700
+Processing by MainController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 28)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 554)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:49:40 -0700
+Processing by MainController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 27)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 377)
+
+
+Started GET "/question" for ::1 at 2021-03-16 11:50:22 -0700
+Processing by MainController#question as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/question.html.erb within layouts/application
+  Rendered main/question.html.erb within layouts/application (Duration: 2.1ms | Allocations: 172)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 63.0ms | Allocations: 3827)
+Completed 200 OK in 69ms (Views: 67.0ms | ActiveRecord: 0.0ms | Allocations: 4854)
+
+
+Started GET "/question" for ::1 at 2021-03-16 11:50:26 -0700
+Processing by MainController#question as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/question.html.erb within layouts/application
+  Rendered main/question.html.erb within layouts/application (Duration: 0.1ms | Allocations: 51)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 3472)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 3917)
+
+
+Started GET "/question" for ::1 at 2021-03-16 11:50:37 -0700
+Processing by MainController#question as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/question.html.erb within layouts/application
+  Rendered main/question.html.erb within layouts/application (Duration: 0.2ms | Allocations: 51)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 3471)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 3918)
+
+
+Started GET "/question" for ::1 at 2021-03-16 11:50:38 -0700
+Processing by MainController#question as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/question.html.erb within layouts/application
+  Rendered main/question.html.erb within layouts/application (Duration: 0.2ms | Allocations: 51)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 3471)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 3918)
+
+
+Started GET "/question" for ::1 at 2021-03-16 11:50:39 -0700
+Processing by MainController#question as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/question.html.erb within layouts/application
+  Rendered main/question.html.erb within layouts/application (Duration: 0.2ms | Allocations: 51)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 3471)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.0ms | Allocations: 3918)
+
+
+Started GET "/question" for ::1 at 2021-03-16 11:50:47 -0700
+Processing by MainController#question as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/question.html.erb within layouts/application
+  Rendered main/question.html.erb within layouts/application (Duration: 0.3ms | Allocations: 51)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 3473)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 3924)
+
+
+Started GET "/question" for ::1 at 2021-03-16 11:50:48 -0700
+Processing by MainController#question as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/question.html.erb within layouts/application
+  Rendered main/question.html.erb within layouts/application (Duration: 0.2ms | Allocations: 51)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 3479)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.0ms | Allocations: 3927)
+
+
+Started GET "/question" for ::1 at 2021-03-16 11:50:50 -0700
+Processing by MainController#question as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/question.html.erb within layouts/application
+  Rendered main/question.html.erb within layouts/application (Duration: 0.1ms | Allocations: 51)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 3476)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 3924)
+
+
+Started GET "/question" for ::1 at 2021-03-16 11:51:09 -0700
+Processing by MainController#question as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/question.html.erb within layouts/application
+  Rendered main/question.html.erb within layouts/application (Duration: 0.1ms | Allocations: 51)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 3471)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 3915)
+
+
+Started GET "/question" for ::1 at 2021-03-16 11:51:33 -0700
+Processing by MainController#question as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/question.html.erb within layouts/application
+  Rendered main/question.html.erb within layouts/application (Duration: 0.9ms | Allocations: 171)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 3826)
+Completed 200 OK in 19ms (Views: 16.6ms | Allocations: 5034)
+
+
+Started GET "/answer" for ::1 at 2021-03-16 11:51:37 -0700
+Processing by MainController#answer as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 1ms (Views: 0.5ms | Allocations: 377)
+
+
+Started GET "/answer" for ::1 at 2021-03-16 11:51:37 -0700
+Processing by MainController#answer as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 1ms (Views: 0.5ms | Allocations: 373)
+
+
+Started GET "/question" for ::1 at 2021-03-16 11:51:52 -0700
+Processing by MainController#question as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/question.html.erb within layouts/application
+  Rendered main/question.html.erb within layouts/application (Duration: 0.1ms | Allocations: 51)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 3471)
+Completed 200 OK in 13ms (Views: 12.7ms | Allocations: 3912)
+
+
+Started GET "/question" for ::1 at 2021-03-16 11:52:25 -0700
+Processing by MainController#question as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/question.html.erb within layouts/application
+  Rendered main/question.html.erb within layouts/application (Duration: 0.4ms | Allocations: 169)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 3824)
+Completed 200 OK in 24ms (Views: 21.7ms | Allocations: 5028)
+
+
+Started GET "/question" for ::1 at 2021-03-16 11:52:42 -0700
+Processing by MainController#question as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/question.html.erb within layouts/application
+  Rendered main/question.html.erb within layouts/application (Duration: 0.6ms | Allocations: 169)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 3824)
+Completed 200 OK in 18ms (Views: 15.6ms | Allocations: 5025)
+
+
+Started GET "/question" for ::1 at 2021-03-16 11:53:00 -0700
+Processing by MainController#question as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/question.html.erb within layouts/application
+  Rendered main/question.html.erb within layouts/application (Duration: 0.7ms | Allocations: 170)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 3825)
+Completed 200 OK in 22ms (Views: 18.9ms | Allocations: 5028)
+
+
+Started GET "/question" for ::1 at 2021-03-16 11:54:19 -0700
+Processing by MainController#question as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/question.html.erb within layouts/application
+  Rendered main/question.html.erb within layouts/application (Duration: 0.9ms | Allocations: 202)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 3857)
+Completed 200 OK in 20ms (Views: 18.6ms | Allocations: 5057)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:54:21 -0700
+Processing by MainController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 2ms (Views: 1.1ms | Allocations: 399)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:54:21 -0700
+Processing by MainController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 1ms (Views: 0.5ms | Allocations: 373)
+
+
+Started GET "/question" for ::1 at 2021-03-16 11:55:11 -0700
+Processing by MainController#question as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/question.html.erb within layouts/application
+  Rendered main/question.html.erb within layouts/application (Duration: 0.2ms | Allocations: 60)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 3486)
+Completed 200 OK in 23ms (Views: 21.6ms | Allocations: 3928)
+
+
+Started GET "/question" for ::1 at 2021-03-16 11:56:38 -0700
+Processing by MainController#question as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/question.html.erb within layouts/application
+  Rendered main/question.html.erb within layouts/application (Duration: 0.9ms | Allocations: 216)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 3858)
+Completed 200 OK in 23ms (Views: 21.7ms | Allocations: 5092)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:56:44 -0700
+Processing by MainController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 27)
+Completed 200 OK in 2ms (Views: 1.3ms | Allocations: 374)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:57:45 -0700
+Processing by MainController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 1ms (Views: 1.0ms | Allocations: 549)
+
+
+Started GET "/question" for ::1 at 2021-03-16 11:57:51 -0700
+Processing by MainController#question as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/question.html.erb within layouts/application
+  Rendered main/question.html.erb within layouts/application (Duration: 0.5ms | Allocations: 240)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 3895)
+Completed 200 OK in 23ms (Views: 20.5ms | Allocations: 4920)
+
+
+Started GET "/question" for ::1 at 2021-03-16 11:57:55 -0700
+Processing by MainController#question as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/question.html.erb within layouts/application
+  Rendered main/question.html.erb within layouts/application (Duration: 0.6ms | Allocations: 70)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 3490)
+Completed 200 OK in 20ms (Views: 18.4ms | Allocations: 3931)
+
+
+Started GET "/question" for ::1 at 2021-03-16 11:58:09 -0700
+Processing by MainController#question as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/question.html.erb within layouts/application
+  Rendered main/question.html.erb within layouts/application (Duration: 0.6ms | Allocations: 70)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 3490)
+Completed 200 OK in 16ms (Views: 15.5ms | Allocations: 3932)
+
+
+Started GET "/question" for ::1 at 2021-03-16 11:58:32 -0700
+Processing by MainController#question as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/question.html.erb within layouts/application
+  Rendered main/question.html.erb within layouts/application (Duration: 1.1ms | Allocations: 239)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 3894)
+Completed 200 OK in 20ms (Views: 17.7ms | Allocations: 5101)
+
+
+Started GET "/question" for ::1 at 2021-03-16 11:58:34 -0700
+Processing by MainController#question as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/question.html.erb within layouts/application
+  Rendered main/question.html.erb within layouts/application (Duration: 0.3ms | Allocations: 70)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 3490)
+Completed 200 OK in 10ms (Views: 9.0ms | Allocations: 3932)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:58:36 -0700
+Processing by MainController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 1ms (Views: 0.5ms | Allocations: 377)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:58:36 -0700
+Processing by MainController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 1ms (Views: 0.4ms | Allocations: 374)
+
+
+Started GET "/question" for ::1 at 2021-03-16 12:01:11 -0700
+Processing by MainController#question as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/question.html.erb within layouts/application
+  Rendered main/question.html.erb within layouts/application (Duration: 1.4ms | Allocations: 204)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.4ms | Allocations: 3867)
+Completed 200 OK in 34ms (Views: 31.4ms | Allocations: 5072)
+
+
+Started GET "/" for ::1 at 2021-03-16 12:01:15 -0700
+Processing by MainController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 2ms (Views: 0.9ms | Allocations: 378)
+
+
+Started GET "/" for ::1 at 2021-03-16 12:01:15 -0700
+Processing by MainController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 2ms (Views: 0.8ms | Allocations: 374)
+
+
+Started GET "/" for ::1 at 2021-03-16 12:02:03 -0700
+Processing by MainController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/hello.html.erb within layouts/application
+  Rendered main/hello.html.erb within layouts/application (Duration: 0.5ms | Allocations: 167)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 3809)
+Completed 200 OK in 16ms (Views: 14.1ms | Allocations: 5043)
+
+
+Started GET "/" for ::1 at 2021-03-16 12:02:32 -0700
+Processing by MainController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/hello.html.erb within layouts/application
+  Rendered main/hello.html.erb within layouts/application (Duration: 0.5ms | Allocations: 160)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 3815)
+Completed 200 OK in 24ms (Views: 20.0ms | Allocations: 5014)
+
+
+Started GET "/question" for ::1 at 2021-03-16 12:02:40 -0700
+Processing by MainController#question as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/question.html.erb within layouts/application
+  Rendered main/question.html.erb within layouts/application (Duration: 1.4ms | Allocations: 189)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 4229)
+Completed 200 OK in 16ms (Views: 14.4ms | Allocations: 4801)
+
+
