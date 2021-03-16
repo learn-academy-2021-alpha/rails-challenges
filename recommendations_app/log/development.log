@@ -1,0 +1,622 @@
+  [1m[35m (1861.3ms)[0m  [1m[35mCREATE DATABASE "recommendations_app_development" ENCODING = 'unicode'[0m
+  [1m[35m (259.2ms)[0m  [1m[35mCREATE DATABASE "recommendations_app_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2021-03-16 10:58:59 -0700
+Processing by MainController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.3ms | Allocations: 57)
+Completed 200 OK in 114ms (Views: 42.6ms | ActiveRecord: 0.0ms | Allocations: 3197)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:02:23 -0700
+Processing by MainController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 28)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 510)
+
+
+Started GET "/question" for ::1 at 2021-03-16 11:02:31 -0700
+Processing by MainController#question as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 28)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 328)
+
+
+Started GET "/question" for ::1 at 2021-03-16 11:04:46 -0700
+Processing by MainController#question as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.3ms | Allocations: 28)
+Completed 200 OK in 7ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 513)
+
+
+Started GET "/answer" for ::1 at 2021-03-16 11:04:54 -0700
+Processing by MainController#answer as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 27)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/index" for ::1 at 2021-03-16 11:11:41 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+Started GET "/" for ::1 at 2021-03-16 11:11:57 -0700
+Processing by MainController#hello as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/index.html.erb (called from hello at /Users/learnacademy/Desktop/rails-challenges/recommendations_app/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 114)
+[Webpacker] Compiling...
+Started GET "/" for ::1 at 2021-03-16 11:12:02 -0700
+Processing by MainController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 38)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/learnacademy/Desktop/rails-challenges/recommendations_app/public/packs
+[Webpacker] Hash: e332c6419728fac579d5
+Version: webpack 4.46.0
+Time: 15744ms
+Built at: 03/16/2021 11:12:20 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-f826770d917d8a37c1d8.js    125 KiB  application  [emitted] [immutable]  application
+js/application-f826770d917d8a37c1d8.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-f826770d917d8a37c1d8.js js/application-f826770d917d8a37c1d8.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 23823.9ms | Allocations: 20295)
+Completed 200 OK in 23836ms (Views: 23835.3ms | Allocations: 21671)
+
+
+[Webpacker] Compiled all packs in /Users/learnacademy/Desktop/rails-challenges/recommendations_app/public/packs
+[Webpacker] Hash: e332c6419728fac579d5
+Version: webpack 4.46.0
+Time: 5127ms
+Built at: 03/16/2021 11:12:22 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-f826770d917d8a37c1d8.js    125 KiB  application  [emitted] [immutable]  application
+js/application-f826770d917d8a37c1d8.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-f826770d917d8a37c1d8.js js/application-f826770d917d8a37c1d8.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 19641.2ms | Allocations: 6297)
+Completed 200 OK in 19645ms (Views: 19642.7ms | Allocations: 6663)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:13:11 -0700
+Processing by MainController#hello as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/index.html.erb (called from hello at /Users/learnacademy/Desktop/rails-challenges/recommendations_app/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 113)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.6ms | Allocations: 3745)
+Completed 200 OK in 91ms (Views: 45.4ms | Allocations: 5117)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:15:00 -0700
+Processing by MainController#hello as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/index.html.erb (called from hello at /Users/learnacademy/Desktop/rails-challenges/recommendations_app/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | Allocations: 3741)
+Completed 200 OK in 37ms (Views: 36.0ms | Allocations: 5077)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:19:07 -0700
+Processing by MainController#hello as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/index.html.erb (called from hello at /Users/learnacademy/Desktop/rails-challenges/recommendations_app/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 123)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.1ms | Allocations: 3746)
+Completed 200 OK in 70ms (Views: 68.6ms | Allocations: 5077)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:33:40 -0700
+Processing by MainController#hello as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/index.html.erb (called from hello at /Users/learnacademy/Desktop/rails-challenges/recommendations_app/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 164)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 535.3ms | Allocations: 3768)
+Completed 200 OK in 595ms (Views: 592.2ms | Allocations: 5127)
+
+
+Started GET "/the_wire" for ::1 at 2021-03-16 11:33:44 -0700
+Processing by MainController#the_wire as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.3ms | Allocations: 27)
+Completed 200 OK in 10ms (Views: 9.1ms | Allocations: 825)
+
+
+Started GET "/the_wire" for ::1 at 2021-03-16 11:33:44 -0700
+Processing by MainController#the_wire as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 27)
+Completed 200 OK in 3ms (Views: 1.2ms | Allocations: 373)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:33:51 -0700
+Processing by MainController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 49)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 3440)
+Completed 200 OK in 21ms (Views: 20.1ms | Allocations: 3855)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:38:13 -0700
+Processing by MainController#hello as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/index.html.erb (called from hello at /Users/learnacademy/Desktop/rails-challenges/recommendations_app/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 400)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.0ms | Allocations: 4022)
+Completed 200 OK in 39ms (Views: 37.0ms | Allocations: 5359)
+
+
+Started GET "/breaking_bad" for ::1 at 2021-03-16 11:38:16 -0700
+Processing by MainController#breaking_bad as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 1ms (Views: 0.8ms | Allocations: 377)
+
+
+Started GET "/breaking_bad" for ::1 at 2021-03-16 11:38:16 -0700
+Processing by MainController#breaking_bad as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 27)
+Completed 200 OK in 3ms (Views: 1.7ms | Allocations: 373)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:38:22 -0700
+Processing by MainController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 3524)
+Completed 200 OK in 10ms (Views: 8.7ms | Allocations: 3939)
+
+
+Started GET "/parks_and_rec" for ::1 at 2021-03-16 11:38:24 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/parks_and_rec"):
+  
+Started GET "/parks_and_rec" for ::1 at 2021-03-16 11:38:57 -0700
+Processing by MainController#parks_and_rec as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 27)
+Completed 200 OK in 10ms (Views: 2.9ms | Allocations: 558)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:39:03 -0700
+Processing by MainController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 149)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 3606)
+Completed 200 OK in 19ms (Views: 18.8ms | Allocations: 4022)
+
+
+Started GET "/good_place" for ::1 at 2021-03-16 11:39:05 -0700
+Processing by MainController#good_place as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 27)
+Completed 200 OK in 2ms (Views: 0.8ms | Allocations: 376)
+
+
+Started GET "/good_place" for ::1 at 2021-03-16 11:39:05 -0700
+Processing by MainController#good_place as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 2ms (Views: 1.1ms | Allocations: 373)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:39:08 -0700
+Processing by MainController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.0ms | Allocations: 3530)
+Completed 200 OK in 61ms (Views: 59.6ms | Allocations: 3945)
+
+
+Started GET "/kobra_kai" for ::1 at 2021-03-16 11:39:12 -0700
+Processing by MainController#kobra_kai as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 2ms (Views: 1.3ms | Allocations: 376)
+
+
+Started GET "/kobra_kai" for ::1 at 2021-03-16 11:39:12 -0700
+Processing by MainController#kobra_kai as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 3ms (Views: 1.8ms | Allocations: 373)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:39:16 -0700
+Processing by MainController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 3526)
+Completed 200 OK in 9ms (Views: 8.0ms | Allocations: 3941)
+
+
+Started GET "/shameless" for ::1 at 2021-03-16 11:39:19 -0700
+Processing by MainController#shameless as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 27)
+Completed 200 OK in 3ms (Views: 1.7ms | Allocations: 376)
+
+
+Started GET "/shameless" for ::1 at 2021-03-16 11:39:19 -0700
+Processing by MainController#shameless as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.4ms | Allocations: 27)
+Completed 200 OK in 7ms (Views: 5.9ms | Allocations: 375)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:39:21 -0700
+Processing by MainController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 3532)
+Completed 200 OK in 9ms (Views: 7.8ms | Allocations: 3947)
+
+
+Started GET "/below_deck" for ::1 at 2021-03-16 11:39:23 -0700
+Processing by MainController#below_deck as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.6ms | Allocations: 27)
+Completed 200 OK in 4ms (Views: 2.2ms | Allocations: 376)
+
+
+Started GET "/below_deck" for ::1 at 2021-03-16 11:39:23 -0700
+Processing by MainController#below_deck as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 27)
+Completed 200 OK in 7ms (Views: 2.7ms | Allocations: 373)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:39:25 -0700
+Processing by MainController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 3524)
+Completed 200 OK in 18ms (Views: 17.3ms | Allocations: 3940)
+
+
+Started GET "/ru_pauls_drag_race" for ::1 at 2021-03-16 11:39:27 -0700
+Processing by MainController#ru_pauls_drag_race as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 3ms (Views: 1.4ms | Allocations: 376)
+
+
+Started GET "/ru_pauls_drag_race" for ::1 at 2021-03-16 11:39:27 -0700
+Processing by MainController#ru_pauls_drag_race as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.9ms | Allocations: 27)
+Completed 200 OK in 5ms (Views: 2.2ms | Allocations: 373)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:39:29 -0700
+Processing by MainController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 3527)
+Completed 200 OK in 9ms (Views: 7.9ms | Allocations: 3942)
+
+
+Started GET "/the_deuce" for ::1 at 2021-03-16 11:39:31 -0700
+Processing by MainController#the_deuce as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 27)
+Completed 200 OK in 4ms (Views: 1.7ms | Allocations: 376)
+
+
+Started GET "/the_deuce" for ::1 at 2021-03-16 11:39:31 -0700
+Processing by MainController#the_deuce as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 27)
+Completed 200 OK in 3ms (Views: 1.6ms | Allocations: 373)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:39:34 -0700
+Processing by MainController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 3526)
+Completed 200 OK in 18ms (Views: 17.3ms | Allocations: 3942)
+
+
+Started GET "/peaky_blinders" for ::1 at 2021-03-16 11:39:35 -0700
+Processing by MainController#peaky_blinders as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 27)
+Completed 200 OK in 7ms (Views: 1.6ms | Allocations: 376)
+
+
+Started GET "/peaky_blinders" for ::1 at 2021-03-16 11:39:35 -0700
+Processing by MainController#peaky_blinders as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.7ms | Allocations: 27)
+Completed 200 OK in 4ms (Views: 3.0ms | Allocations: 373)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:39:37 -0700
+Processing by MainController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 3530)
+Completed 200 OK in 11ms (Views: 10.3ms | Allocations: 3945)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:41:43 -0700
+Processing by MainController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 149)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.3ms | Allocations: 3585)
+Completed 200 OK in 38ms (Views: 36.6ms | Allocations: 4186)
+
+
+Started GET "/the_wire" for ::1 at 2021-03-16 11:41:46 -0700
+Processing by MainController#the_wire as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 27)
+Completed 200 OK in 3ms (Views: 1.3ms | Allocations: 377)
+
+
+Started GET "/the_wire" for ::1 at 2021-03-16 11:41:46 -0700
+Processing by MainController#the_wire as HTML
+  Rendering html template
+  Rendered html template (Duration: 2.7ms | Allocations: 27)
+Completed 200 OK in 5ms (Views: 3.7ms | Allocations: 373)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:43:35 -0700
+Processing by MainController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 149)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.8ms | Allocations: 3585)
+Completed 200 OK in 29ms (Views: 27.9ms | Allocations: 4186)
+
+
+Started GET "/the_wire" for ::1 at 2021-03-16 11:43:37 -0700
+Processing by MainController#the_wire as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 27)
+Completed 200 OK in 5ms (Views: 2.2ms | Allocations: 377)
+
+
+Started GET "/the_wire" for ::1 at 2021-03-16 11:43:37 -0700
+Processing by MainController#the_wire as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 2ms (Views: 0.9ms | Allocations: 374)
+
+
+Started GET "/the_wire" for ::1 at 2021-03-16 11:43:47 -0700
+  
+SyntaxError (/Users/learnacademy/Desktop/rails-challenges/recommendations_app/app/controllers/main_controller.rb:13: syntax error, unexpected '<', expecting `end'
+        <h3>Back to Landing Page</h3>
+        ^
+/Users/learnacademy/Desktop/rails-challenges/recommendations_app/app/controllers/main_controller.rb:13: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+        <h3>Back to Landing Page</h3>
+                 ^~
+/Users/learnacademy/Desktop/rails-challenges/recommendations_app/app/controllers/main_controller.rb:14: syntax error, unexpected string literal, expecting `end'
+        <%= link_to "Home", "/" %>
+                              ^
+/Users/learnacademy/Desktop/rails-challenges/recommendations_app/app/controllers/main_controller.rb:45: unterminated string meets end of file
+/Users/learnacademy/Desktop/rails-challenges/recommendations_app/app/controllers/main_controller.rb:45: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/main_controller.rb:13: syntax error, unexpected '<', expecting `end'
+app/controllers/main_controller.rb:13: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/controllers/main_controller.rb:14: syntax error, unexpected string literal, expecting `end'
+app/controllers/main_controller.rb:45: unterminated string meets end of file
+app/controllers/main_controller.rb:45: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/main_controller.rb:13: syntax error, unexpected '<', expecting `end'
+app/controllers/main_controller.rb:13: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/controllers/main_controller.rb:14: syntax error, unexpected string literal, expecting `end'
+app/controllers/main_controller.rb:45: unterminated string meets end of file
+app/controllers/main_controller.rb:45: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/main_controller.rb:13: syntax error, unexpected '<', expecting `end'
+app/controllers/main_controller.rb:13: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/controllers/main_controller.rb:14: syntax error, unexpected string literal, expecting `end'
+app/controllers/main_controller.rb:45: unterminated string meets end of file
+app/controllers/main_controller.rb:45: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/the_wire" for ::1 at 2021-03-16 11:44:37 -0700
+Processing by MainController#the_wire as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 27)
+Completed 500 Internal Server Error in 6ms (Views: 4.7ms | Allocations: 973)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/main_controller.rb:13:in `the_wire'
+Started GET "/the_wire" for ::1 at 2021-03-16 11:45:12 -0700
+Processing by MainController#the_wire as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 27)
+Completed 200 OK in 7ms (Views: 2.4ms | Allocations: 560)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:45:22 -0700
+Processing by MainController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 149)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 3606)
+Completed 200 OK in 18ms (Views: 17.3ms | Allocations: 4022)
+
+
+Started GET "/the_wire" for ::1 at 2021-03-16 11:45:24 -0700
+Processing by MainController#the_wire as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 2ms (Views: 0.7ms | Allocations: 377)
+
+
+Started GET "/the_wire" for ::1 at 2021-03-16 11:45:24 -0700
+Processing by MainController#the_wire as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 3ms (Views: 1.2ms | Allocations: 374)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:45:28 -0700
+Processing by MainController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 3524)
+Completed 200 OK in 24ms (Views: 21.9ms | Allocations: 3939)
+
+
+Started GET "/the_wire" for ::1 at 2021-03-16 11:48:07 -0700
+Processing by MainController#the_wire as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.3ms | Allocations: 27)
+Completed 500 Internal Server Error in 6ms (Views: 4.2ms | Allocations: 960)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/main_controller.rb:13:in `the_wire'
+Started GET "/the_wire" for ::1 at 2021-03-16 11:48:23 -0700
+Processing by MainController#the_wire as HTML
+  Rendering inline template
+  Rendered inline template (Duration: 0.9ms | Allocations: 132)
+Completed 200 OK in 34ms (Views: 29.7ms | Allocations: 800)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:48:26 -0700
+Processing by MainController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.5ms | Allocations: 3596)
+Completed 200 OK in 45ms (Views: 40.7ms | Allocations: 4012)
+
+
+Started GET "/the_wire" for ::1 at 2021-03-16 11:49:21 -0700
+Processing by MainController#the_wire as HTML
+  Rendering inline template
+  Rendered inline template (Duration: 0.5ms | Allocations: 122)
+Completed 200 OK in 3ms (Views: 1.8ms | Allocations: 658)
+
+
+Started GET "/the_wire" for ::1 at 2021-03-16 11:49:21 -0700
+Processing by MainController#the_wire as HTML
+  Rendering inline template
+  Rendered inline template (Duration: 1.2ms | Allocations: 108)
+Completed 200 OK in 3ms (Views: 2.2ms | Allocations: 455)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:49:24 -0700
+Processing by MainController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 3596)
+Completed 200 OK in 16ms (Views: 15.4ms | Allocations: 4012)
+
+
+Started GET "/the_wire" for ::1 at 2021-03-16 11:49:25 -0700
+Processing by MainController#the_wire as HTML
+  Rendering inline template
+  Rendered inline template (Duration: 0.9ms | Allocations: 108)
+Completed 200 OK in 3ms (Views: 1.9ms | Allocations: 458)
+
+
+Started GET "/the_wire" for ::1 at 2021-03-16 11:49:25 -0700
+Processing by MainController#the_wire as HTML
+  Rendering inline template
+  Rendered inline template (Duration: 0.7ms | Allocations: 108)
+Completed 200 OK in 4ms (Views: 2.9ms | Allocations: 455)
+
+
+Started GET "/the_wire" for ::1 at 2021-03-16 11:49:41 -0700
+Processing by MainController#the_wire as HTML
+  Rendering inline template
+  Rendered inline template (Duration: 0.7ms | Allocations: 120)
+Completed 200 OK in 6ms (Views: 4.6ms | Allocations: 652)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:50:20 -0700
+Processing by MainController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 149)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.9ms | Allocations: 3585)
+Completed 200 OK in 27ms (Views: 25.7ms | Allocations: 4187)
+
+
+Started GET "/breaking_bad" for ::1 at 2021-03-16 11:50:22 -0700
+Processing by MainController#breaking_bad as HTML
+  Rendering inline template
+  Rendered inline template (Duration: 0.6ms | Allocations: 112)
+Completed 200 OK in 3ms (Views: 1.9ms | Allocations: 462)
+
+
+Started GET "/breaking_bad" for ::1 at 2021-03-16 11:50:22 -0700
+Processing by MainController#breaking_bad as HTML
+  Rendering inline template
+  Rendered inline template (Duration: 4.7ms | Allocations: 108)
+Completed 200 OK in 11ms (Views: 9.1ms | Allocations: 455)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:50:23 -0700
+Processing by MainController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 3530)
+Completed 200 OK in 23ms (Views: 21.2ms | Allocations: 3945)
+
+
