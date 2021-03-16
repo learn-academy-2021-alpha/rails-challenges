@@ -249,3 +249,69 @@ Processing by NumbersController#divisible_by as HTML
 Completed 200 OK in 14ms (Views: 13.5ms | Allocations: 3857)
 
 
+  [1m[35m (645.9ms)[0m  [1m[35mCREATE DATABASE "parameters_challenge_development" ENCODING = 'unicode'[0m
+  [1m[35m (351.2ms)[0m  [1m[35mCREATE DATABASE "parameters_challenge_test" ENCODING = 'unicode'[0m
+Started GET "/letter_count/hello" for ::1 at 2021-03-16 14:56:07 -0700
+Processing by NumbersController#letter_count as HTML
+  Parameters: {"string"=>"hello"}
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 2005)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/numbers_controller.rb:19:in `letter_count'
+Started GET "/letter_count/hello" for ::1 at 2021-03-16 14:56:37 -0700
+Processing by NumbersController#letter_count as HTML
+  Parameters: {"string"=>"hello"}
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: numbers/lettercount.html.erb (called from letter_count at /Users/learnacademy/Desktop/rails-challenges/parameters_challenge/app/controllers/numbers_controller.rb:21)
+  Rendering layout layouts/application.html.erb
+  Rendering numbers/lettercount.html.erb within layouts/application
+  Rendered numbers/lettercount.html.erb within layouts/application (Duration: 0.9ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 66.4ms | Allocations: 16780)
+Completed 200 OK in 72ms (Views: 71.1ms | ActiveRecord: 0.0ms | Allocations: 18276)
+
+
+Started GET "/palindrome/racecar" for ::1 at 2021-03-16 15:02:50 -0700
+Processing by NumbersController#palindrome as HTML
+  Parameters: {"string"=>"racecar"}
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: numbers/palindromereader.html.erb (called from palindrome at /Users/learnacademy/Desktop/rails-challenges/parameters_challenge/app/controllers/numbers_controller.rb:31)
+  Rendering layout layouts/application.html.erb
+  Rendering numbers/palindromereader.html.erb within layouts/application
+  Rendered numbers/palindromereader.html.erb within layouts/application (Duration: 0.8ms | Allocations: 140)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 3754)
+Completed 200 OK in 21ms (Views: 20.7ms | Allocations: 5169)
+
+
+Started GET "/palindrome/momma" for ::1 at 2021-03-16 15:02:58 -0700
+Processing by NumbersController#palindrome as HTML
+  Parameters: {"string"=>"momma"}
+  Rendering layout layouts/application.html.erb
+  Rendering numbers/palindromereader.html.erb within layouts/application
+  Rendered numbers/palindromereader.html.erb within layouts/application (Duration: 0.1ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3430)
+Completed 200 OK in 9ms (Views: 8.4ms | Allocations: 3864)
+
+
+Started GET "/short_story/fat/man/gleefully/skipped" for ::1 at 2021-03-16 15:11:45 -0700
+  
+SyntaxError (/Users/learnacademy/Desktop/rails-challenges/parameters_challenge/app/controllers/numbers_controller.rb:40: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/numbers_controller.rb:40: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/numbers_controller.rb:40: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/numbers_controller.rb:40: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/short_story/fat/man/gleefully/skipped" for ::1 at 2021-03-16 15:12:07 -0700
+Processing by NumbersController#short_story as HTML
+  Parameters: {"adjective"=>"fat", "noun"=>"man", "adverb"=>"gleefully", "verb"=>"skipped"}
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: numbers/shortstory.html.erb (called from short_story at /Users/learnacademy/Desktop/rails-challenges/parameters_challenge/app/controllers/numbers_controller.rb:39)
+  Rendering layout layouts/application.html.erb
+  Rendering numbers/shortstory.html.erb within layouts/application
+  Rendered numbers/shortstory.html.erb within layouts/application (Duration: 1.0ms | Allocations: 169)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 3802)
+Completed 200 OK in 22ms (Views: 21.2ms | Allocations: 5188)
+
+

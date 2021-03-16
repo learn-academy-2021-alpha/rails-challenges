@@ -3,4 +3,7 @@ Rails.application.routes.draw do
 
   get '/number_cubed/:number'=>'numbers#number_cubed'
   get '/divisible_by/:number1/:number2'=>'numbers#divisible_by'
+  get '/letter_count/:string'=> 'numbers#letter_count'
+  get '/palindrome/:string' => 'numbers#palindrome'
+  get 'short_story/:adjective/:noun/:adverb/:verb' => 'numbers#short_story'
 end

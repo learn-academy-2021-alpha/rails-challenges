@@ -14,4 +14,28 @@ class NumbersController < ApplicationController
     end
     render 'divisibleby.html.erb'
   end
-end
+
+  def letter_count
+    @string = params[:string]
+    @string_length = @string.length
+    render 'lettercount.html.erb'
+  end
+
+  def palindrome
+    @string = params[:string]
+    if @string == @string.reverse
+      @result = 'is a palindrome'
+    else
+      @result = 'is not a palindrome'
+    end
+    render 'palindromereader.html.erb'
+  end
+
+  def short_story
+    @noun = params[:noun]
+    @verb = params[:verb]
+    @adjective = params[:adjective]
+    @adverb = params[:adverb]
+    render 'shortstory.html.erb'
+  end
+  end
