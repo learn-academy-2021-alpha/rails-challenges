@@ -183,3 +183,196 @@ DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/
 Completed 200 OK in 22ms (Views: 21.1ms | Allocations: 5086)
 
 
+  [1m[35m (550.3ms)[0m  [1m[35mCREATE DATABASE "routes_controllers_views_challenge_development" ENCODING = 'unicode'[0m
+  [1m[35m (198.7ms)[0m  [1m[35mCREATE DATABASE "routes_controllers_views_challenge_test" ENCODING = 'unicode'[0m
+Started GET "/Top10" for ::1 at 2021-03-16 11:36:22 -0700
+Processing by MainController#Top10 as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/top10.html.erb (called from Top10 at /Users/lexpeterson/Desktop/rails-challenges/routes_controllers_views_challenge/app/controllers/main_controller.rb:7)
+  Rendering layout layouts/application.html.erb
+  Rendering main/top10.html.erb within layouts/application
+  Rendered main/top10.html.erb within layouts/application (Duration: 178.8ms | Allocations: 411)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 483.4ms | Allocations: 17608)
+Completed 200 OK in 570ms (Views: 547.0ms | ActiveRecord: 0.0ms | Allocations: 21878)
+
+
+Started GET "/Top10" for ::1 at 2021-03-16 11:36:40 -0700
+Processing by MainController#Top10 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/top10.html.erb within layouts/application
+  Rendered main/top10.html.erb within layouts/application (Duration: 0.2ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | Allocations: 3428)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.0ms | Allocations: 3882)
+
+
+Started GET "/Top10" for ::1 at 2021-03-16 11:39:09 -0700
+Processing by MainController#Top10 as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/top10.html.erb (called from Top10 at /Users/lexpeterson/Desktop/rails-challenges/routes_controllers_views_challenge/app/controllers/main_controller.rb:7)
+  Rendering layout layouts/application.html.erb
+  Rendering main/top10.html.erb within layouts/application
+  Rendered main/top10.html.erb within layouts/application (Duration: 1.0ms | Allocations: 126)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.3ms | Allocations: 3737)
+Completed 200 OK in 50ms (Views: 49.4ms | ActiveRecord: 0.0ms | Allocations: 5110)
+
+
+Started GET "/Top10" for ::1 at 2021-03-16 11:40:22 -0700
+Processing by MainController#Top10 as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/top10.html.erb (called from Top10 at /Users/lexpeterson/Desktop/rails-challenges/routes_controllers_views_challenge/app/controllers/main_controller.rb:7)
+  Rendering layout layouts/application.html.erb
+  Rendering main/top10.html.erb within layouts/application
+  Rendered main/top10.html.erb within layouts/application (Duration: 0.8ms | Allocations: 121)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 3748)
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.0ms | Allocations: 5088)
+
+
+Started GET "/Top10" for ::1 at 2021-03-16 11:41:25 -0700
+Processing by MainController#Top10 as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/top10.html.erb (called from Top10 at /Users/lexpeterson/Desktop/rails-challenges/routes_controllers_views_challenge/app/controllers/main_controller.rb:7)
+  Rendering layout layouts/application.html.erb
+  Rendering main/top10.html.erb within layouts/application
+  Rendered main/top10.html.erb within layouts/application (Duration: 0.4ms | Allocations: 121)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 3747)
+Completed 200 OK in 16ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 5087)
+
+
+Started GET "/Top10" for ::1 at 2021-03-16 11:41:38 -0700
+Processing by MainController#Top10 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/top10.html.erb within layouts/application
+  Rendered main/top10.html.erb within layouts/application (Duration: 0.2ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 115.8ms | Allocations: 3433)
+Completed 200 OK in 122ms (Views: 120.3ms | ActiveRecord: 0.0ms | Allocations: 3853)
+
+
+Started GET "/Top10" for ::1 at 2021-03-16 11:43:01 -0700
+Processing by MainController#Top10 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/top10.html.erb within layouts/application
+  Rendered main/top10.html.erb within layouts/application (Duration: 0.2ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 3426)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.0ms | Allocations: 3844)
+
+
+Started GET "/Top10" for ::1 at 2021-03-16 11:43:08 -0700
+Processing by MainController#Top10 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/top10.html.erb within layouts/application
+  Rendered main/top10.html.erb within layouts/application (Duration: 0.4ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 3426)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.0ms | Allocations: 3844)
+
+
+Started GET "/Top10" for ::1 at 2021-03-16 11:46:45 -0700
+Processing by MainController#Top10 as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/top10.html.erb (called from Top10 at /Users/lexpeterson/Desktop/rails-challenges/routes_controllers_views_challenge/app/controllers/main_controller.rb:7)
+  Rendering layout layouts/application.html.erb
+  Rendering main/top10.html.erb within layouts/application
+  Rendered main/top10.html.erb within layouts/application (Duration: 0.6ms | Allocations: 121)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 3746)
+Completed 200 OK in 27ms (Views: 25.9ms | Allocations: 5076)
+
+
+Started GET "/Top10" for ::1 at 2021-03-16 11:46:55 -0700
+Processing by MainController#Top10 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/top10.html.erb within layouts/application
+  Rendered main/top10.html.erb within layouts/application (Duration: 0.2ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.6ms | Allocations: 3428)
+Completed 200 OK in 23ms (Views: 22.1ms | Allocations: 3848)
+
+
+Started GET "/Top10" for ::1 at 2021-03-16 11:52:58 -0700
+Processing by MainController#Top10 as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/top10.html.erb (called from Top10 at /Users/lexpeterson/Desktop/rails-challenges/routes_controllers_views_challenge/app/controllers/main_controller.rb:8)
+  Rendering layout layouts/application.html.erb
+  Rendering main/top10.html.erb within layouts/application
+  Rendered main/top10.html.erb within layouts/application (Duration: 1.1ms | Allocations: 166)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 3767)
+Completed 200 OK in 22ms (Views: 21.7ms | Allocations: 5127)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:53:02 -0700
+Processing by MainController#TopRappers as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 31)
+Completed 200 OK in 14ms (Views: 13.3ms | Allocations: 532)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:53:02 -0700
+Processing by MainController#TopRappers as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 27)
+Completed 200 OK in 3ms (Views: 1.4ms | Allocations: 373)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:53:12 -0700
+Processing by MainController#TopRappers as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 27)
+Completed 200 OK in 2ms (Views: 1.3ms | Allocations: 375)
+
+
+Started GET "/Top10" for ::1 at 2021-03-16 11:53:12 -0700
+Processing by MainController#Top10 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/top10.html.erb within layouts/application
+  Rendered main/top10.html.erb within layouts/application (Duration: 0.2ms | Allocations: 48)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 3442)
+Completed 200 OK in 20ms (Views: 18.5ms | Allocations: 3857)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:53:25 -0700
+Processing by MainController#TopRappers as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 1ms (Views: 0.7ms | Allocations: 378)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:53:25 -0700
+Processing by MainController#TopRappers as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 1ms (Views: 0.7ms | Allocations: 373)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:53:51 -0700
+Processing by MainController#TopRappers as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.3ms | Allocations: 27)
+Completed 200 OK in 3ms (Views: 1.9ms | Allocations: 558)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:54:03 -0700
+  
+SyntaxError (/Users/lexpeterson/Desktop/rails-challenges/routes_controllers_views_challenge/app/controllers/main_controller.rb:3: syntax error, unexpected '<'
+        render html: <h1>Top 10 Rappers</h1>
+                     ^
+/Users/lexpeterson/Desktop/rails-challenges/routes_controllers_views_challenge/app/controllers/main_controller.rb:3: syntax error, unexpected integer literal, expecting `do' or '{' or '('
+        render html: <h1>Top 10 Rappers</h1>
+                             ^~
+/Users/lexpeterson/Desktop/rails-challenges/routes_controllers_views_challenge/app/controllers/main_controller.rb:10: unterminated regexp meets end of file
+/Users/lexpeterson/Desktop/rails-challenges/routes_controllers_views_challenge/app/controllers/main_controller.rb:10: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/main_controller.rb:3: syntax error, unexpected '<'
+app/controllers/main_controller.rb:3: syntax error, unexpected integer literal, expecting `do' or '{' or '('
+app/controllers/main_controller.rb:10: unterminated regexp meets end of file
+app/controllers/main_controller.rb:10: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/main_controller.rb:3: syntax error, unexpected '<'
+app/controllers/main_controller.rb:3: syntax error, unexpected integer literal, expecting `do' or '{' or '('
+app/controllers/main_controller.rb:10: unterminated regexp meets end of file
+app/controllers/main_controller.rb:10: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/main_controller.rb:3: syntax error, unexpected '<'
+app/controllers/main_controller.rb:3: syntax error, unexpected integer literal, expecting `do' or '{' or '('
+app/controllers/main_controller.rb:10: unterminated regexp meets end of file
+app/controllers/main_controller.rb:10: syntax error, unexpected end-of-input, expecting `end'
