@@ -1,0 +1,205 @@
+  [1m[35m (515.6ms)[0m  [1m[35mCREATE DATABASE "params_raul_kevinn_development" ENCODING = 'unicode'[0m
+  [1m[35m (240.5ms)[0m  [1m[35mCREATE DATABASE "params_raul_kevinn_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2021-03-16 14:09:06 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 16.4ms | Allocations: 522)
+Completed 200 OK in 51ms (Views: 28.5ms | ActiveRecord: 0.0ms | Allocations: 4215)
+
+
+Started GET "/number/3" for ::1 at 2021-03-16 14:18:18 -0700
+Processing by NumberController#number as HTML
+  Parameters: {"number"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering number/number.html.erb within layouts/application
+  Rendered number/number.html.erb within layouts/application (Duration: 1.5ms | Allocations: 131)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/learnacademy/Desktop/LEARN/rails-challenges/params_raul_kevinn/public/packs
+[Webpacker] Hash: e332c6419728fac579d5
+Version: webpack 4.46.0
+Time: 4990ms
+Built at: 03/16/2021 2:18:28 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-f826770d917d8a37c1d8.js    125 KiB  application  [emitted] [immutable]  application
+js/application-f826770d917d8a37c1d8.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-f826770d917d8a37c1d8.js js/application-f826770d917d8a37c1d8.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 9606.2ms | Allocations: 14914)
+Completed 200 OK in 9614ms (Views: 9611.3ms | Allocations: 16162)
+
+
+Started GET "/number/3" for ::1 at 2021-03-16 14:21:37 -0700
+Processing by NumberController#number as HTML
+  Parameters: {"number"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering number/number.html.erb within layouts/application
+  Rendered number/number.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1675)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 1745)
+Completed 500 Internal Server Error in 15ms (Allocations: 2990)
+
+
+  
+ActionView::Template::Error (no implicit conversion of String into Integer):
+    1: <h1>This number cubed is <%= @number * @number * @number %></h1>
+  
+app/views/number/number.html.erb:1:in `*'
+app/views/number/number.html.erb:1
+Started GET "/number/3" for ::1 at 2021-03-16 14:22:12 -0700
+Processing by NumberController#number as HTML
+  Parameters: {"number"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering number/number.html.erb within layouts/application
+  Rendered number/number.html.erb within layouts/application (Duration: 1.1ms | Allocations: 125)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.4ms | Allocations: 3792)
+Completed 200 OK in 39ms (Views: 36.3ms | Allocations: 4998)
+
+
+Started GET "/number/3" for ::1 at 2021-03-16 14:22:32 -0700
+Processing by NumberController#number as HTML
+  Parameters: {"number"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering number/number.html.erb within layouts/application
+  Rendered number/number.html.erb within layouts/application (Duration: 0.2ms | Allocations: 43)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.7ms | Allocations: 3509)
+Completed 200 OK in 37ms (Views: 35.7ms | Allocations: 4143)
+
+
+Started GET "/number/3" for ::1 at 2021-03-16 14:23:09 -0700
+Processing by NumberController#number as HTML
+  Parameters: {"number"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering number/number.html.erb within layouts/application
+  Rendered number/number.html.erb within layouts/application (Duration: 0.6ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 3797)
+Completed 200 OK in 27ms (Views: 24.6ms | Allocations: 4997)
+
+
+Started GET "/divisible/44" for ::1 at 2021-03-16 14:29:37 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/divisible/44"):
+  
+Started GET "/divisible/4,4" for ::1 at 2021-03-16 14:30:05 -0700
+  
+ActionController::RoutingError (uninitialized constant DivisibleController):
+  
+Started GET "/divisible/4,4" for ::1 at 2021-03-16 14:30:52 -0700
+  
+ActionController::RoutingError (uninitialized constant DivisibleController):
+  
+Started GET "/divisible/4,4" for ::1 at 2021-03-16 14:31:26 -0700
+  
+ActionController::RoutingError (uninitialized constant DivisibleController):
+  
+Started GET "/divisible/4/4" for ::1 at 2021-03-16 14:31:42 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/divisible/4/4"):
+  
+Started GET "/divisible/4/4" for ::1 at 2021-03-16 14:32:09 -0700
+  
+ActionController::RoutingError (uninitialized constant DivisibleController):
+  
+Started GET "/divisible/4/4" for ::1 at 2021-03-16 14:33:22 -0700
+  
+SyntaxError (/Users/learnacademy/Desktop/LEARN/rails-challenges/params_raul_kevinn/app/controllers/number_controller.rb:13: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/number_controller.rb:13: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/number_controller.rb:13: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/number_controller.rb:13: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/divisible/4/4" for ::1 at 2021-03-16 14:33:42 -0700
+Processing by NumberController#divisible as HTML
+  Parameters: {"number"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering number/divisible.html.erb within layouts/application
+  Rendered number/divisible.html.erb within layouts/application (Duration: 2.0ms | Allocations: 127)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.8ms | Allocations: 3794)
+Completed 200 OK in 64ms (Views: 60.1ms | Allocations: 5042)
+
+
+Started GET "/length/hello" for ::1 at 2021-03-16 14:38:22 -0700
+Processing by NumberController#length as HTML
+  Parameters: {"string"=>"hello"}
+  Rendering layout layouts/application.html.erb
+  Rendering number/length.html.erb within layouts/application
+  Rendered number/length.html.erb within layouts/application (Duration: 1.1ms | Allocations: 142)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.3ms | Allocations: 3788)
+Completed 200 OK in 35ms (Views: 32.4ms | Allocations: 5030)
+
+
+Started GET "/palindrome/car" for ::1 at 2021-03-16 14:42:50 -0700
+Processing by NumberController#palindrome as HTML
+  Parameters: {"string"=>"car"}
+  Rendering layout layouts/application.html.erb
+  Rendering number/palindrome.html.erb within layouts/application
+  Rendered number/palindrome.html.erb within layouts/application (Duration: 2.3ms | Allocations: 138)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.4ms | Allocations: 3775)
+Completed 200 OK in 50ms (Views: 46.4ms | Allocations: 5018)
+
+
+Started GET "/palindrome/car" for ::1 at 2021-03-16 14:43:42 -0700
+Processing by NumberController#palindrome as HTML
+  Parameters: {"string"=>"car"}
+Completed 500 Internal Server Error in 9ms (Allocations: 3032)
+
+
+  
+NameError (undefined local variable or method `string' for #<NumberController:0x00000000013588>
+Did you mean?  @string
+               String):
+  
+app/controllers/number_controller.rb:19:in `palindrome'
+Started GET "/palindrome/car" for ::1 at 2021-03-16 14:45:47 -0700
+Processing by NumberController#palindrome as HTML
+  Parameters: {"string"=>"car"}
+  Rendering layout layouts/application.html.erb
+  Rendering number/palindrome.html.erb within layouts/application
+  Rendered number/palindrome.html.erb within layouts/application (Duration: 0.4ms | Allocations: 43)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 3518)
+Completed 200 OK in 23ms (Views: 22.3ms | Allocations: 4156)
+
+
+Started GET "/palindrome/car" for ::1 at 2021-03-16 14:47:49 -0700
+Processing by NumberController#palindrome as HTML
+  Parameters: {"string"=>"car"}
+  Rendering layout layouts/application.html.erb
+  Rendering number/palindrome.html.erb within layouts/application
+  Rendered number/palindrome.html.erb within layouts/application (Duration: 1.2ms | Allocations: 128)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.4ms | Allocations: 3773)
+Completed 200 OK in 42ms (Views: 38.6ms | Allocations: 5017)
+
+
+Started GET "/palindrome/mom" for ::1 at 2021-03-16 14:48:01 -0700
+Processing by NumberController#palindrome as HTML
+  Parameters: {"string"=>"mom"}
+  Rendering layout layouts/application.html.erb
+  Rendering number/palindrome.html.erb within layouts/application
+  Rendered number/palindrome.html.erb within layouts/application (Duration: 0.2ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.6ms | Allocations: 3461)
+Completed 200 OK in 65ms (Views: 63.8ms | Allocations: 3911)
+
+
+Started GET "/madlibs/tyler/flew/monster%20truck/coolaids" for ::1 at 2021-03-16 14:55:44 -0700
+Processing by NumberController#madlibs as HTML
+  Parameters: {"noun"=>"tyler", "verb"=>"flew", "adjective"=>"monster truck", "adverb"=>"coolaids"}
+  Rendering layout layouts/application.html.erb
+  Rendering number/madlibs.html.erb within layouts/application
+  Rendered number/madlibs.html.erb within layouts/application (Duration: 0.5ms | Allocations: 172)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.3ms | Allocations: 3809)
+Completed 200 OK in 30ms (Views: 28.0ms | Allocations: 5052)
+
+
