@@ -1,0 +1,423 @@
+Started GET "/" for ::1 at 2021-03-16 10:48:48 -0700
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "app_name_development" does not exist
+):
+  
+activerecord (6.0.3.5) lib/active_record/connection_adapters/postgresql_adapter.rb:50:in `rescue in postgresql_connection'
+activerecord (6.0.3.5) lib/active_record/connection_adapters/postgresql_adapter.rb:33:in `postgresql_connection'
+activerecord (6.0.3.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:887:in `new_connection'
+activerecord (6.0.3.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `checkout_new_connection'
+activerecord (6.0.3.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:910:in `try_to_checkout_new_connection'
+activerecord (6.0.3.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:871:in `acquire_connection'
+activerecord (6.0.3.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:593:in `checkout'
+activerecord (6.0.3.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:437:in `connection'
+activerecord (6.0.3.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:1119:in `retrieve_connection'
+activerecord (6.0.3.5) lib/active_record/connection_handling.rb:221:in `retrieve_connection'
+activerecord (6.0.3.5) lib/active_record/connection_handling.rb:189:in `connection'
+activerecord (6.0.3.5) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.5) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.5) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.5) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.5) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.5) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (596.9ms)[0m  [1m[35mCREATE DATABASE "app_name_development" ENCODING = 'unicode'[0m
+  [1m[35m (254.4ms)[0m  [1m[35mCREATE DATABASE "app_name_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2021-03-16 10:50:00 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/learnacademy/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 15.9ms | Allocations: 295)
+Completed 200 OK in 29ms (Views: 20.1ms | ActiveRecord: 0.0ms | Allocations: 1723)
+
+
+Started GET "/" for ::1 at 2021-03-16 10:53:23 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/learnacademy/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 10.9ms | Allocations: 295)
+Completed 200 OK in 29ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 2088)
+
+
+Started GET "/" for ::1 at 2021-03-16 10:55:36 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/learnacademy/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 10.6ms | Allocations: 179)
+Completed 200 OK in 18ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 1251)
+
+
+Started GET "/" for ::1 at 2021-03-16 10:55:38 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/learnacademy/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | Allocations: 8)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 386)
+
+
+Started GET "/" for ::1 at 2021-03-16 10:55:45 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/learnacademy/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.8ms | Allocations: 7)
+Completed 200 OK in 7ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 771)
+
+
+Started GET "/" for ::1 at 2021-03-16 10:55:47 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/learnacademy/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.6ms | Allocations: 8)
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 385)
+
+
+Started GET "/hello" for ::1 at 2021-03-16 10:56:05 -0700
+Processing by MainController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 711)
+
+
+Started GET "/" for ::1 at 2021-03-16 10:58:48 -0700
+Processing by MainController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 5ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 480)
+
+
+Started GET "/" for ::1 at 2021-03-16 10:58:51 -0700
+Processing by MainController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 322)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:02:46 -0700
+Processing by MainController#hello as HTML
+  Rendering main/main.html.erb within layouts/application
+  Rendered main/main.html.erb within layouts/application (Duration: 0.3ms | Allocations: 77)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/learnacademy/Desktop/rails-challenges/app_name/public/packs
+[Webpacker] Hash: ef270c56fa66020c9089
+Version: webpack 4.46.0
+Time: 7033ms
+Built at: 03/16/2021 11:02:58 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e88c6c3304a15e6886b6.js    124 KiB  application  [emitted] [immutable]  application
+js/application-e88c6c3304a15e6886b6.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-e88c6c3304a15e6886b6.js js/application-e88c6c3304a15e6886b6.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 12605ms (Views: 12604.3ms | ActiveRecord: 0.0ms | Allocations: 18347)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:12:54 -0700
+Processing by MainController#hello as HTML
+  Rendering main/main.html.erb within layouts/application
+  Rendered main/main.html.erb within layouts/application (Duration: 3.9ms | Allocations: 123)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 27.8ms | ActiveRecord: 0.0ms | Allocations: 4848)
+
+
+Started GET "/forest_gump" for ::1 at 2021-03-16 11:12:57 -0700
+Processing by MainController#forest_gump as HTML
+  Rendering main/forest_gump.html.erb within layouts/application
+  Rendered main/forest_gump.html.erb within layouts/application (Duration: 1.5ms | Allocations: 73)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 0.0ms | Allocations: 4039)
+
+
+Started GET "/forest_gump" for ::1 at 2021-03-16 11:13:02 -0700
+Processing by MainController#forest_gump as HTML
+  Rendering main/forest_gump.html.erb within layouts/application
+  Rendered main/forest_gump.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.0ms | Allocations: 3849)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:14:15 -0700
+Processing by MainController#hello as HTML
+  Rendering main/main.html.erb within layouts/application
+  Rendered main/main.html.erb within layouts/application (Duration: 0.6ms | Allocations: 114)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 4848)
+
+
+Started GET "/forest_gump" for ::1 at 2021-03-16 11:14:18 -0700
+Processing by MainController#forest_gump as HTML
+  Rendering main/forest_gump.html.erb within layouts/application
+  Rendered main/forest_gump.html.erb within layouts/application (Duration: 0.7ms | Allocations: 104)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.0ms | Allocations: 4072)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:14:19 -0700
+Processing by MainController#hello as HTML
+  Rendering main/main.html.erb within layouts/application
+  Rendered main/main.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.0ms | Allocations: 3867)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:33:41 -0700
+Processing by MainController#hello as HTML
+  Rendering main/main.html.erb within layouts/application
+  Rendered main/main.html.erb within layouts/application (Duration: 2.0ms | Allocations: 390)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.0ms | Allocations: 5123)
+
+
+Started GET "/shrek" for ::1 at 2021-03-16 11:33:45 -0700
+Processing by MainController#shrek as HTML
+  Rendering main/shrek.html.erb within layouts/application
+  Rendered main/shrek.html.erb within layouts/application (Duration: 1.0ms | Allocations: 104)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms | Allocations: 4097)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:33:46 -0700
+Processing by MainController#hello as HTML
+  Rendering main/main.html.erb within layouts/application
+  Rendered main/main.html.erb within layouts/application (Duration: 0.1ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 3980)
+
+
+Started GET "/tokyo_drift" for ::1 at 2021-03-16 11:33:47 -0700
+Processing by MainController#tokyo_drift as HTML
+  Rendering main/tokyo_drift.html.erb within layouts/application
+  Rendered main/tokyo_drift.html.erb within layouts/application (Duration: 1.1ms | Allocations: 104)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 4088)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:33:48 -0700
+Processing by MainController#hello as HTML
+  Rendering main/main.html.erb within layouts/application
+  Rendered main/main.html.erb within layouts/application (Duration: 0.2ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 3988)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:33:51 -0700
+Processing by MainController#hello as HTML
+  Rendering main/main.html.erb within layouts/application
+  Rendered main/main.html.erb within layouts/application (Duration: 0.2ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 3979)
+
+
+Started GET "/ghost_in_the_shell" for ::1 at 2021-03-16 11:33:52 -0700
+Processing by MainController#ghost_in_the_shell as HTML
+  Rendering main/ghost_in_the_shell.html.erb within layouts/application
+  Rendered main/ghost_in_the_shell.html.erb within layouts/application (Duration: 1.5ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 4075)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:33:53 -0700
+Processing by MainController#hello as HTML
+  Rendering main/main.html.erb within layouts/application
+  Rendered main/main.html.erb within layouts/application (Duration: 0.3ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 3992)
+
+
+Started GET "/ip_man" for ::1 at 2021-03-16 11:33:54 -0700
+Processing by MainController#ip_man as HTML
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 1711)
+
+
+  
+ActionView::MissingTemplate (Missing template main/ip_man.html.erb, application/ip_man.html.erb with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/learnacademy/Desktop/rails-challenges/app_name/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-2.7.0/gems/actiontext-6.0.3.5/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-2.7.0/gems/actionmailbox-6.0.3.5/app/views"
+):
+  
+app/controllers/main_controller.rb:16:in `ip_man'
+Started GET "/ip_man" for ::1 at 2021-03-16 11:34:31 -0700
+Processing by MainController#ip_man as HTML
+  Rendering main/ip_man.html.erb within layouts/application
+  Rendered main/ip_man.html.erb within layouts/application (Duration: 1.0ms | Allocations: 104)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.0ms | Allocations: 4904)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:34:33 -0700
+Processing by MainController#hello as HTML
+  Rendering main/main.html.erb within layouts/application
+  Rendered main/main.html.erb within layouts/application (Duration: 1.7ms | Allocations: 384)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.0ms | Allocations: 4353)
+
+
+Started GET "/player_one" for ::1 at 2021-03-16 11:34:34 -0700
+Processing by MainController#player_one as HTML
+  Rendering main/player_one.html.erb within layouts/application
+  Rendered main/player_one.html.erb within layouts/application (Duration: 1.0ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 4080)
+
+
+Started GET "/pulp_fiction" for ::1 at 2021-03-16 11:34:36 -0700
+Processing by MainController#pulp_fiction as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1399)
+
+
+  
+ActionView::MissingTemplate (Missing template main/pulp_fiction.html.erb, application/pulp_fiction.html.erb with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/learnacademy/Desktop/rails-challenges/app_name/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-2.7.0/gems/actiontext-6.0.3.5/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-2.7.0/gems/actionmailbox-6.0.3.5/app/views"
+):
+  
+app/controllers/main_controller.rb:22:in `pulp_fiction'
+Started GET "/pulp_fiction" for ::1 at 2021-03-16 11:35:56 -0700
+Processing by MainController#pulp_fiction as HTML
+  Rendering main/pulp_fiction.html.erb within layouts/application
+  Rendered main/pulp_fiction.html.erb within layouts/application (Duration: 0.7ms | Allocations: 107)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 4863)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:35:58 -0700
+Processing by MainController#hello as HTML
+  Rendering main/main.html.erb within layouts/application
+  Rendered main/main.html.erb within layouts/application (Duration: 2.2ms | Allocations: 384)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 4359)
+
+
+Started GET "/the_goonies" for ::1 at 2021-03-16 11:35:59 -0700
+Processing by MainController#the_goonies as HTML
+  Rendering main/the_goonies.html.erb within layouts/application
+  Rendered main/the_goonies.html.erb within layouts/application (Duration: 1.6ms | Allocations: 104)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 4093)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:36:00 -0700
+Processing by MainController#hello as HTML
+  Rendering main/main.html.erb within layouts/application
+  Rendered main/main.html.erb within layouts/application (Duration: 0.3ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 3994)
+
+
+Started GET "/up" for ::1 at 2021-03-16 11:36:01 -0700
+Processing by MainController#up as HTML
+  Rendering main/up.html.erb within layouts/application
+  Rendered main/up.html.erb within layouts/application (Duration: 0.8ms | Allocations: 104)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 4092)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:36:02 -0700
+Processing by MainController#hello as HTML
+  Rendering main/main.html.erb within layouts/application
+  Rendered main/main.html.erb within layouts/application (Duration: 0.3ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 25.1ms | ActiveRecord: 0.0ms | Allocations: 3980)
+
+
+Started GET "/tokyo_drift" for ::1 at 2021-03-16 11:36:03 -0700
+Processing by MainController#tokyo_drift as HTML
+  Rendering main/tokyo_drift.html.erb within layouts/application
+  Rendered main/tokyo_drift.html.erb within layouts/application (Duration: 1.5ms | Allocations: 102)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.0ms | Allocations: 4098)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:36:04 -0700
+Processing by MainController#hello as HTML
+  Rendering main/main.html.erb within layouts/application
+  Rendered main/main.html.erb within layouts/application (Duration: 0.9ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 39.3ms | ActiveRecord: 0.0ms | Allocations: 3988)
+
+
+Started GET "/tokyo_drift" for ::1 at 2021-03-16 11:36:08 -0700
+Processing by MainController#tokyo_drift as HTML
+  Rendering main/tokyo_drift.html.erb within layouts/application
+  Rendered main/tokyo_drift.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 3868)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:37:01 -0700
+Processing by MainController#hello as HTML
+  Rendering main/main.html.erb within layouts/application
+  Rendered main/main.html.erb within layouts/application (Duration: 1.1ms | Allocations: 386)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms | Allocations: 5129)
+
+
+Started GET "/the_mummy" for ::1 at 2021-03-16 11:37:03 -0700
+Processing by MainController#the_mummy as HTML
+  Rendering main/the_mummy.html.erb within layouts/application
+  Rendered main/the_mummy.html.erb within layouts/application (Duration: 0.7ms | Allocations: 104)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 4080)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:37:04 -0700
+Processing by MainController#hello as HTML
+  Rendering main/main.html.erb within layouts/application
+  Rendered main/main.html.erb within layouts/application (Duration: 0.2ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.0ms | Allocations: 3982)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:38:11 -0700
+Processing by MainController#hello as HTML
+  Rendering main/main.html.erb within layouts/application
+  Rendered main/main.html.erb within layouts/application (Duration: 13.3ms | Allocations: 387)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 102ms (Views: 100.0ms | ActiveRecord: 0.0ms | Allocations: 5151)
+
+
+Started GET "/ghost_in_the_shell" for ::1 at 2021-03-16 11:38:13 -0700
+Processing by MainController#ghost_in_the_shell as HTML
+  Rendering main/ghost_in_the_shell.html.erb within layouts/application
+  Rendered main/ghost_in_the_shell.html.erb within layouts/application (Duration: 0.5ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 4101)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:38:21 -0700
+Processing by MainController#hello as HTML
+  Rendering main/main.html.erb within layouts/application
+  Rendered main/main.html.erb within layouts/application (Duration: 0.3ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 3980)
+
+
