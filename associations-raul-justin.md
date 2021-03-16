@@ -19,6 +19,9 @@ class Owner < ApplicationRecord
     has_many :credit_cards
 end
 
+pp CreditCard.all
+pp Owner.all
+
 Challenges
 
 Create three owners and save them in the database

@@ -1,0 +1,1994 @@
+  [1m[35m (124.9ms)[0m  [1m[35mCREATE DATABASE "params_app_development" ENCODING = 'unicode'[0m
+  [1m[35m (55.4ms)[0m  [1m[35mCREATE DATABASE "params_app_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2021-03-16 14:05:53 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/justinhilario/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/justinhilario/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.1ms | Allocations: 522)
+Completed 200 OK in 22ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 4216)
+
+
+Started GET "/" for ::1 at 2021-03-16 14:18:31 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/justinhilario/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/justinhilario/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.1ms | Allocations: 224)
+Completed 200 OK in 7ms (Views: 5.9ms | Allocations: 954)
+
+
+Started GET "/cubed/:number" for ::1 at 2021-03-16 14:18:36 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>":number"}
+Completed 500 Internal Server Error in 2ms (Allocations: 1988)
+
+
+  
+NoMethodError (undefined method `**' for ":number":String
+Did you mean?  *):
+  
+app/controllers/main_controller.rb:5:in `cubed'
+Started GET "/cubed/3" for ::1 at 2021-03-16 14:18:51 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"3"}
+Completed 500 Internal Server Error in 1ms (Allocations: 1627)
+
+
+  
+NoMethodError (undefined method `**' for "3":String
+Did you mean?  *):
+  
+app/controllers/main_controller.rb:5:in `cubed'
+Started GET "/cubed/3" for ::1 at 2021-03-16 14:20:09 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"3"}
+Completed 500 Internal Server Error in 1ms (Allocations: 1634)
+
+
+  
+NoMethodError (undefined method `**' for "3":String
+Did you mean?  *):
+  
+app/controllers/main_controller.rb:5:in `cubed'
+Started GET "/cubed/3" for ::1 at 2021-03-16 14:20:20 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 0.5ms | Allocations: 128)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/justinhilario/Desktop/learn/rails-challenges/params_app/public/packs
+[Webpacker] Hash: e332c6419728fac579d5
+Version: webpack 4.46.0
+Time: 1317ms
+Built at: 03/16/2021 2:20:22 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-f826770d917d8a37c1d8.js    125 KiB  application  [emitted] [immutable]  application
+js/application-f826770d917d8a37c1d8.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-f826770d917d8a37c1d8.js js/application-f826770d917d8a37c1d8.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 2569.6ms | Allocations: 14653)
+Completed 200 OK in 2572ms (Views: 2571.2ms | Allocations: 15848)
+
+
+Started GET "/cubed/3" for ::1 at 2021-03-16 14:21:17 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"3"}
+Completed 500 Internal Server Error in 1ms (Allocations: 1715)
+
+
+  
+NoMethodError (undefined method `**' for "3":String
+Did you mean?  *):
+  
+app/controllers/main_controller.rb:5:in `cubed'
+Started GET "/cubed/3" for ::1 at 2021-03-16 14:21:37 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"3"}
+Completed 500 Internal Server Error in 1ms (Allocations: 1707)
+
+
+  
+NoMethodError (undefined method `**' for "3":String
+Did you mean?  *):
+  
+app/controllers/main_controller.rb:4:in `cubed'
+Started GET "/cubed/3" for ::1 at 2021-03-16 14:21:47 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"3"}
+Completed 500 Internal Server Error in 1ms (Allocations: 1122)
+
+
+  
+NoMethodError (undefined method `**' for :number:Symbol):
+  
+app/controllers/main_controller.rb:4:in `cubed'
+Started GET "/cubed/3" for ::1 at 2021-03-16 14:21:56 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"3"}
+Completed 500 Internal Server Error in 1ms (Allocations: 1098)
+
+
+  
+NoMethodError (undefined method `**' for :number:Symbol):
+  
+app/controllers/main_controller.rb:4:in `cubed'
+Started GET "/cubed/3" for ::1 at 2021-03-16 14:22:16 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"3"}
+Completed 500 Internal Server Error in 1ms (Allocations: 1707)
+
+
+  
+NoMethodError (undefined method `**' for "3":String
+Did you mean?  *):
+  
+app/controllers/main_controller.rb:5:in `cubed'
+Started GET "/cubed/3" for ::1 at 2021-03-16 14:23:15 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"3"}
+Completed 500 Internal Server Error in 1ms (Allocations: 1686)
+
+
+  
+NoMethodError (undefined method `**' for "3":String
+Did you mean?  *):
+  
+app/controllers/main_controller.rb:5:in `cubed'
+Started GET "/cubed/3" for ::1 at 2021-03-16 14:23:24 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"3"}
+Completed 500 Internal Server Error in 1ms (Allocations: 1707)
+
+
+  
+NoMethodError (undefined method `**' for "3":String
+Did you mean?  *):
+  
+app/controllers/main_controller.rb:5:in `cubed'
+Started GET "/cubed/3" for ::1 at 2021-03-16 14:23:43 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"3"}
+Completed 500 Internal Server Error in 1ms (Allocations: 1707)
+
+
+  
+NoMethodError (undefined method `**' for "3":String
+Did you mean?  *):
+  
+app/controllers/main_controller.rb:5:in `cubed'
+Started GET "/cubed/3" for ::1 at 2021-03-16 14:24:15 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"3"}
+Completed 500 Internal Server Error in 1ms (Allocations: 1098)
+
+
+  
+NoMethodError (undefined method `**' for :number:Symbol):
+  
+app/controllers/main_controller.rb:5:in `cubed'
+Started GET "/cubed/3" for ::1 at 2021-03-16 14:25:10 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 1.6ms | Allocations: 2152)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 2221)
+Completed 500 Internal Server Error in 5ms (Allocations: 3434)
+
+
+  
+ActionView::Template::Error (undefined method `**' for "3":String
+Did you mean?  *):
+    1: <h1> the number you entered cubed is <%= @cubed_number ** 3%> </h1>
+  
+app/views/main/cubed.html.erb:1
+Started GET "/cubed/3" for ::1 at 2021-03-16 14:25:11 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 1.4ms | Allocations: 2077)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 2145)
+Completed 500 Internal Server Error in 2ms (Allocations: 2558)
+
+
+  
+ActionView::Template::Error (undefined method `**' for "3":String
+Did you mean?  *):
+    1: <h1> the number you entered cubed is <%= @cubed_number ** 3%> </h1>
+  
+app/views/main/cubed.html.erb:1
+Started GET "/cubed/3" for ::1 at 2021-03-16 14:25:19 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 0.3ms | Allocations: 125)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 3792)
+Completed 200 OK in 8ms (Views: 7.4ms | Allocations: 5003)
+
+
+Started GET "/cubed/3" for ::1 at 2021-03-16 14:25:35 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 1.4ms | Allocations: 2165)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 2234)
+Completed 500 Internal Server Error in 4ms (Allocations: 3410)
+
+
+  
+ActionView::Template::Error (undefined method `**' for "3":String
+Did you mean?  *):
+    1: <h1> the number you entered cubed is <%= @cubed_number ** 3 %> </h1>
+  
+app/views/main/cubed.html.erb:1
+Started GET "/cubed/3" for ::1 at 2021-03-16 14:26:34 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 0.4ms | Allocations: 128)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 3794)
+Completed 200 OK in 9ms (Views: 8.5ms | Allocations: 5007)
+
+
+Started GET "/cubed/5" for ::1 at 2021-03-16 14:26:38 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"5"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 0.1ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 3463)
+Completed 200 OK in 6ms (Views: 5.8ms | Allocations: 3912)
+
+
+Started GET "/cubed/5" for ::1 at 2021-03-16 14:26:58 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"5"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 1.5ms | Allocations: 2162)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 2231)
+Completed 500 Internal Server Error in 5ms (Allocations: 3401)
+
+
+  
+ActionView::Template::Error (undefined method `**' for "5":String
+Did you mean?  *):
+    1: <h1> the number you entered cubed is <%= @cubed_number ** 3 %> </h1>
+  
+app/views/main/cubed.html.erb:1
+Started GET "/cubed/5" for ::1 at 2021-03-16 14:30:46 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"5"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1387)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1456)
+Completed 500 Internal Server Error in 2ms (Allocations: 2061)
+
+
+  
+ActionView::Template::Error (undefined method `**' for nil:NilClass):
+    1: <h1> the number you entered cubed is <%= @cubed_number ** 3 %> </h1>
+  
+app/views/main/cubed.html.erb:1
+Started GET "/cubed/5" for ::1 at 2021-03-16 14:30:56 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"5"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 1.2ms | Allocations: 2079)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 2148)
+Completed 500 Internal Server Error in 2ms (Allocations: 2750)
+
+
+  
+ActionView::Template::Error (undefined method `**' for "5":String
+Did you mean?  *):
+    1: <h1> the number you entered cubed is <%= @cubed_number ** 3 %> </h1>
+  
+app/views/main/cubed.html.erb:1
+Started GET "/cubed/5" for ::1 at 2021-03-16 14:31:51 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"5"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 0.3ms | Allocations: 124)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 3791)
+Completed 200 OK in 26ms (Views: 25.1ms | Allocations: 5002)
+
+
+Started GET "/cubed/3" for ::1 at 2021-03-16 14:32:06 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 0.1ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 3469)
+Completed 200 OK in 7ms (Views: 6.2ms | Allocations: 3919)
+
+
+Started GET "/" for ::1 at 2021-03-16 14:32:13 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/justinhilario/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/justinhilario/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.9ms | Allocations: 220)
+Completed 200 OK in 8ms (Views: 5.8ms | Allocations: 975)
+
+
+Started GET "/" for ::1 at 2021-03-16 14:32:14 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/justinhilario/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/justinhilario/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | Allocations: 45)
+Completed 200 OK in 1ms (Views: 0.7ms | Allocations: 454)
+
+
+Started GET "/cubed/3" for ::1 at 2021-03-16 14:32:16 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 0.1ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 3462)
+Completed 200 OK in 6ms (Views: 5.4ms | Allocations: 3911)
+
+
+Started GET "/cubed/f" for ::1 at 2021-03-16 14:32:35 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"f"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 0.1ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 3507)
+Completed 200 OK in 7ms (Views: 6.1ms | Allocations: 4143)
+
+
+Started GET "/cubed/4" for ::1 at 2021-03-16 14:32:40 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 3460)
+Completed 200 OK in 6ms (Views: 5.1ms | Allocations: 3910)
+
+
+Started GET "/cubed/4" for ::1 at 2021-03-16 14:32:41 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 3468)
+Completed 200 OK in 8ms (Views: 7.4ms | Allocations: 3919)
+
+
+Started GET "/cubed/4" for ::1 at 2021-03-16 14:32:55 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1494)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1563)
+Completed 500 Internal Server Error in 4ms (Allocations: 2774)
+
+
+  
+ActionView::Template::Error (undefined method `**' for nil:NilClass):
+    1: <h1> the number you entered cubed is <%= @cubed_number ** 3%> </h1>
+  
+app/views/main/cubed.html.erb:1
+Started GET "/cubed/4" for ::1 at 2021-03-16 14:33:16 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"4"}
+Completed 500 Internal Server Error in 1ms (Allocations: 1015)
+
+
+  
+NoMethodError (undefined method `**' for nil:NilClass):
+  
+app/controllers/main_controller.rb:5:in `cubed'
+Started GET "/cubed/4" for ::1 at 2021-03-16 14:33:28 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"4"}
+Completed 500 Internal Server Error in 1ms (Allocations: 1707)
+
+
+  
+NoMethodError (undefined method `**' for "4":String
+Did you mean?  *):
+  
+app/controllers/main_controller.rb:5:in `cubed'
+Started GET "/cubed/4" for ::1 at 2021-03-16 14:35:47 -0700
+  
+SyntaxError (/Users/justinhilario/Desktop/learn/rails-challenges/params_app/app/controllers/main_controller.rb:10: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/main_controller.rb:10: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/main_controller.rb:10: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/main_controller.rb:10: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/cubed/4" for ::1 at 2021-03-16 14:35:58 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"4"}
+Completed 500 Internal Server Error in 1ms (Allocations: 1707)
+
+
+  
+NoMethodError (undefined method `**' for "4":String
+Did you mean?  *):
+  
+app/controllers/main_controller.rb:6:in `cubed'
+Started GET "/cubed/4" for ::1 at 2021-03-16 14:36:34 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"4"}
+Completed 500 Internal Server Error in 1ms (Allocations: 1686)
+
+
+  
+NoMethodError (undefined method `**' for "4":String
+Did you mean?  *):
+  
+app/controllers/main_controller.rb:6:in `cubed'
+Started GET "/cubed/4" for ::1 at 2021-03-16 14:36:50 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1406)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 1475)
+Completed 500 Internal Server Error in 3ms (Allocations: 2079)
+
+
+  
+ActionView::Template::Error (undefined method `**' for nil:NilClass):
+    1: <h1> the number you entered cubed is <%= @cubed_number ** 3%> </h1>
+  
+app/views/main/cubed.html.erb:1
+Started GET "/cubed/4" for ::1 at 2021-03-16 14:37:38 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"4"}
+Completed 500 Internal Server Error in 1ms (Allocations: 1686)
+
+
+  
+NoMethodError (undefined method `**' for "4":String
+Did you mean?  *):
+  
+app/controllers/main_controller.rb:6:in `cubed'
+Started GET "/cubed/4" for ::1 at 2021-03-16 14:37:54 -0700
+  
+SyntaxError (/Users/justinhilario/Desktop/learn/rails-challenges/params_app/app/controllers/main_controller.rb:6: syntax error, unexpected **arg
+...             @cubed_number = ** 3            
+...                             ^~
+):
+  
+app/controllers/main_controller.rb:6: syntax error, unexpected **arg
+app/controllers/main_controller.rb:6: syntax error, unexpected **arg
+app/controllers/main_controller.rb:6: syntax error, unexpected **arg
+Started GET "/cubed/4" for ::1 at 2021-03-16 14:38:14 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"4"}
+Completed 500 Internal Server Error in 3ms (Allocations: 1686)
+
+
+  
+NoMethodError (undefined method `**' for "4":String
+Did you mean?  *):
+  
+app/controllers/main_controller.rb:6:in `cubed'
+Started GET "/cubed/4" for ::1 at 2021-03-16 14:39:39 -0700
+  
+SyntaxError (/Users/justinhilario/Desktop/learn/rails-challenges/params_app/app/controllers/main_controller.rb:9: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/main_controller.rb:9: syntax error, unexpected `end', expecting end-of-input
+app/controllers/main_controller.rb:9: syntax error, unexpected `end', expecting end-of-input
+app/controllers/main_controller.rb:9: syntax error, unexpected `end', expecting end-of-input
+Started GET "/cubed/f" for ::1 at 2021-03-16 14:39:50 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"f"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1055)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | Allocations: 1124)
+Completed 500 Internal Server Error in 3ms (Allocations: 2334)
+
+
+  
+ActionView::Template::Error (no implicit conversion of Integer into Hash):
+    1: <h1> the number you entered cubed is <%= @cubed_number.to_i **3 %> </h1>
+  
+app/views/main/cubed.html.erb:1
+Started GET "/cubed/f" for ::1 at 2021-03-16 14:39:54 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"f"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 0.3ms | Allocations: 124)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 3790)
+Completed 200 OK in 9ms (Views: 7.6ms | Allocations: 5030)
+
+
+Started GET "/cubed/4" for ::1 at 2021-03-16 14:39:59 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"4"}
+Completed 500 Internal Server Error in 1ms (Allocations: 1685)
+
+
+  
+NoMethodError (undefined method `**' for "4":String
+Did you mean?  *):
+  
+app/controllers/main_controller.rb:6:in `cubed'
+Started GET "/cubed/4" for ::1 at 2021-03-16 14:43:55 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 0.7ms | Allocations: 125)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 3770)
+Completed 200 OK in 17ms (Views: 15.9ms | Allocations: 5012)
+
+
+Started GET "/cubed/4" for ::1 at 2021-03-16 14:45:05 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 0.3ms | Allocations: 126)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 3771)
+Completed 200 OK in 12ms (Views: 11.5ms | Allocations: 5007)
+
+
+Started GET "/cubed/4" for ::1 at 2021-03-16 14:45:10 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 0.1ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 3462)
+Completed 200 OK in 6ms (Views: 5.5ms | Allocations: 3910)
+
+
+Started GET "/cubed/4" for ::1 at 2021-03-16 14:45:18 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 0.1ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 3462)
+Completed 200 OK in 6ms (Views: 5.3ms | Allocations: 3910)
+
+
+Started GET "/cubed/4" for ::1 at 2021-03-16 14:45:39 -0700
+  
+SyntaxError (/Users/justinhilario/Desktop/learn/rails-challenges/params_app/app/controllers/main_controller.rb:5: syntax error, unexpected **arg
+            @cubed_number = ** 3          
+                            ^~
+):
+  
+app/controllers/main_controller.rb:5: syntax error, unexpected **arg
+app/controllers/main_controller.rb:5: syntax error, unexpected **arg
+app/controllers/main_controller.rb:5: syntax error, unexpected **arg
+Started GET "/cubed/4" for ::1 at 2021-03-16 14:45:50 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 0.7ms | Allocations: 125)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 3791)
+Completed 200 OK in 8ms (Views: 7.1ms | Allocations: 5030)
+
+
+Started GET "/cubed/4" for ::1 at 2021-03-16 14:45:57 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 0.1ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 3470)
+Completed 200 OK in 6ms (Views: 5.1ms | Allocations: 3919)
+
+
+Started GET "/cubed/5" for ::1 at 2021-03-16 14:46:00 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"5"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 0.1ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 3462)
+Completed 200 OK in 7ms (Views: 6.0ms | Allocations: 3910)
+
+
+Started GET "/divisble/10/5" for ::1 at 2021-03-16 14:54:00 -0700
+  
+SyntaxError (/Users/justinhilario/Desktop/learn/rails-challenges/params_app/config/routes.rb:5: syntax error, unexpected '=', expecting `end'
+.../divisible/:number1/:number2' = 'main#divisble'
+...                              ^
+/Users/justinhilario/Desktop/learn/rails-challenges/params_app/config/routes.rb:7: syntax error, unexpected `end', expecting end-of-input):
+  
+config/routes.rb:5: syntax error, unexpected '=', expecting `end'
+config/routes.rb:7: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:5: syntax error, unexpected '=', expecting `end'
+config/routes.rb:7: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:5: syntax error, unexpected '=', expecting `end'
+config/routes.rb:7: syntax error, unexpected `end', expecting end-of-input
+Started GET "/divisble/10/5" for ::1 at 2021-03-16 14:54:23 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/divisble/10/5"):
+  
+Started GET "/divisble/10/5" for ::1 at 2021-03-16 14:54:27 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/divisble/10/5"):
+  
+Started GET "/divisble/10/5" for ::1 at 2021-03-16 14:54:35 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/divisble/10/5"):
+  
+Started GET "/cubed/5" for ::1 at 2021-03-16 14:54:36 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"5"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 0.3ms | Allocations: 125)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 3753)
+Completed 200 OK in 11ms (Views: 10.0ms | Allocations: 4993)
+
+
+Started GET "/divisble/10/5" for ::1 at 2021-03-16 14:55:23 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/divisble/10/5"):
+  
+Started GET "/divisble/10/5" for ::1 at 2021-03-16 14:55:24 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/divisble/10/5"):
+  
+Started GET "/cuber/4" for ::1 at 2021-03-16 14:55:36 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/cuber/4"):
+  
+Started GET "/cubed/4" for ::1 at 2021-03-16 14:55:42 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 0.4ms | Allocations: 125)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 3797)
+Completed 200 OK in 12ms (Views: 11.1ms | Allocations: 5037)
+
+
+Started GET "/cubed/4" for ::1 at 2021-03-16 14:56:31 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 0.1ms | Allocations: 43)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 3509)
+Completed 200 OK in 6ms (Views: 5.6ms | Allocations: 4143)
+
+
+Started GET "/divisble/10/5" for ::1 at 2021-03-16 14:56:34 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/divisble/10/5"):
+  
+Started GET "/divisble/10/5" for ::1 at 2021-03-16 14:56:39 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/divisble/10/5"):
+  
+Started GET "/divisble/10/5" for ::1 at 2021-03-16 14:57:20 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/divisble/10/5"):
+  
+Started GET "/divisble/10/5" for ::1 at 2021-03-16 14:57:21 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/divisble/10/5"):
+  
+Started GET "/divisble/10/5" for ::1 at 2021-03-16 14:57:45 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/divisble/10/5"):
+  
+Started GET "/divisble/10/5" for ::1 at 2021-03-16 14:57:45 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/divisble/10/5"):
+  
+Started GET "/divisble/10/5" for ::1 at 2021-03-16 14:58:17 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/divisble/10/5"):
+  
+Started GET "/divisble/10/5" for ::1 at 2021-03-16 14:58:18 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/divisble/10/5"):
+  
+Started GET "/divisible/10/5" for ::1 at 2021-03-16 14:58:29 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number"=>"5"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.4ms | Allocations: 138)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 3785)
+Completed 200 OK in 8ms (Views: 7.5ms | Allocations: 4930)
+
+
+Started GET "/divisible/10/5" for ::1 at 2021-03-16 14:59:54 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number"=>"5"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.3ms | Allocations: 131)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 3756)
+Completed 200 OK in 9ms (Views: 7.5ms | Allocations: 4902)
+
+
+Started GET "/divisible/10/3" for ::1 at 2021-03-16 14:59:58 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 3440)
+Completed 200 OK in 6ms (Views: 5.5ms | Allocations: 3878)
+
+
+Started GET "/divisible/10/3" for ::1 at 2021-03-16 15:00:16 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"10", "number2"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.3ms | Allocations: 130)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 3777)
+Completed 200 OK in 16ms (Views: 14.9ms | Allocations: 4923)
+
+
+Started GET "/divisible/10/3" for ::1 at 2021-03-16 15:00:25 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"10", "number2"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 3447)
+Completed 200 OK in 6ms (Views: 5.6ms | Allocations: 3885)
+
+
+Started GET "/divisible/10/4" for ::1 at 2021-03-16 15:00:29 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"10", "number2"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 3441)
+Completed 200 OK in 5ms (Views: 5.0ms | Allocations: 3879)
+
+
+Started GET "/divisible/10/4" for ::1 at 2021-03-16 15:00:43 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"10", "number2"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.1ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 3496)
+Completed 200 OK in 6ms (Views: 5.5ms | Allocations: 4120)
+
+
+Started GET "/divisible/10/4" for ::1 at 2021-03-16 15:01:58 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"10", "number2"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.3ms | Allocations: 147)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 3765)
+Completed 200 OK in 9ms (Views: 8.2ms | Allocations: 4910)
+
+
+Started GET "/divisible/10/4" for ::1 at 2021-03-16 15:01:58 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"10", "number2"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 3449)
+Completed 200 OK in 6ms (Views: 5.9ms | Allocations: 3888)
+
+
+Started GET "/divisible/10/5" for ::1 at 2021-03-16 15:02:01 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"10", "number2"=>"5"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 3447)
+Completed 200 OK in 6ms (Views: 5.0ms | Allocations: 3885)
+
+
+Started GET "/divisible/10/5" for ::1 at 2021-03-16 15:03:27 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"10", "number2"=>"5"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.4ms | Allocations: 146)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 3785)
+Completed 200 OK in 8ms (Views: 7.4ms | Allocations: 4901)
+
+
+Started GET "/divisible/10/5" for ::1 at 2021-03-16 15:05:56 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"10", "number2"=>"5"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.1ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 3496)
+Completed 200 OK in 10ms (Views: 9.8ms | Allocations: 4120)
+
+
+Started GET "/divisible/10/5" for ::1 at 2021-03-16 15:07:08 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"10", "number2"=>"5"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.3ms | Allocations: 133)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 3759)
+Completed 200 OK in 8ms (Views: 7.2ms | Allocations: 4905)
+
+
+Started GET "/divisible/4/8" for ::1 at 2021-03-16 15:07:19 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"4", "number2"=>"8"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 3441)
+Completed 200 OK in 6ms (Views: 5.5ms | Allocations: 3879)
+
+
+Started GET "/divisible/4/8" for ::1 at 2021-03-16 15:07:53 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"4", "number2"=>"8"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.3ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 3496)
+Completed 200 OK in 6ms (Views: 5.6ms | Allocations: 4120)
+
+
+Started GET "/divisible/4/8" for ::1 at 2021-03-16 15:08:09 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"4", "number2"=>"8"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 3441)
+Completed 200 OK in 17ms (Views: 15.6ms | Allocations: 3880)
+
+
+Started GET "/divisible/4/8" for ::1 at 2021-03-16 15:08:39 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"4", "number2"=>"8"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.1ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 3496)
+Completed 200 OK in 6ms (Views: 6.0ms | Allocations: 4120)
+
+
+Started GET "/divisible/4/8" for ::1 at 2021-03-16 15:08:52 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"4", "number2"=>"8"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.1ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 3509)
+Completed 200 OK in 7ms (Views: 6.6ms | Allocations: 4132)
+
+
+Started GET "/divisible/4/8" for ::1 at 2021-03-16 15:09:03 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"4", "number2"=>"8"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 3447)
+Completed 200 OK in 6ms (Views: 5.8ms | Allocations: 3886)
+
+
+Started GET "/divisible/4/8" for ::1 at 2021-03-16 15:10:03 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"4", "number2"=>"8"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.1ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 3502)
+Completed 200 OK in 7ms (Views: 6.4ms | Allocations: 4126)
+
+
+Started GET "/divisible/4/8" for ::1 at 2021-03-16 15:10:04 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"4", "number2"=>"8"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 3443)
+Completed 200 OK in 6ms (Views: 5.0ms | Allocations: 3885)
+
+
+Started GET "/divisible/8/4" for ::1 at 2021-03-16 15:10:09 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"8", "number2"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 3441)
+Completed 200 OK in 5ms (Views: 5.0ms | Allocations: 3879)
+
+
+Started GET "/divisible/8/4" for ::1 at 2021-03-16 15:10:50 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"8", "number2"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.1ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 3496)
+Completed 200 OK in 6ms (Views: 5.6ms | Allocations: 4120)
+
+
+Started GET "/divisible/8/4" for ::1 at 2021-03-16 15:10:51 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"8", "number2"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 3441)
+Completed 200 OK in 6ms (Views: 5.1ms | Allocations: 3879)
+
+
+Started GET "/divisible/8/4" for ::1 at 2021-03-16 15:11:03 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"8", "number2"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.1ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 3517)
+Completed 200 OK in 6ms (Views: 5.5ms | Allocations: 4141)
+
+
+Started GET "/divisible/8/4" for ::1 at 2021-03-16 15:11:04 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"8", "number2"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 3441)
+Completed 200 OK in 6ms (Views: 5.5ms | Allocations: 3879)
+
+
+Started GET "/divisible/8/4" for ::1 at 2021-03-16 15:11:48 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"8", "number2"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.2ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 3496)
+Completed 200 OK in 10ms (Views: 9.1ms | Allocations: 4120)
+
+
+Started GET "/divisible/8/4" for ::1 at 2021-03-16 15:12:06 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"8", "number2"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.1ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 3517)
+Completed 200 OK in 6ms (Views: 5.7ms | Allocations: 4141)
+
+
+Started GET "/divisible/8/4" for ::1 at 2021-03-16 15:12:06 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"8", "number2"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 3441)
+Completed 200 OK in 6ms (Views: 5.5ms | Allocations: 3879)
+
+
+Started GET "/divisible/8/4" for ::1 at 2021-03-16 15:12:45 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"8", "number2"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.1ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 3496)
+Completed 200 OK in 6ms (Views: 5.7ms | Allocations: 4120)
+
+
+Started GET "/divisible/8/4" for ::1 at 2021-03-16 15:12:46 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"8", "number2"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 3449)
+Completed 200 OK in 6ms (Views: 5.3ms | Allocations: 3887)
+
+
+Started GET "/divisible/8/4" for ::1 at 2021-03-16 15:13:51 -0700
+Started GET "/divisible/8/4" for ::1 at 2021-03-16 15:14:08 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"8", "number2"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.6ms | Allocations: 319)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 6292)
+Completed 200 OK in 18ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 9110)
+
+
+Started GET "/divisible/8/4" for ::1 at 2021-03-16 15:14:13 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"8", "number2"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 3443)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 3889)
+
+
+Started GET "/divisible/8/4" for ::1 at 2021-03-16 15:15:17 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"8", "number2"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.4ms | Allocations: 127)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 3778)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 4904)
+
+
+Started GET "/divisible/8/4" for ::1 at 2021-03-16 15:16:28 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"8", "number2"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.1ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 3500)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 4128)
+
+
+Started GET "/divisible/8/4" for ::1 at 2021-03-16 15:16:29 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"8", "number2"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 3441)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 3882)
+
+
+Started GET "/divisible/8/4" for ::1 at 2021-03-16 15:16:29 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"8", "number2"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 3443)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 3886)
+
+
+Started GET "/cubed/4" for ::1 at 2021-03-16 15:16:38 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 0.3ms | Allocations: 125)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 3546)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 4137)
+
+
+Started GET "/cubed/4" for ::1 at 2021-03-16 15:16:38 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 0.1ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 3462)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 3913)
+
+
+Started GET "/divisible/8/4" for ::1 at 2021-03-16 15:16:40 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"8", "number2"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 3441)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 3882)
+
+
+Started GET "/divisible/8/4" for ::1 at 2021-03-16 15:17:56 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"8", "number2"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.4ms | Allocations: 123)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 3761)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 4880)
+
+
+Started GET "/divisible/8/4" for ::1 at 2021-03-16 15:18:05 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"8", "number2"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 3440)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 3882)
+
+
+Started GET "/divisible/8/4" for ::1 at 2021-03-16 15:18:47 -0700
+Processing by MainController#divisble as HTML
+  Parameters: {"number1"=>"8", "number2"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisble.html.erb within layouts/application
+  Rendered main/divisble.html.erb within layouts/application (Duration: 0.1ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 3487)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 4113)
+
+
+Started GET "/divisible/8/4" for ::1 at 2021-03-16 15:19:37 -0700
+Processing by MainController#divisible as HTML
+  Parameters: {"number1"=>"8", "number2"=>"4"}
+Completed 406 Not Acceptable in 3ms (ActiveRecord: 0.0ms | Allocations: 1915)
+
+
+  
+ActionController::MissingExactTemplate (MainController#divisible is missing a template for request formats: text/html):
+  
+actionpack (6.1.3) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.1.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.3) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.3) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.3) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.3) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.3) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.3) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.3) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.3) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.3) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.3) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.3) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.3) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.3) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.3) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.3) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.3) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.3) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/divisible/8/4" for ::1 at 2021-03-16 15:19:58 -0700
+Processing by MainController#divisible as HTML
+  Parameters: {"number1"=>"8", "number2"=>"4"}
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 701)
+
+
+  
+ActionController::MissingExactTemplate (MainController#divisible is missing a template for request formats: text/html):
+  
+actionpack (6.1.3) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.1.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.3) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.3) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.3) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.3) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.3) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.3) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.3) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.3) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.3) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.3) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.3) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.3) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.3) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.3) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.3) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.3) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.3) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/cubed/4" for ::1 at 2021-03-16 15:20:42 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 0.6ms | Allocations: 318)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 6307)
+Completed 200 OK in 18ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 9489)
+
+
+Started GET "/divisible/10/5" for ::1 at 2021-03-16 15:20:49 -0700
+Processing by MainController#divisible as HTML
+  Parameters: {"number1"=>"10", "number2"=>"5"}
+Completed 406 Not Acceptable in 3ms (ActiveRecord: 0.0ms | Allocations: 1920)
+
+
+  
+ActionController::MissingExactTemplate (MainController#divisible is missing a template for request formats: text/html):
+  
+actionpack (6.1.3) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.1.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.3) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.3) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.3) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.3) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.3) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.3) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.3) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.3) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.3) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.3) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.3) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.3) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.3) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.3) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.3) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.3) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.3) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/divisible/10/5" for ::1 at 2021-03-16 15:22:25 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/divisible/10/5"):
+  
+Started GET "/divisible/10/5" for ::1 at 2021-03-16 15:22:55 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/divisible/10/5"):
+  
+Started GET "/divisible_by/10/5" for ::1 at 2021-03-16 15:23:21 -0700
+Processing by MainController#divisible_by as HTML
+  Parameters: {"number1"=>"10", "number2"=>"5"}
+Completed 406 Not Acceptable in 2ms (ActiveRecord: 0.0ms | Allocations: 1850)
+
+
+  
+ActionController::MissingExactTemplate (MainController#divisible_by is missing a template for request formats: text/html):
+  
+actionpack (6.1.3) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.1.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.3) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.3) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.3) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.3) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.3) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.3) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.3) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.3) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.3) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.3) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.3) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.3) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.3) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.3) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.3) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.3) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.3) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/divisible_by/10/5" for ::1 at 2021-03-16 15:25:02 -0700
+Processing by MainController#divisible_by as HTML
+  Parameters: {"number1"=>"10", "number2"=>"5"}
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 679)
+
+
+  
+ActionController::MissingExactTemplate (MainController#divisible_by is missing a template for request formats: text/html):
+  
+actionpack (6.1.3) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.1.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.3) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.3) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.3) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.3) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.3) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.3) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.3) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.3) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.3) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.3) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.3) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.3) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.3) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.3) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.3) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.3) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.3) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/cubed/8" for ::1 at 2021-03-16 15:25:30 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"8"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 0.1ms | Allocations: 43)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 3541)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 4158)
+
+
+Started GET "/divide/10/5" for ::1 at 2021-03-16 15:26:14 -0700
+Processing by MainController#divide as HTML
+  Parameters: {"number1"=>"10", "number2"=>"5"}
+Completed 406 Not Acceptable in 3ms (ActiveRecord: 0.0ms | Allocations: 1869)
+
+
+  
+ActionController::MissingExactTemplate (MainController#divide is missing a template for request formats: text/html):
+  
+actionpack (6.1.3) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.1.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.3) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.3) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.3) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.3) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.3) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.3) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.3) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.3) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.3) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.3) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.3) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.3) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.3) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.3) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.3) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.3) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.3) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/divide/10/5" for ::1 at 2021-03-16 15:28:17 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/divide/10/5"):
+  
+Started GET "/divisible/10/5" for ::1 at 2021-03-16 15:28:23 -0700
+Processing by MainController#divisible as HTML
+  Parameters: {"number1"=>"10", "number2"=>"5"}
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 700)
+
+
+  
+ActionController::MissingExactTemplate (MainController#divisible is missing a template for request formats: text/html):
+  
+actionpack (6.1.3) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.1.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.3) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.3) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.3) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.3) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.3) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.3) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.3) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.3) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.3) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.3) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.3) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.3) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.3) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.3) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.3) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.3) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.3) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/divisible/10/5" for ::1 at 2021-03-16 15:28:43 -0700
+Processing by MainController#divisible as HTML
+  Parameters: {"number1"=>"10", "number2"=>"5"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisible.html.erb within layouts/application
+  Rendered main/divisible.html.erb within layouts/application (Duration: 0.3ms | Allocations: 126)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 3795)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 5048)
+
+
+Started GET "/length/dfghjkjhgftyujnbgv" for ::1 at 2021-03-16 15:32:32 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/length/dfghjkjhgftyujnbgv"):
+  
+Started GET "/length/dfghjkjhgftyujnbgv" for ::1 at 2021-03-16 15:33:06 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/length/dfghjkjhgftyujnbgv"):
+  
+Started GET "/length/dfghjkjhgftyujnbgv" for ::1 at 2021-03-16 15:33:30 -0700
+Processing by MainController#length as HTML
+  Parameters: {"string"=>"dfghjkjhgftyujnbgv"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/length.html.erb within layouts/application
+  Rendered main/length.html.erb within layouts/application (Duration: 0.4ms | Allocations: 126)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 3793)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 5038)
+
+
+Started GET "/lpalindrome/poop" for ::1 at 2021-03-16 15:38:51 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/lpalindrome/poop"):
+  
+Started GET "/lpalindrome/poop" for ::1 at 2021-03-16 15:39:06 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/lpalindrome/poop"):
+  
+Started GET "/lpalindrome/poop" for ::1 at 2021-03-16 15:39:59 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/lpalindrome/poop"):
+  
+Started GET "/lpalindrome/poop" for ::1 at 2021-03-16 15:40:53 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/lpalindrome/poop"):
+  
+Started GET "/palindrome/poop" for ::1 at 2021-03-16 15:41:04 -0700
+Processing by MainController#palindrome as HTML
+  Parameters: {"book"=>"poop"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/palindrome.html.erb within layouts/application
+  Rendered main/palindrome.html.erb within layouts/application (Duration: 0.3ms | Allocations: 115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 3783)
+Completed 200 OK in 8ms (Views: 7.5ms | Allocations: 5031)
+
+
+Started GET "/palindrome/poop" for ::1 at 2021-03-16 15:41:17 -0700
+Processing by MainController#palindrome as HTML
+  Parameters: {"book"=>"poop"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/palindrome.html.erb within layouts/application
+  Rendered main/palindrome.html.erb within layouts/application (Duration: 0.3ms | Allocations: 123)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 3791)
+Completed 200 OK in 8ms (Views: 7.3ms | Allocations: 5011)
+
+
+Started GET "/palindrome/poop" for ::1 at 2021-03-16 15:41:37 -0700
+Processing by MainController#palindrome as HTML
+  Parameters: {"book"=>"poop"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/palindrome.html.erb within layouts/application
+  Rendered main/palindrome.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 3508)
+Completed 200 OK in 6ms (Views: 5.5ms | Allocations: 4147)
+
+
+Started GET "/palindrome/poop" for ::1 at 2021-03-16 15:42:14 -0700
+Processing by MainController#palindrome as HTML
+  Parameters: {"book"=>"poop"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/palindrome.html.erb within layouts/application
+  Rendered main/palindrome.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 3509)
+Completed 200 OK in 6ms (Views: 5.6ms | Allocations: 4147)
+
+
+Started GET "/palindrome/poop" for ::1 at 2021-03-16 15:42:42 -0700
+Processing by MainController#palindrome as HTML
+  Parameters: {"book"=>"poop"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/palindrome.html.erb within layouts/application
+  Rendered main/palindrome.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 3539)
+Completed 200 OK in 7ms (Views: 6.1ms | Allocations: 4181)
+
+
+Started GET "/palindrome/learn" for ::1 at 2021-03-16 15:43:16 -0700
+Processing by MainController#palindrome as HTML
+  Parameters: {"book"=>"learn"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/palindrome.html.erb within layouts/application
+  Rendered main/palindrome.html.erb within layouts/application (Duration: 0.1ms | Allocations: 43)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 3520)
+Completed 200 OK in 6ms (Views: 5.7ms | Allocations: 4162)
+
+
+Started GET "/adlibs/person/run/slow/well" for ::1 at 2021-03-16 15:48:06 -0700
+Processing by MainController#adlibs as HTML
+  Parameters: {"noun"=>"person", "verb"=>"run", "adj"=>"slow", "adv"=>"well"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/adlibs.html.erb within layouts/application
+  Rendered main/adlibs.html.erb within layouts/application (Duration: 0.3ms | Allocations: 126)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 3764)
+Completed 200 OK in 7ms (Views: 6.6ms | Allocations: 5015)
+
+
+Started GET "/adlibs/person/run/slow/well" for ::1 at 2021-03-16 15:50:07 -0700
+Processing by MainController#adlibs as HTML
+  Parameters: {"noun"=>"person", "verb"=>"run", "adj"=>"slow", "adv"=>"well"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/adlibs.html.erb within layouts/application
+  Rendered main/adlibs.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 3518)
+Completed 200 OK in 6ms (Views: 5.5ms | Allocations: 4162)
+
+
+Started GET "/adlibs/deven/code/more/type" for ::1 at 2021-03-16 15:50:53 -0700
+Processing by MainController#adlibs as HTML
+  Parameters: {"noun"=>"deven", "verb"=>"code", "adj"=>"more", "adv"=>"type"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/adlibs.html.erb within layouts/application
+  Rendered main/adlibs.html.erb within layouts/application (Duration: 0.1ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 3471)
+Completed 200 OK in 7ms (Views: 6.0ms | Allocations: 3931)
+
+
