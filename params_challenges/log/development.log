@@ -1,0 +1,255 @@
+  [1m[35m (679.3ms)[0m  [1m[35mCREATE DATABASE "params_challenges_development" ENCODING = 'unicode'[0m
+  [1m[35m (315.2ms)[0m  [1m[35mCREATE DATABASE "params_challenges_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2021-03-16 14:11:54 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 11.6ms | Allocations: 522)
+Completed 200 OK in 44ms (Views: 21.9ms | ActiveRecord: 0.0ms | Allocations: 4230)
+
+
+Started GET "/cubed" for ::1 at 2021-03-16 14:17:14 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/cubed"):
+  
+Started GET "/cubed/3" for ::1 at 2021-03-16 14:17:17 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 0.5ms | Allocations: 114)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/learnacademy/Desktop/rails-challenges/params_challenges/public/packs
+[Webpacker] Hash: e332c6419728fac579d5
+Version: webpack 4.46.0
+Time: 3521ms
+Built at: 03/16/2021 2:17:23 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-f826770d917d8a37c1d8.js    125 KiB  application  [emitted] [immutable]  application
+js/application-f826770d917d8a37c1d8.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-f826770d917d8a37c1d8.js js/application-f826770d917d8a37c1d8.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 6476.7ms | Allocations: 14791)
+Completed 200 OK in 6482ms (Views: 6480.3ms | ActiveRecord: 0.0ms | Allocations: 16045)
+
+
+Started GET "/cubed/3" for ::1 at 2021-03-16 14:17:47 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 0.8ms | Allocations: 121)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 3764)
+Completed 200 OK in 41ms (Views: 26.4ms | ActiveRecord: 0.0ms | Allocations: 5011)
+
+
+Started GET "/cubed/3" for ::1 at 2021-03-16 14:19:31 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"3"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 593)
+
+
+  
+TypeError (no implicit conversion of String into Integer):
+  
+app/controllers/main_controller.rb:4:in `*'
+app/controllers/main_controller.rb:4:in `cubed'
+Started GET "/cubed/3" for ::1 at 2021-03-16 14:20:19 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 0.8ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 3764)
+Completed 200 OK in 27ms (Views: 24.4ms | ActiveRecord: 0.0ms | Allocations: 5012)
+
+
+Started GET "/cubed/3" for ::1 at 2021-03-16 14:20:51 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 1.3ms | Allocations: 138)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 3782)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 5001)
+
+
+Started GET "/cubed/2" for ::1 at 2021-03-16 14:21:01 -0700
+Processing by MainController#cubed as HTML
+  Parameters: {"number"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubed.html.erb within layouts/application
+  Rendered main/cubed.html.erb within layouts/application (Duration: 0.1ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3446)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 3900)
+
+
+Started GET "/evenly_divisible/2/1" for ::1 at 2021-03-16 14:28:09 -0700
+Processing by MainController#evenly_divisible as HTML
+  Parameters: {"num1"=>"2", "num2"=>"1"}
+Completed 500 Internal Server Error in 7ms (Allocations: 3039)
+
+
+  
+NameError (undefined local variable or method `string' for #<MainController:0x0000000000b450>
+Did you mean?  String):
+  
+app/controllers/main_controller.rb:10:in `evenly_divisible'
+Started GET "/evenly_divisible/2/1" for ::1 at 2021-03-16 14:28:20 -0700
+Processing by MainController#evenly_divisible as HTML
+  Parameters: {"num1"=>"2", "num2"=>"1"}
+Completed 500 Internal Server Error in 8ms (Allocations: 3027)
+
+
+  
+NameError (undefined local variable or method `num2' for #<MainController:0x0000000000c558>
+Did you mean?  @num2
+               @num1):
+  
+app/controllers/main_controller.rb:11:in `evenly_divisible'
+Started GET "/evenly_divisible/2/1" for ::1 at 2021-03-16 14:28:32 -0700
+Processing by MainController#evenly_divisible as HTML
+  Parameters: {"num1"=>"2", "num2"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/evenly_divisible.erb within layouts/application
+  Rendered main/evenly_divisible.erb within layouts/application (Duration: 0.6ms | Allocations: 122)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 3772)
+Completed 200 OK in 14ms (Views: 12.0ms | Allocations: 5015)
+
+
+Started GET "/evenly_divisible/4/2" for ::1 at 2021-03-16 14:28:45 -0700
+Processing by MainController#evenly_divisible as HTML
+  Parameters: {"num1"=>"4", "num2"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/evenly_divisible.erb within layouts/application
+  Rendered main/evenly_divisible.erb within layouts/application (Duration: 0.2ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 3445)
+Completed 200 OK in 19ms (Views: 17.0ms | Allocations: 3897)
+
+
+Started GET "/evenly_divisible/4/2" for ::1 at 2021-03-16 14:29:09 -0700
+Processing by MainController#evenly_divisible as HTML
+  Parameters: {"num1"=>"4", "num2"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/evenly_divisible.erb within layouts/application
+  Rendered main/evenly_divisible.erb within layouts/application (Duration: 0.1ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 3499)
+Completed 200 OK in 10ms (Views: 9.7ms | Allocations: 4136)
+
+
+Started GET "/evenly_divisible/3/2" for ::1 at 2021-03-16 14:29:18 -0700
+Processing by MainController#evenly_divisible as HTML
+  Parameters: {"num1"=>"3", "num2"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/evenly_divisible.erb within layouts/application
+  Rendered main/evenly_divisible.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 3444)
+Completed 200 OK in 8ms (Views: 7.4ms | Allocations: 3894)
+
+
+Started GET "/string_length_test" for ::1 at 2021-03-16 14:33:22 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/string_length_test"):
+  
+Started GET "/string_length/test" for ::1 at 2021-03-16 14:33:27 -0700
+Processing by MainController#string_length as HTML
+  Parameters: {"str"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/string_length.html.erb within layouts/application
+  Rendered main/string_length.html.erb within layouts/application (Duration: 0.4ms | Allocations: 126)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 3776)
+Completed 200 OK in 13ms (Views: 11.1ms | Allocations: 5019)
+
+
+Started GET "/string_length/test" for ::1 at 2021-03-16 14:33:49 -0700
+Processing by MainController#string_length as HTML
+  Parameters: {"str"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/string_length.html.erb within layouts/application
+  Rendered main/string_length.html.erb within layouts/application (Duration: 0.7ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 3781)
+Completed 200 OK in 19ms (Views: 17.2ms | Allocations: 4990)
+
+
+Started GET "/string_length/test" for ::1 at 2021-03-16 14:38:23 -0700
+  
+SyntaxError (/Users/learnacademy/Desktop/rails-challenges/params_challenges/app/controllers/main_controller.rb:31: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/main_controller.rb:31: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/main_controller.rb:31: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/main_controller.rb:31: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/string_length/test" for ::1 at 2021-03-16 14:38:37 -0700
+Processing by MainController#string_length as HTML
+  Parameters: {"str"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/string_length.html.erb within layouts/application
+  Rendered main/string_length.html.erb within layouts/application (Duration: 0.5ms | Allocations: 137)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 3787)
+Completed 200 OK in 12ms (Views: 10.2ms | Allocations: 5030)
+
+
+Started GET "/palindrome/racecar" for ::1 at 2021-03-16 14:38:47 -0700
+Processing by MainController#palindrome as HTML
+  Parameters: {"string2"=>"racecar"}
+Completed 500 Internal Server Error in 4ms (Allocations: 1736)
+
+
+  
+NoMethodError (undefined method `reverse=' for "racecar":String
+Did you mean?  reverse
+               reverse!):
+  
+app/controllers/main_controller.rb:26:in `palindrome'
+Started GET "/palindrome/racecar" for ::1 at 2021-03-16 14:39:16 -0700
+Processing by MainController#palindrome as HTML
+  Parameters: {"string2"=>"racecar"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/palindrome.html.erb within layouts/application
+  Rendered main/palindrome.html.erb within layouts/application (Duration: 0.7ms | Allocations: 119)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 3577)
+Completed 200 OK in 11ms (Views: 10.2ms | Allocations: 4345)
+
+
+Started GET "/palindrome/ruby" for ::1 at 2021-03-16 14:39:23 -0700
+Processing by MainController#palindrome as HTML
+  Parameters: {"string2"=>"ruby"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/palindrome.html.erb within layouts/application
+  Rendered main/palindrome.html.erb within layouts/application (Duration: 0.2ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 3445)
+Completed 200 OK in 11ms (Views: 9.6ms | Allocations: 3898)
+
+
+Started GET "/silly_story/boy/ran/small/faster" for ::1 at 2021-03-16 14:44:35 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/silly_story/boy/ran/small/faster"):
+  
+Started GET "/story/boy/ran/small/faster" for ::1 at 2021-03-16 14:44:48 -0700
+Processing by MainController#story as HTML
+  Parameters: {"noun"=>"boy", "verb"=>"ran", "adj"=>"small", "adv"=>"faster"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/story.html.erb within layouts/application
+  Rendered main/story.html.erb within layouts/application (Duration: 0.4ms | Allocations: 120)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 3770)
+Completed 200 OK in 12ms (Views: 10.1ms | Allocations: 5020)
+
+
