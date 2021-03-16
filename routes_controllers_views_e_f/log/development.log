@@ -1,0 +1,515 @@
+  [1m[35m (587.8ms)[0m  [1m[35mCREATE DATABASE "routes_controllers_views_e_f_development" ENCODING = 'unicode'[0m
+  [1m[35m (217.6ms)[0m  [1m[35mCREATE DATABASE "routes_controllers_views_e_f_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2021-03-16 10:51:13 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 11.8ms | Allocations: 522)
+Completed 200 OK in 55ms (Views: 36.6ms | ActiveRecord: 0.0ms | Allocations: 4215)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:00:15 -0700
+  
+SyntaxError (/Users/learnacademy/Desktop/rails-challenges/routes_controllers_views_e_f/app/controllers/main_controller.rb:4: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/main_controller.rb:4: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/main_controller.rb:4: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/main_controller.rb:4: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for ::1 at 2021-03-16 11:00:47 -0700
+  
+SyntaxError (/Users/learnacademy/Desktop/rails-challenges/routes_controllers_views_e_f/app/controllers/main_controller.rb:4: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/main_controller.rb:4: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/main_controller.rb:4: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/main_controller.rb:4: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for ::1 at 2021-03-16 11:01:14 -0700
+  
+SyntaxError (/Users/learnacademy/Desktop/rails-challenges/routes_controllers_views_e_f/app/controllers/main_controller.rb:4: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/main_controller.rb:4: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/main_controller.rb:4: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/main_controller.rb:4: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for ::1 at 2021-03-16 11:03:09 -0700
+Processing by MainController#landing_page as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/landing_page.html.erb (called from landing_page at /Users/learnacademy/Desktop/rails-challenges/routes_controllers_views_e_f/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing_page.html.erb within layouts/application
+  Rendered main/landing_page.html.erb within layouts/application (Duration: 0.5ms | Allocations: 110)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/learnacademy/Desktop/rails-challenges/routes_controllers_views_e_f/public/packs
+[Webpacker] Hash: e332c6419728fac579d5
+Version: webpack 4.46.0
+Time: 3684ms
+Built at: 03/16/2021 11:03:16 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-f826770d917d8a37c1d8.js    125 KiB  application  [emitted] [immutable]  application
+js/application-f826770d917d8a37c1d8.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-f826770d917d8a37c1d8.js js/application-f826770d917d8a37c1d8.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 7062.5ms | Allocations: 14588)
+Completed 200 OK in 7068ms (Views: 7067.4ms | Allocations: 15993)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:10:41 -0700
+Processing by MainController#landing_page as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/landing_page.html.erb (called from landing_page at /Users/learnacademy/Desktop/rails-challenges/routes_controllers_views_e_f/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing_page.html.erb within layouts/application
+  Rendered main/landing_page.html.erb within layouts/application (Duration: 0.4ms | Allocations: 126)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 3759)
+Completed 200 OK in 28ms (Views: 15.0ms | Allocations: 5136)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:25:55 -0700
+Processing by MainController#landing_page as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/landing_page.html.erb (called from landing_page at /Users/learnacademy/Desktop/rails-challenges/routes_controllers_views_e_f/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing_page.html.erb within layouts/application
+  Rendered main/landing_page.html.erb within layouts/application (Duration: 0.3ms | Allocations: 124)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 3733)
+Completed 200 OK in 20ms (Views: 19.7ms | Allocations: 5101)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:27:51 -0700
+Processing by MainController#landing_page as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/landing_page.html.erb (called from landing_page at /Users/learnacademy/Desktop/rails-challenges/routes_controllers_views_e_f/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing_page.html.erb within layouts/application
+  Rendered main/landing_page.html.erb within layouts/application (Duration: 1.1ms | Allocations: 167)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 3791)
+Completed 200 OK in 21ms (Views: 19.7ms | Allocations: 5127)
+
+
+Started GET "/aladdin" for ::1 at 2021-03-16 11:27:52 -0700
+Processing by MainController#aladdin as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/aladdin.html.erb (called from aladdin at /Users/learnacademy/Desktop/rails-challenges/routes_controllers_views_e_f/app/controllers/main_controller.rb:7)
+  Rendering layout layouts/application.html.erb
+  Rendering main/aladdin.html.erb within layouts/application
+  Rendered main/aladdin.html.erb within layouts/application (Duration: 0.5ms | Allocations: 101)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 3599)
+Completed 200 OK in 17ms (Views: 15.8ms | Allocations: 4779)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:31:09 -0700
+Processing by MainController#landing_page as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/landing_page.html.erb (called from landing_page at /Users/learnacademy/Desktop/rails-challenges/routes_controllers_views_e_f/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing_page.html.erb within layouts/application
+  Rendered main/landing_page.html.erb within layouts/application (Duration: 1.8ms | Allocations: 420)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 4050)
+Completed 200 OK in 22ms (Views: 21.6ms | Allocations: 5397)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:35:44 -0700
+Processing by MainController#landing_page as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/landing_page.html.erb (called from landing_page at /Users/learnacademy/Desktop/rails-challenges/routes_controllers_views_e_f/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing_page.html.erb within layouts/application
+  Rendered main/landing_page.html.erb within layouts/application (Duration: 0.6ms | Allocations: 395)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 4015)
+Completed 200 OK in 15ms (Views: 14.1ms | Allocations: 5345)
+
+
+Started GET "/aladdin" for ::1 at 2021-03-16 11:35:45 -0700
+Processing by MainController#aladdin as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/aladdin.html.erb (called from aladdin at /Users/learnacademy/Desktop/rails-challenges/routes_controllers_views_e_f/app/controllers/main_controller.rb:7)
+  Rendering layout layouts/application.html.erb
+  Rendering main/aladdin.html.erb within layouts/application
+  Rendered main/aladdin.html.erb within layouts/application (Duration: 0.9ms | Allocations: 160)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 3673)
+Completed 200 OK in 17ms (Views: 16.2ms | Allocations: 4825)
+
+
+Started GET "/landing_page" for ::1 at 2021-03-16 11:35:49 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/landing_page"):
+  
+Started GET "/landing_page" for ::1 at 2021-03-16 11:36:25 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/landing_page"):
+  
+Started GET "/" for ::1 at 2021-03-16 11:36:33 -0700
+Processing by MainController#landing_page as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/landing_page.html.erb (called from landing_page at /Users/learnacademy/Desktop/rails-challenges/routes_controllers_views_e_f/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing_page.html.erb within layouts/application
+  Rendered main/landing_page.html.erb within layouts/application (Duration: 1.2ms | Allocations: 404)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 4032)
+Completed 200 OK in 16ms (Views: 15.9ms | Allocations: 5370)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:36:35 -0700
+Processing by MainController#landing_page as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing_page.html.erb within layouts/application
+  Rendered main/landing_page.html.erb within layouts/application (Duration: 0.2ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 3524)
+Completed 200 OK in 9ms (Views: 8.0ms | Allocations: 3940)
+
+
+Started GET "/aladdin" for ::1 at 2021-03-16 11:36:37 -0700
+Processing by MainController#aladdin as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/aladdin.html.erb (called from aladdin at /Users/learnacademy/Desktop/rails-challenges/routes_controllers_views_e_f/app/controllers/main_controller.rb:7)
+  Rendering layout layouts/application.html.erb
+  Rendering main/aladdin.html.erb within layouts/application
+  Rendered main/aladdin.html.erb within layouts/application (Duration: 1.5ms | Allocations: 144)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 3672)
+Completed 200 OK in 20ms (Views: 19.4ms | Allocations: 4820)
+
+
+Started GET "/main" for ::1 at 2021-03-16 11:36:38 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/main"):
+  
+Started GET "/aladdin" for ::1 at 2021-03-16 11:36:55 -0700
+Processing by MainController#aladdin as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/aladdin.html.erb within layouts/application
+  Rendered main/aladdin.html.erb within layouts/application (Duration: 0.1ms | Allocations: 49)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 3434)
+Completed 200 OK in 12ms (Views: 11.1ms | Allocations: 3849)
+
+
+Started GET "/aladdin" for ::1 at 2021-03-16 11:37:54 -0700
+Processing by MainController#aladdin as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/aladdin.html.erb within layouts/application
+  Rendered main/aladdin.html.erb within layouts/application (Duration: 0.2ms | Allocations: 59)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 3495)
+Completed 200 OK in 12ms (Views: 11.2ms | Allocations: 4097)
+
+
+Started GET "/main" for ::1 at 2021-03-16 11:37:56 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/main"):
+  
+Started GET "/aladdin" for ::1 at 2021-03-16 11:38:48 -0700
+Processing by MainController#aladdin as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/aladdin.html.erb within layouts/application
+  Rendered main/aladdin.html.erb within layouts/application (Duration: 0.2ms | Allocations: 59)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 3495)
+Completed 200 OK in 7ms (Views: 6.7ms | Allocations: 4096)
+
+
+Started GET "/main" for ::1 at 2021-03-16 11:38:49 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/main"):
+  
+Started GET "/aladdin" for ::1 at 2021-03-16 11:38:50 -0700
+Processing by MainController#aladdin as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/aladdin.html.erb within layouts/application
+  Rendered main/aladdin.html.erb within layouts/application (Duration: 0.2ms | Allocations: 49)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 3442)
+Completed 200 OK in 17ms (Views: 16.3ms | Allocations: 3859)
+
+
+Started GET "/aladdin" for ::1 at 2021-03-16 11:38:52 -0700
+Processing by MainController#aladdin as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/aladdin.html.erb within layouts/application
+  Rendered main/aladdin.html.erb within layouts/application (Duration: 0.1ms | Allocations: 49)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 3434)
+Completed 200 OK in 12ms (Views: 11.7ms | Allocations: 3849)
+
+
+Started GET "/main" for ::1 at 2021-03-16 11:38:53 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/main"):
+  
+Started GET "/aladdin" for ::1 at 2021-03-16 11:38:54 -0700
+Processing by MainController#aladdin as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/aladdin.html.erb within layouts/application
+  Rendered main/aladdin.html.erb within layouts/application (Duration: 0.2ms | Allocations: 49)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3434)
+Completed 200 OK in 9ms (Views: 8.2ms | Allocations: 3849)
+
+
+Started GET "/aladdin" for ::1 at 2021-03-16 11:40:33 -0700
+Processing by MainController#aladdin as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/aladdin.html.erb (called from aladdin at /Users/learnacademy/Desktop/rails-challenges/routes_controllers_views_e_f/app/controllers/main_controller.rb:7)
+  Rendering layout layouts/application.html.erb
+  Rendering main/aladdin.html.erb within layouts/application
+  Rendered main/aladdin.html.erb within layouts/application (Duration: 0.4ms | Allocations: 152)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 3759)
+Completed 200 OK in 13ms (Views: 12.0ms | Allocations: 5126)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:40:34 -0700
+Processing by MainController#landing_page as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/landing_page.html.erb (called from landing_page at /Users/learnacademy/Desktop/rails-challenges/routes_controllers_views_e_f/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing_page.html.erb within layouts/application
+  Rendered main/landing_page.html.erb within layouts/application (Duration: 3.0ms | Allocations: 410)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 3921)
+Completed 200 OK in 28ms (Views: 26.3ms | Allocations: 5084)
+
+
+Started GET "/aladdin" for ::1 at 2021-03-16 11:41:06 -0700
+Processing by MainController#aladdin as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/aladdin.html.erb (called from aladdin at /Users/learnacademy/Desktop/rails-challenges/routes_controllers_views_e_f/app/controllers/main_controller.rb:7)
+  Rendering layout layouts/application.html.erb
+  Rendering main/aladdin.html.erb within layouts/application
+  Rendered main/aladdin.html.erb within layouts/application (Duration: 2.3ms | Allocations: 161)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 3879)
+Completed 200 OK in 28ms (Views: 26.4ms | Allocations: 5718)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:41:08 -0700
+Processing by MainController#landing_page as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/landing_page.html.erb (called from landing_page at /Users/learnacademy/Desktop/rails-challenges/routes_controllers_views_e_f/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing_page.html.erb within layouts/application
+  Rendered main/landing_page.html.erb within layouts/application (Duration: 1.2ms | Allocations: 383)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 4361)
+Completed 200 OK in 23ms (Views: 22.3ms | Allocations: 5061)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:53:25 -0700
+Processing by MainController#landing_page as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/landing_page.html.erb (called from landing_page at /Users/learnacademy/Desktop/rails-challenges/routes_controllers_views_e_f/app/controllers/main_controller.rb:3)
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing_page.html.erb within layouts/application
+  Rendered main/landing_page.html.erb within layouts/application (Duration: 0.8ms | Allocations: 400)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 4028)
+Completed 200 OK in 16ms (Views: 15.5ms | Allocations: 5367)
+
+
+Started GET "/aladdin" for ::1 at 2021-03-16 11:53:27 -0700
+Processing by MainController#aladdin as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/aladdin.html.erb (called from aladdin at /Users/learnacademy/Desktop/rails-challenges/routes_controllers_views_e_f/app/controllers/main_controller.rb:7)
+  Rendering layout layouts/application.html.erb
+  Rendering main/aladdin.html.erb within layouts/application
+  Rendered main/aladdin.html.erb within layouts/application (Duration: 0.9ms | Allocations: 140)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 4112)
+Completed 200 OK in 18ms (Views: 16.5ms | Allocations: 4812)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:53:31 -0700
+Processing by MainController#landing_page as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing_page.html.erb within layouts/application
+  Rendered main/landing_page.html.erb within layouts/application (Duration: 0.4ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 4111)
+Completed 200 OK in 16ms (Views: 14.8ms | Allocations: 4529)
+
+
+Started GET "/goofymovie" for ::1 at 2021-03-16 11:53:32 -0700
+Processing by MainController#goofymovie as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/goofymovie.html.erb (called from goofymovie at /Users/learnacademy/Desktop/rails-challenges/routes_controllers_views_e_f/app/controllers/main_controller.rb:11)
+  Rendering layout layouts/application.html.erb
+  Rendering main/goofymovie.html.erb within layouts/application
+  Rendered main/goofymovie.html.erb within layouts/application (Duration: 0.5ms | Allocations: 151)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 3688)
+Completed 200 OK in 15ms (Views: 14.4ms | Allocations: 4818)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:53:35 -0700
+Processing by MainController#landing_page as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing_page.html.erb within layouts/application
+  Rendered main/landing_page.html.erb within layouts/application (Duration: 0.3ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 4117)
+Completed 200 OK in 17ms (Views: 15.9ms | Allocations: 4535)
+
+
+Started GET "/bigherosix" for ::1 at 2021-03-16 11:53:36 -0700
+Processing by MainController#bigherosix as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/bigherosix.html.erb (called from bigherosix at /Users/learnacademy/Desktop/rails-challenges/routes_controllers_views_e_f/app/controllers/main_controller.rb:15)
+  Rendering layout layouts/application.html.erb
+  Rendering main/bigherosix.html.erb within layouts/application
+  Rendered main/bigherosix.html.erb within layouts/application (Duration: 2.2ms | Allocations: 170)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 4117)
+Completed 200 OK in 23ms (Views: 22.0ms | Allocations: 4816)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:53:38 -0700
+Processing by MainController#landing_page as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing_page.html.erb within layouts/application
+  Rendered main/landing_page.html.erb within layouts/application (Duration: 0.5ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 4107)
+Completed 200 OK in 24ms (Views: 22.7ms | Allocations: 4525)
+
+
+Started GET "/monstersinc" for ::1 at 2021-03-16 11:53:39 -0700
+Processing by MainController#monstersinc as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/monstersinc.html.erb (called from monstersinc at /Users/learnacademy/Desktop/rails-challenges/routes_controllers_views_e_f/app/controllers/main_controller.rb:19)
+  Rendering layout layouts/application.html.erb
+  Rendering main/monstersinc.html.erb within layouts/application
+  Rendered main/monstersinc.html.erb within layouts/application (Duration: 0.7ms | Allocations: 140)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 3641)
+Completed 200 OK in 30ms (Views: 28.6ms | Allocations: 4815)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:53:41 -0700
+Processing by MainController#landing_page as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing_page.html.erb within layouts/application
+  Rendered main/landing_page.html.erb within layouts/application (Duration: 0.3ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 4124)
+Completed 200 OK in 23ms (Views: 22.2ms | Allocations: 4542)
+
+
+Started GET "/marypoppins" for ::1 at 2021-03-16 11:53:42 -0700
+Processing by MainController#marypoppins as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/marypoppins.html.erb (called from marypoppins at /Users/learnacademy/Desktop/rails-challenges/routes_controllers_views_e_f/app/controllers/main_controller.rb:23)
+  Rendering layout layouts/application.html.erb
+  Rendering main/marypoppins.html.erb within layouts/application
+  Rendered main/marypoppins.html.erb within layouts/application (Duration: 0.9ms | Allocations: 151)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 3681)
+Completed 200 OK in 15ms (Views: 14.5ms | Allocations: 4837)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:53:44 -0700
+Processing by MainController#landing_page as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing_page.html.erb within layouts/application
+  Rendered main/landing_page.html.erb within layouts/application (Duration: 0.4ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 4121)
+Completed 200 OK in 16ms (Views: 15.7ms | Allocations: 4539)
+
+
+Started GET "/frozen" for ::1 at 2021-03-16 11:53:45 -0700
+Processing by MainController#frozen as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/frozen.html.erb (called from frozen at /Users/learnacademy/Desktop/rails-challenges/routes_controllers_views_e_f/app/controllers/main_controller.rb:27)
+  Rendering layout layouts/application.html.erb
+  Rendering main/frozen.html.erb within layouts/application
+  Rendered main/frozen.html.erb within layouts/application (Duration: 0.8ms | Allocations: 141)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 3669)
+Completed 200 OK in 16ms (Views: 15.0ms | Allocations: 4797)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:53:47 -0700
+Processing by MainController#landing_page as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing_page.html.erb within layouts/application
+  Rendered main/landing_page.html.erb within layouts/application (Duration: 0.4ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.9ms | Allocations: 4113)
+Completed 200 OK in 45ms (Views: 43.9ms | Allocations: 4533)
+
+
+Started GET "/tangled" for ::1 at 2021-03-16 11:53:48 -0700
+Processing by MainController#tangled as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/tangled.html.erb (called from tangled at /Users/learnacademy/Desktop/rails-challenges/routes_controllers_views_e_f/app/controllers/main_controller.rb:31)
+  Rendering layout layouts/application.html.erb
+  Rendering main/tangled.html.erb within layouts/application
+  Rendered main/tangled.html.erb within layouts/application (Duration: 1.1ms | Allocations: 142)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 4106)
+Completed 200 OK in 25ms (Views: 24.1ms | Allocations: 4809)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:53:49 -0700
+Processing by MainController#landing_page as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing_page.html.erb within layouts/application
+  Rendered main/landing_page.html.erb within layouts/application (Duration: 0.4ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.7ms | Allocations: 4129)
+Completed 200 OK in 23ms (Views: 21.9ms | Allocations: 4547)
+
+
+Started GET "/beautyandthebeast" for ::1 at 2021-03-16 11:53:51 -0700
+Processing by MainController#beautyandthebeast as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/beautyandthebeast.html.erb (called from beautyandthebeast at /Users/learnacademy/Desktop/rails-challenges/routes_controllers_views_e_f/app/controllers/main_controller.rb:35)
+  Rendering layout layouts/application.html.erb
+  Rendering main/beautyandthebeast.html.erb within layouts/application
+  Rendered main/beautyandthebeast.html.erb within layouts/application (Duration: 1.2ms | Allocations: 145)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 4121)
+Completed 200 OK in 22ms (Views: 19.5ms | Allocations: 4820)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:53:53 -0700
+Processing by MainController#landing_page as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing_page.html.erb within layouts/application
+  Rendered main/landing_page.html.erb within layouts/application (Duration: 0.3ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.8ms | Allocations: 4115)
+Completed 200 OK in 24ms (Views: 23.1ms | Allocations: 4533)
+
+
+Started GET "/moana" for ::1 at 2021-03-16 11:53:55 -0700
+Processing by MainController#moana as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/moana.html.erb (called from moana at /Users/learnacademy/Desktop/rails-challenges/routes_controllers_views_e_f/app/controllers/main_controller.rb:39)
+  Rendering layout layouts/application.html.erb
+  Rendering main/moana.html.erb within layouts/application
+  Rendered main/moana.html.erb within layouts/application (Duration: 1.0ms | Allocations: 143)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 4079)
+Completed 200 OK in 28ms (Views: 27.4ms | Allocations: 4811)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:53:56 -0700
+Processing by MainController#landing_page as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing_page.html.erb within layouts/application
+  Rendered main/landing_page.html.erb within layouts/application (Duration: 0.4ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 4115)
+Completed 200 OK in 23ms (Views: 22.5ms | Allocations: 4533)
+
+
+Started GET "/littlemermaid" for ::1 at 2021-03-16 11:53:58 -0700
+Processing by MainController#littlemermaid as HTML
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/littlemermaid.html.erb (called from littlemermaid at /Users/learnacademy/Desktop/rails-challenges/routes_controllers_views_e_f/app/controllers/main_controller.rb:43)
+  Rendering layout layouts/application.html.erb
+  Rendering main/littlemermaid.html.erb within layouts/application
+  Rendered main/littlemermaid.html.erb within layouts/application (Duration: 2.2ms | Allocations: 566)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 4117)
+Completed 200 OK in 24ms (Views: 22.4ms | Allocations: 4817)
+
+
+Started GET "/" for ::1 at 2021-03-16 11:53:59 -0700
+Processing by MainController#landing_page as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/landing_page.html.erb within layouts/application
+  Rendered main/landing_page.html.erb within layouts/application (Duration: 0.6ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 4113)
+Completed 200 OK in 26ms (Views: 24.3ms | Allocations: 4532)
+
+
