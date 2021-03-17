@@ -986,3 +986,663 @@ Processing by PostController#index as HTML
 Completed 200 OK in 329ms (Views: 314.4ms | ActiveRecord: 10.3ms | Allocations: 6011)
 
 
+  [1m[35m (593.8ms)[0m  [1m[35mCREATE DATABASE "blog_app_development" ENCODING = 'unicode'[0m
+  [1m[35m (214.4ms)[0m  [1m[35mCREATE DATABASE "blog_app_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2021-03-17 15:36:19 -0700
+  [1m[35m (60.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20210317210459_create_posts.rb
+
+
+):
+  
+activerecord (6.1.3) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.3) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.3) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.3) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.3) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.3) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+  [1m[35m (31.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1508658759281986305)[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePosts (20210317210459)
+  [1m[36mTRANSACTION (25.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (13.2ms)[0m  [1m[35mCREATE TABLE "posts" ("id" bigserial primary key, "title" character varying, "content" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210317210459"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-03-17 22:37:07.671450"], ["updated_at", "2021-03-17 22:37:07.671450"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1508658759281986305)[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2021-03-17 15:37:24 -0700
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.4ms | Allocations: 415)
+Completed 200 OK in 25ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 3489)
+
+
+Started GET "/home" for ::1 at 2021-03-17 15:37:36 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+Started GET "/index" for ::1 at 2021-03-17 15:37:43 -0700
+Processing by PostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering post/index.html.erb within layouts/application
+  [1m[36mPost Load (6.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/post/index.html.erb:4
+  Rendered post/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 1265)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 107.7ms | Allocations: 18511)
+Completed 200 OK in 119ms (Views: 105.9ms | ActiveRecord: 6.1ms | Allocations: 20242)
+
+
+Started GET "/post/new" for ::1 at 2021-03-17 15:37:51 -0700
+Processing by PostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering post/new.html.erb within layouts/application
+  Rendered post/new.html.erb within layouts/application (Duration: 28.9ms | Allocations: 6603)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.7ms | Allocations: 9924)
+Completed 200 OK in 66ms (Views: 36.4ms | ActiveRecord: 6.8ms | Allocations: 14633)
+
+
+Started GET "/post/new" for ::1 at 2021-03-17 15:37:55 -0700
+Processing by PostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering post/new.html.erb within layouts/application
+  Rendered post/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 609)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.2ms | Allocations: 4675)
+Completed 200 OK in 39ms (Views: 38.1ms | ActiveRecord: 0.0ms | Allocations: 5141)
+
+
+Started GET "/index" for ::1 at 2021-03-17 15:42:57 -0700
+Processing by PostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering post/index.html.erb within layouts/application
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/post/index.html.erb:4
+  Rendered post/index.html.erb within layouts/application (Duration: 15.5ms | Allocations: 1119)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.2ms | Allocations: 4754)
+Completed 200 OK in 37ms (Views: 30.8ms | ActiveRecord: 1.5ms | Allocations: 6416)
+
+
+Started GET "/post/new" for ::1 at 2021-03-17 15:43:25 -0700
+Processing by PostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering post/new.html.erb within layouts/application
+  Rendered post/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 944)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 4354)
+Completed 200 OK in 67ms (Views: 18.7ms | ActiveRecord: 8.1ms | Allocations: 8331)
+
+
+Started POST "/index" for ::1 at 2021-03-17 15:44:24 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/index"):
+  
+Started POST "/index" for ::1 at 2021-03-17 15:58:04 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/index"):
+  
+Started GET "/index" for ::1 at 2021-03-17 15:58:07 -0700
+Processing by PostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering post/index.html.erb within layouts/application
+  [1m[36mPost Load (2.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/post/index.html.erb:4
+  Rendered post/index.html.erb within layouts/application (Duration: 55.2ms | Allocations: 4242)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 71.6ms | Allocations: 7735)
+Completed 200 OK in 77ms (Views: 73.1ms | ActiveRecord: 38.5ms | Allocations: 8786)
+
+
+Started GET "/post/new" for ::1 at 2021-03-17 15:58:10 -0700
+Processing by PostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering post/new.html.erb within layouts/application
+  Rendered post/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 718)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.8ms | Allocations: 4276)
+Completed 200 OK in 35ms (Views: 22.6ms | ActiveRecord: 0.0ms | Allocations: 7462)
+
+
+Started POST "/index" for ::1 at 2021-03-17 15:58:16 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/index"):
+  
+Started GET "/index" for ::1 at 2021-03-17 16:00:57 -0700
+Processing by PostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering post/index.html.erb within layouts/application
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/post/index.html.erb:4
+  Rendered post/index.html.erb within layouts/application (Duration: 19.3ms | Allocations: 974)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.0ms | Allocations: 4446)
+Completed 200 OK in 35ms (Views: 31.2ms | ActiveRecord: 1.1ms | Allocations: 5499)
+
+
+Started GET "/post/new" for ::1 at 2021-03-17 16:00:58 -0700
+Processing by PostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering post/new.html.erb within layouts/application
+  Rendered post/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 718)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 4129)
+Completed 200 OK in 69ms (Views: 16.2ms | ActiveRecord: 45.6ms | Allocations: 8176)
+
+
+Started POST "/index" for ::1 at 2021-03-17 16:01:02 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/index"):
+  
+Started GET "/index" for ::1 at 2021-03-17 16:02:16 -0700
+Processing by PostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering post/index.html.erb within layouts/application
+  [1m[36mPost Load (2.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/post/index.html.erb:4
+  Rendered post/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 972)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 4444)
+Completed 200 OK in 22ms (Views: 16.8ms | ActiveRecord: 2.7ms | Allocations: 5498)
+
+
+Started GET "/post/new" for ::1 at 2021-03-17 16:02:17 -0700
+Processing by PostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering post/new.html.erb within layouts/application
+  Rendered post/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 718)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.9ms | Allocations: 4269)
+Completed 200 OK in 139ms (Views: 33.5ms | ActiveRecord: 90.9ms | Allocations: 11171)
+
+
+Started POST "/index" for ::1 at 2021-03-17 16:02:20 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/index"):
+  
+Started GET "/index" for ::1 at 2021-03-17 16:05:00 -0700
+Processing by PostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering post/index.html.erb within layouts/application
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/post/index.html.erb:4
+  Rendered post/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 968)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 4440)
+Completed 200 OK in 25ms (Views: 21.1ms | ActiveRecord: 1.6ms | Allocations: 5494)
+
+
+Started GET "/post/new" for ::1 at 2021-03-17 16:05:01 -0700
+Processing by PostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering post/new.html.erb within layouts/application
+  Rendered post/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 718)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 4134)
+Completed 200 OK in 73ms (Views: 12.4ms | ActiveRecord: 53.8ms | Allocations: 8009)
+
+
+Started POST "/index" for ::1 at 2021-03-17 16:05:06 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/index"):
+  
+Started GET "/index" for ::1 at 2021-03-17 16:10:20 -0700
+Processing by PostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering post/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/post/index.html.erb:4
+  Rendered post/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 971)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 4443)
+Completed 200 OK in 18ms (Views: 14.4ms | ActiveRecord: 0.7ms | Allocations: 5496)
+
+
+Started GET "/post/new" for ::1 at 2021-03-17 16:10:21 -0700
+Processing by PostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering post/new.html.erb within layouts/application
+  Rendered post/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 718)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 4128)
+Completed 200 OK in 57ms (Views: 11.7ms | ActiveRecord: 37.6ms | Allocations: 7468)
+
+
+Started POST "/index" for ::1 at 2021-03-17 16:10:25 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/index"):
+  
+Started GET "/index/new" for ::1 at 2021-03-17 16:12:59 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/index/new"):
+  
+Started GET "/index" for ::1 at 2021-03-17 16:13:06 -0700
+Processing by PostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering post/index.html.erb within layouts/application
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/post/index.html.erb:4
+  Rendered post/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 892)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.5ms | Allocations: 4322)
+Completed 200 OK in 44ms (Views: 41.9ms | ActiveRecord: 1.5ms | Allocations: 4776)
+
+
+Started GET "/post/new" for ::1 at 2021-03-17 16:13:08 -0700
+Processing by PostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering post/new.html.erb within layouts/application
+  Rendered post/new.html.erb within layouts/application (Duration: 9.2ms | Allocations: 609)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.8ms | Allocations: 4684)
+Completed 200 OK in 41ms (Views: 39.6ms | ActiveRecord: 0.0ms | Allocations: 5143)
+
+
+Started GET "/posts/new" for ::1 at 2021-03-17 16:18:16 -0700
+  [1m[35m (7.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering post/new.html.erb within layouts/application
+  Rendered post/new.html.erb within layouts/application (Duration: 22.7ms | Allocations: 2893)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 61.1ms | Allocations: 8823)
+Completed 200 OK in 117ms (Views: 73.8ms | ActiveRecord: 11.0ms | Allocations: 15754)
+
+
+Started POST "/posts" for ::1 at 2021-03-17 16:18:25 -0700
+Processing by PostController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"Confessions", "content"=>"i eat spaghetti with my fingers"}, "commit"=>"Add Post"}
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_controller.rb:15:in `create'
+  [1m[36mPost Create (42.6ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Confessions"], ["content", "i eat spaghetti with my fingers"], ["created_at", "2021-03-17 23:18:26.031664"], ["updated_at", "2021-03-17 23:18:26.031664"]]
+  ↳ app/controllers/post_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (31.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_controller.rb:15:in `create'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 117ms (ActiveRecord: 77.6ms | Allocations: 3236)
+
+
+Started GET "/posts" for ::1 at 2021-03-17 16:18:26 -0700
+Processing by PostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering post/index.html.erb within layouts/application
+  [1m[36mPost Load (3.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/post/index.html.erb:4
+  Rendered post/index.html.erb within layouts/application (Duration: 15.9ms | Allocations: 1209)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.7ms | Allocations: 4633)
+Completed 200 OK in 46ms (Views: 32.6ms | ActiveRecord: 3.6ms | Allocations: 5237)
+
+
+Started GET "/posts/1" for ::1 at 2021-03-17 16:18:38 -0700
+Processing by PostController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (3.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/post_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering post/show.html.erb within layouts/application
+  Rendered post/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 196)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 3566)
+Completed 200 OK in 89ms (Views: 19.6ms | ActiveRecord: 30.2ms | Allocations: 7513)
+
+
+Started GET "/posts/new" for ::1 at 2021-03-17 16:35:20 -0700
+Processing by PostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering post/new.html.erb within layouts/application
+  Rendered post/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 971)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 4599)
+Completed 200 OK in 112ms (Views: 21.4ms | ActiveRecord: 46.4ms | Allocations: 11414)
+
+
+Started GET "/posts" for ::1 at 2021-03-17 16:35:28 -0700
+Processing by PostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering post/index.html.erb within layouts/application
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/post/index.html.erb:4
+  Rendered post/index.html.erb within layouts/application (Duration: 14.3ms | Allocations: 1192)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.9ms | Allocations: 4697)
+Completed 200 OK in 35ms (Views: 31.7ms | ActiveRecord: 1.2ms | Allocations: 5368)
+
+
+Started GET "/posts/1" for ::1 at 2021-03-17 16:35:34 -0700
+Processing by PostController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/post_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering post/show.html.erb within layouts/application
+  Rendered post/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 257)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 3679)
+Completed 200 OK in 36ms (Views: 9.5ms | ActiveRecord: 1.6ms | Allocations: 5870)
+
+
+Started DELETE "/posts/1" for ::1 at 2021-03-17 16:35:39 -0700
+Processing by PostController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/post_controller.rb:26:in `destroy'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_controller.rb:27:in `destroy'
+  [1m[36mPost Destroy (3.2ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/post_controller.rb:27:in `destroy'
+  [1m[36mTRANSACTION (6.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_controller.rb:27:in `destroy'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 19ms (ActiveRecord: 11.8ms | Allocations: 2845)
+
+
+Started GET "/posts" for ::1 at 2021-03-17 16:35:39 -0700
+Processing by PostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering post/index.html.erb within layouts/application
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/post/index.html.erb:4
+  Rendered post/index.html.erb within layouts/application (Duration: 13.8ms | Allocations: 893)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 4315)
+Completed 200 OK in 23ms (Views: 20.7ms | ActiveRecord: 1.4ms | Allocations: 4768)
+
+
+Started GET "/posts/new" for ::1 at 2021-03-17 16:35:49 -0700
+Processing by PostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering post/new.html.erb within layouts/application
+  Rendered post/new.html.erb within layouts/application (Duration: 7.3ms | Allocations: 609)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 4143)
+Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.0ms | Allocations: 4618)
+
+
+Started POST "/posts" for ::1 at 2021-03-17 16:35:54 -0700
+Processing by PostController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"Confessions", "content"=>"i eat spaghetti with my fingers"}, "commit"=>"Add Post"}
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/post_controller.rb:15:in `create'
+  [1m[36mPost Create (1.1ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Confessions"], ["content", "i eat spaghetti with my fingers"], ["created_at", "2021-03-17 23:35:54.246185"], ["updated_at", "2021-03-17 23:35:54.246185"]]
+  ↳ app/controllers/post_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/post_controller.rb:15:in `create'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 22ms (ActiveRecord: 3.4ms | Allocations: 2613)
+
+
+Started GET "/posts" for ::1 at 2021-03-17 16:35:54 -0700
+Processing by PostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering post/index.html.erb within layouts/application
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/post/index.html.erb:4
+  Rendered post/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 925)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 4357)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 1.4ms | Allocations: 4811)
+
+
+Started GET "/posts/2" for ::1 at 2021-03-17 16:41:41 -0700
+Processing by PostController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (2.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/post_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering post/show.html.erb within layouts/application
+  Rendered post/show.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1735)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 1804)
+Completed 500 Internal Server Error in 79ms (ActiveRecord: 43.2ms | Allocations: 9545)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"herb", :id=>"2"}, missing required keys: [:edit]
+Did you mean?  edit_post_url):
+    6: <br />
+    7: <%= link_to 'Delete Post', delete_post_path(@post), method: :delete, data: {confirm:'Are you sure?'} %>
+    8: <br />
+    9: <%= link_to 'Edit Post', edit_post_path %>
+  
+app/views/post/show.html.erb:9
+Started GET "/posts/new" for ::1 at 2021-03-17 16:44:40 -0700
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering post/new.html.erb within layouts/application
+  Rendered post/new.html.erb within layouts/application (Duration: 24.6ms | Allocations: 2887)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.6ms | Allocations: 8816)
+Completed 200 OK in 76ms (Views: 54.7ms | ActiveRecord: 5.3ms | Allocations: 15742)
+
+
+Started GET "/posts" for ::1 at 2021-03-17 16:44:43 -0700
+Processing by PostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering post/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/post/index.html.erb:4
+  Rendered post/index.html.erb within layouts/application (Duration: 25.6ms | Allocations: 1870)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.4ms | Allocations: 5292)
+Completed 200 OK in 35ms (Views: 32.0ms | ActiveRecord: 1.0ms | Allocations: 5915)
+
+
+Started GET "/posts/2" for ::1 at 2021-03-17 16:44:44 -0700
+Processing by PostController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/post_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering post/show.html.erb within layouts/application
+  Rendered post/show.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1730)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 1799)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 2.5ms | Allocations: 4467)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"herb", :id=>"2"}, missing required keys: [:edit]
+Did you mean?  edit_post_url):
+    6: <br />
+    7: <%= link_to 'Delete Post', delete_post_path(@post), method: :delete, data: {confirm:'Are you sure?'} %>
+    8: <br />
+    9: <%= link_to 'Edit Post', edit_post_path %>
+  
+app/views/post/show.html.erb:9
+Started GET "/" for ::1 at 2021-03-17 16:45:09 -0700
+  [1m[35m (25.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.9ms | Allocations: 415)
+Completed 200 OK in 23ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 3181)
+
+
+Started GET "/posts" for ::1 at 2021-03-17 16:45:31 -0700
+Processing by PostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering post/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/post/index.html.erb:4
+  Rendered post/index.html.erb within layouts/application (Duration: 49.6ms | Allocations: 4810)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 76.8ms | Allocations: 10759)
+Completed 200 OK in 88ms (Views: 44.6ms | ActiveRecord: 36.6ms | Allocations: 12502)
+
+
+Started GET "/posts/2" for ::1 at 2021-03-17 16:45:34 -0700
+Processing by PostController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/post_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering post/show.html.erb within layouts/application
+  Rendered post/show.html.erb within layouts/application (Duration: 31.8ms | Allocations: 1704)
+  Rendered layout layouts/application.html.erb (Duration: 32.2ms | Allocations: 1773)
+Completed 500 Internal Server Error in 101ms (ActiveRecord: 2.3ms | Allocations: 6344)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"herb", :id=>"2"}, missing required keys: [:edit]
+Did you mean?  edit_post_url):
+    6: <br />
+    7: <%= link_to 'Delete Post', delete_post_path(@post), method: :delete, data: {confirm:'Are you sure?'} %>
+    8: <br />
+    9: <%= link_to 'Edit Post', edit_post_path %>
+  
+app/views/post/show.html.erb:9
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+Started GET "/posts" for ::1 at 2021-03-17 16:49:18 -0700
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering post/index.html.erb within layouts/application
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/post/index.html.erb:4
+  Rendered post/index.html.erb within layouts/application (Duration: 48.3ms | Allocations: 4838)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 73.0ms | Allocations: 10814)
+Completed 200 OK in 92ms (Views: 42.0ms | ActiveRecord: 38.1ms | Allocations: 14415)
+
+
+Started GET "/posts/2" for ::1 at 2021-03-17 16:49:26 -0700
+Processing by PostController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/post_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering post/show.html.erb within layouts/application
+  Rendered post/show.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1766)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 1834)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 3.1ms | Allocations: 4503)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"herb", :id=>"2"}, missing required keys: [:edit]
+Did you mean?  edit_post_url):
+    6: <br />
+    7: <%= link_to 'Delete Post', delete_post_path(@post), method: :delete, data: {confirm:'Are you sure?'} %>
+    8: <br />
+    9: <%= link_to 'Edit Post', edit_post_path %>
+  
+app/views/post/show.html.erb:9
+Started GET "/posts" for ::1 at 2021-03-17 16:50:10 -0700
+Processing by PostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering post/index.html.erb within layouts/application
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/post/index.html.erb:4
+  Rendered post/index.html.erb within layouts/application (Duration: 43.8ms | Allocations: 3858)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.3ms | Allocations: 7334)
+Completed 200 OK in 61ms (Views: 22.1ms | ActiveRecord: 34.5ms | Allocations: 8394)
+
+
+Started GET "/posts/2" for ::1 at 2021-03-17 16:50:11 -0700
+Processing by PostController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (6.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/post_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering post/show.html.erb within layouts/application
+  Rendered post/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1227)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 1295)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 6.4ms | Allocations: 3172)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"post", :id=>"2"}, missing required keys: [:edit]
+Did you mean?  edit_post_url):
+    6: <br />
+    7: <%= link_to 'Delete Post', delete_post_path(@post), method: :delete, data: {confirm:'Are you sure?'} %>
+    8: <br />
+    9: <%= link_to 'Edit Post', edit_post_path %>
+  
+app/views/post/show.html.erb:9
+Started GET "/posts" for ::1 at 2021-03-17 16:50:38 -0700
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering post/index.html.erb within layouts/application
+  [1m[36mPost Load (14.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/post/index.html.erb:4
+  Rendered post/index.html.erb within layouts/application (Duration: 42.8ms | Allocations: 4845)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 87.8ms | Allocations: 10823)
+Completed 200 OK in 125ms (Views: 76.1ms | ActiveRecord: 26.2ms | Allocations: 14424)
+
+
+Started GET "/posts/2" for ::1 at 2021-03-17 16:50:40 -0700
+Processing by PostController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (2.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/post_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering post/show.html.erb within layouts/application
+  Rendered post/show.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1770)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 1839)
+Completed 500 Internal Server Error in 140ms (ActiveRecord: 3.3ms | Allocations: 9979)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"post", :id=>"2"}, missing required keys: [:edit]
+Did you mean?  edit_post_url):
+    6: <br />
+    7: <%= link_to 'Delete Post', delete_post_path(@post), method: :delete, data: {confirm:'Are you sure?'} %>
+    8: <br />
+    9: <%= link_to 'Edit Post', edit_post_path %>
+  
+app/views/post/show.html.erb:9
