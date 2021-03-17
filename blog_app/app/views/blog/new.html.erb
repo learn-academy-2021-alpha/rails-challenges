@@ -1,0 +1,14 @@
+<h3>Create a new post</h3>
+
+<p><%= form_with model: @blog, local: true do |form| %></p>
+  <p>Title of Post </p>
+  <p><%= form.text_field :title %></p>
+<br>
+<p>Tell Us More</p>
+  <p><%= form.text_field :content %></p>
+
+  <p><%= form.submit 'add post' %></p>
+
+  <p><%= form.submit 'clear post', :type => 'reset' %></p>
+
+<% end %>

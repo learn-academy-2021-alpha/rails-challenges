@@ -1,0 +1,9 @@
+<h1 class="postpage">Posts</h1>
+<p class="editblocks">
+<%= @blog.title %>
+<%= @blog.content %>
+</p>
+<p class="backbutton">Back To <%= link_to 'All Blog Posts', blog_posts_path %> </p>
+<br/>
+<p class="deletebutton"><%= link_to 'Delete Post', delete_blog_post_path(@blog), method: :delete, data: { confirm: 'are you sure'} %> </p>
+<p class="editbutton"><%= link_to 'Edit Post', edit_blog_post_path %></p>
