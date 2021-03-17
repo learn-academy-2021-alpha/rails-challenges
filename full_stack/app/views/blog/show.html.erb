@@ -1,0 +1,6 @@
+<h2><%= @blog.title %></h2>
+<p><%= @blog.content %></p>
+<p> Back to <%= link_to 'All Blog Posts', blogs_path %></p>
+<br/>
+<%= link_to 'Delete Blog', delete_blog_path(@blog), method: :delete, data: {confirm: 'Are you sure?'} %>
+<%= link_to 'Edit Blog', edit_blog_path %>
