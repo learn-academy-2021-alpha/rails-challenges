@@ -1,12 +1,13 @@
-<h1> 
+<h2> 
 <%= @post.title %>
-</h1>
+</h2>
 
 <p> <%= @post.content %> </p>
 <br />
-<%= link_to 'Edit Post', edit_post_path%>
-<br />
-<%= link_to 'Delete Post', delete_post_path(@post), method: :delete, data: { confirm: 'Are you sure?' }%>
+<button type=onclick > <%= link_to 'Edit Post', edit_post_path,  class:'clicks'%> </button>
 <br />
 <br />
-<p> <%= link_to 'Home Page', posts_path %> </p>
+<button type=onclick ><%= link_to 'Delete Post', delete_post_path(@post), method: :delete, data: { confirm: 'Are you sure?' },  class:'clicks' %> </button>
+<br />
+<br />
+ <button type=onclick > <%= link_to 'Home Page', posts_path,  class:'clicks' %> </button>
