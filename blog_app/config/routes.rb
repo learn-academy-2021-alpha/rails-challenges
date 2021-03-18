@@ -4,4 +4,7 @@ Rails.application.routes.draw do
   get 'posts/new' => 'post#new', as: 'new_post'
   post 'posts' => 'post#create'
   get 'posts/:id' => 'post#show', as: 'post'
+  delete 'posts/:id' => 'post#destroy', as: 'delete_post'
+  get 'posts/:id/edit' => 'post#edit', as: 'edit_post'
+  patch 'posts/:id' => 'post#update'
 end

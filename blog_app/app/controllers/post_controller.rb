@@ -20,6 +20,30 @@ class PostController < ApplicationController
     end
   end
 
+  def destroy
+    @post = Post.find(params[:id])
+    # @post.destroy ? redirect_to posts_path : redirect_to post_path(@post)
+    redirect_to @post.destroy ? posts_path : post_path(@post)
+      # if @post.destroy
+      #   redirect_to posts_path
+      # else
+      #   redirect_to post_path(@post)
+      # end
+  end
+
+  def edit
+    @post = Post.find(params[:id])
+  end
+
+  def update
+    @post = Post.find(params[:id])
+    @post.update(post_params)
+    if @post.valid?
+      redirect_to post_path(@post)
+    else
+      redirect_to edit_post_path(@post)
+    end
+  end
 
   private
   def post_params

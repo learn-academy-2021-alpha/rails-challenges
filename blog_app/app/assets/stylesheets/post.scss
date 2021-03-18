@@ -1,3 +1,50 @@
 // Place all the styles related to the Post controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(to bottom right, rebeccapurple, gray);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+ul{
+  list-style-type: none;
+  padding: 50px;
+}
+
+li{
+}
+
+footer{
+  background-color: red;
+  // position: fixed;
+  // left: 0;
+  // bottom: 0;
+  width: 100%;
+}
+
+.title{
+  background-color: #606060;
+  padding: 30px;
+}
+
+.list{
+  height: 100vh;
+}
+
+.post{
+  padding: 50px;
+}

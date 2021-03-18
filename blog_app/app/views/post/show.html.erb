@@ -4,4 +4,11 @@
 <p><%= @post.content %></p>
 
 <br />
-<p>Back To <%= link_to 'Home', posts_path %></p>
+
+<%= link_to 'Edit Blog', edit_post_path %>
+
+<br />
+<%= link_to 'Delete Post', delete_post_path(@post), method: :delete, data: {confirm: 'Are really sure you want to delete this awesome post???'}%>
+
+<br />
+<%= link_to 'Back To Home', posts_path %>

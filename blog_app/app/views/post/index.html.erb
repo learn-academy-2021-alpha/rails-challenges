@@ -1,9 +1,15 @@
-<h1>Blog Posts</h1>
-
-<ul>
-  <% @posts.each do |post|%>
-    <li><%= link_to post.title, post_path(post) %></li>
-  <% end %>
-</ul>
-
-<%= link_to 'Post a new blog', new_post_path %>
+<div class='title'>
+  <h1>Blog Posts</h1>
+</div>
+<div class='list'>
+  <ul>
+    <% @posts.each do |post|%>
+      <li><%= link_to post.title, post_path(post) %></li>
+      <% end %>
+    </ul>
+<br />
+  <div class="post">
+        <%= link_to 'Post a new blog', new_post_path %>
+  </div>
+</div>
+<footer>Brought to you by Elyse and Kevinn at LEARN Academy!</footer>
