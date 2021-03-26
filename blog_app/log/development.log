@@ -4504,3 +4504,262 @@ Processing by BlogController#new as HTML
 Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 4927)
 
 
+Started POST "/blogs" for ::1 at 2021-03-17 17:03:07 -0700
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "blog_post"=>{"title"=>"", "content"=>""}, "commit"=>"add post"}
+Redirected to http://localhost:3000/blogs/new
+Completed 302 Found in 20ms (ActiveRecord: 5.8ms | Allocations: 6322)
+
+
+Started GET "/blogs/new" for ::1 at 2021-03-17 17:03:08 -0700
+Processing by BlogController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog/new.html.erb within layouts/application
+  Rendered blog/new.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1146)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 195.3ms | Allocations: 11428)
+Completed 200 OK in 210ms (Views: 205.9ms | ActiveRecord: 0.0ms | Allocations: 13680)
+
+
+Started GET "/blogs/" for ::1 at 2021-03-17 17:03:11 -0700
+Processing by BlogController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (2.8ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog/index.html.erb:3
+  Rendered blog/index.html.erb within layouts/application (Duration: 9.7ms | Allocations: 1283)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 5439)
+Completed 200 OK in 23ms (Views: 17.3ms | ActiveRecord: 2.8ms | Allocations: 6072)
+
+
+Started GET "/blog" for ::1 at 2021-03-17 17:03:13 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog"):
+  
+Started GET "/blogs" for ::1 at 2021-03-17 17:03:15 -0700
+Processing by BlogController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (2.0ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog/index.html.erb:3
+  Rendered blog/index.html.erb within layouts/application (Duration: 8.9ms | Allocations: 962)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 5118)
+Completed 200 OK in 21ms (Views: 18.0ms | ActiveRecord: 2.0ms | Allocations: 5581)
+
+
+Started GET "/blogs" for ::1 at 2021-03-17 17:03:16 -0700
+Processing by BlogController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (3.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog/index.html.erb:3
+  Rendered blog/index.html.erb within layouts/application (Duration: 10.8ms | Allocations: 963)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.9ms | Allocations: 5114)
+Completed 200 OK in 43ms (Views: 38.4ms | ActiveRecord: 3.3ms | Allocations: 5577)
+
+
+Started GET "/blogs/10" for ::1 at 2021-03-17 17:03:28 -0700
+Processing by BlogController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mBlogPost Load (1.6ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/blog_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering blog/show.html.erb within layouts/application
+  Rendered blog/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 327)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 5076)
+Completed 200 OK in 40ms (Views: 15.8ms | ActiveRecord: 10.5ms | Allocations: 7090)
+
+
+Started GET "/blogs" for ::1 at 2021-03-17 17:03:37 -0700
+Processing by BlogController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (2.8ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog/index.html.erb:3
+  Rendered blog/index.html.erb within layouts/application (Duration: 15.4ms | Allocations: 956)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.3ms | Allocations: 5700)
+Completed 200 OK in 40ms (Views: 35.7ms | ActiveRecord: 2.8ms | Allocations: 6156)
+
+
+Started GET "/blogs/new" for ::1 at 2021-03-17 17:03:38 -0700
+Processing by BlogController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog/new.html.erb within layouts/application
+  Rendered blog/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 330)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 5050)
+Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 0.0ms | Allocations: 5508)
+
+
+Started POST "/blogs" for ::1 at 2021-03-17 17:04:07 -0700
+Processing by BlogController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "blog_post"=>{"title"=>"angelos post", "content"=>"hi im angelo and im from san diego"}, "commit"=>"add post"}
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blog_controller.rb:15:in `create'
+  [1m[36mBlogPost Create (1.6ms)[0m  [1m[32mINSERT INTO "blog_posts" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "angelos post"], ["content", "hi im angelo and im from san diego"], ["created_at", "2021-03-18 00:04:07.125677"], ["updated_at", "2021-03-18 00:04:07.125677"]]
+  ↳ app/controllers/blog_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blog_controller.rb:15:in `create'
+Redirected to http://localhost:3000/blogs
+Completed 302 Found in 14ms (ActiveRecord: 5.4ms | Allocations: 2890)
+
+
+Started GET "/blogs" for ::1 at 2021-03-17 17:04:07 -0700
+Processing by BlogController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (1.5ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog/index.html.erb:3
+  Rendered blog/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 988)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 5137)
+Completed 200 OK in 17ms (Views: 14.3ms | ActiveRecord: 1.5ms | Allocations: 5590)
+
+
+Started GET "/blogs/13" for ::1 at 2021-03-17 17:04:10 -0700
+Processing by BlogController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mBlogPost Load (1.4ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/blog_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering blog/show.html.erb within layouts/application
+  Rendered blog/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 150)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 4899)
+Completed 200 OK in 29ms (Views: 20.6ms | ActiveRecord: 1.4ms | Allocations: 6031)
+
+
+Started GET "/blogs/13/edit" for ::1 at 2021-03-17 17:04:22 -0700
+Processing by BlogController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mBlogPost Load (5.4ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/blog_controller.rb:33:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering blog/edit.html.erb within layouts/application
+  Rendered blog/edit.html.erb within layouts/application (Duration: 1.9ms | Allocations: 536)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 5269)
+Completed 200 OK in 37ms (Views: 24.2ms | ActiveRecord: 5.4ms | Allocations: 6542)
+
+
+Started PATCH "/blogs/13" for ::1 at 2021-03-17 17:04:39 -0700
+Processing by BlogController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "blog_post"=>{"title"=>"angelos post", "content"=>"hi im angelo and im from ct san diego"}, "commit"=>"Add Editted Post", "id"=>"13"}
+  [1m[36mBlogPost Load (1.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/blog_controller.rb:37:in `update'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blog_controller.rb:38:in `update'
+  [1m[36mBlogPost Update (1.3ms)[0m  [1m[33mUPDATE "blog_posts" SET "content" = $1, "updated_at" = $2 WHERE "blog_posts"."id" = $3[0m  [["content", "hi im angelo and im from ct san diego"], ["updated_at", "2021-03-18 00:04:39.496196"], ["id", 13]]
+  ↳ app/controllers/blog_controller.rb:38:in `update'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blog_controller.rb:38:in `update'
+Redirected to http://localhost:3000/blogs/13
+Completed 302 Found in 16ms (ActiveRecord: 5.0ms | Allocations: 3289)
+
+
+Started GET "/blogs/13" for ::1 at 2021-03-17 17:04:39 -0700
+Processing by BlogController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mBlogPost Load (1.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/blog_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering blog/show.html.erb within layouts/application
+  Rendered blog/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 150)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 4304)
+Completed 200 OK in 16ms (Views: 12.2ms | ActiveRecord: 1.2ms | Allocations: 5433)
+
+
+Started DELETE "/blogs/13" for ::1 at 2021-03-17 17:05:01 -0700
+Processing by BlogController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"13"}
+  [1m[36mBlogPost Load (1.7ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/blog_controller.rb:24:in `destroy'
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blog_controller.rb:25:in `destroy'
+  [1m[36mBlogPost Destroy (1.4ms)[0m  [1m[31mDELETE FROM "blog_posts" WHERE "blog_posts"."id" = $1[0m  [["id", 13]]
+  ↳ app/controllers/blog_controller.rb:25:in `destroy'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blog_controller.rb:25:in `destroy'
+Redirected to http://localhost:3000/blogs
+Completed 302 Found in 15ms (ActiveRecord: 7.0ms | Allocations: 2779)
+
+
+Started GET "/blogs" for ::1 at 2021-03-17 17:05:01 -0700
+Processing by BlogController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (1.7ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog/index.html.erb:3
+  Rendered blog/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 956)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 5108)
+Completed 200 OK in 19ms (Views: 16.5ms | ActiveRecord: 1.7ms | Allocations: 5563)
+
+
+Started GET "/blogs/10" for ::1 at 2021-03-17 17:06:57 -0700
+Processing by BlogController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mBlogPost Load (2.4ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/blog_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering blog/show.html.erb within layouts/application
+  Rendered blog/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 149)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | Allocations: 4903)
+Completed 200 OK in 33ms (Views: 24.5ms | ActiveRecord: 2.4ms | Allocations: 6035)
+
+
+Started GET "/blogs/10/edit" for ::1 at 2021-03-17 17:07:02 -0700
+Processing by BlogController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mBlogPost Load (3.4ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/blog_controller.rb:33:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering blog/edit.html.erb within layouts/application
+  Rendered blog/edit.html.erb within layouts/application (Duration: 1.6ms | Allocations: 352)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 5079)
+Completed 200 OK in 30ms (Views: 19.9ms | ActiveRecord: 3.4ms | Allocations: 6212)
+
+
+Started PATCH "/blogs/10" for ::1 at 2021-03-17 17:07:05 -0700
+Processing by BlogController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "blog_post"=>{"title"=>"asdf", "content"=>"asdfas"}, "commit"=>"Add Editted Post", "id"=>"10"}
+  [1m[36mBlogPost Load (0.9ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/blog_controller.rb:37:in `update'
+Redirected to http://localhost:3000/blogs/10
+Completed 302 Found in 6ms (ActiveRecord: 0.9ms | Allocations: 1188)
+
+
+Started GET "/blogs/10" for ::1 at 2021-03-17 17:07:05 -0700
+Processing by BlogController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mBlogPost Load (1.7ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/blog_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering blog/show.html.erb within layouts/application
+  Rendered blog/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 149)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 4298)
+Completed 200 OK in 20ms (Views: 13.2ms | ActiveRecord: 1.7ms | Allocations: 5429)
+
+
+Started GET "/blogs" for ::1 at 2021-03-17 17:07:07 -0700
+Processing by BlogController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (5.1ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog/index.html.erb:3
+  Rendered blog/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 1412)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 5701)
+Completed 200 OK in 28ms (Views: 21.4ms | ActiveRecord: 5.1ms | Allocations: 6157)
+
+
