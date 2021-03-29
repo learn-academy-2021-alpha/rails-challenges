@@ -1,0 +1,1277 @@
+  [1m[35m (661.5ms)[0m  [1m[35mCREATE DATABASE "params_elyse_fernando_development" ENCODING = 'unicode'[0m
+  [1m[35m (341.7ms)[0m  [1m[35mCREATE DATABASE "params_elyse_fernando_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2021-03-16 14:22:14 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 12.5ms | Allocations: 521)
+Completed 200 OK in 45ms (Views: 22.7ms | ActiveRecord: 0.0ms | Allocations: 4224)
+
+
+Started GET "/main/3" for ::1 at 2021-03-16 14:22:33 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/main/3"):
+  
+Started GET "/cubbed/3" for ::1 at 2021-03-16 14:22:50 -0700
+Processing by MainController#cubbed as HTML
+  Parameters: {"number"=>"3"}
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.0ms | Allocations: 3013)
+
+
+  
+NameError (undefined local variable or method `paramas' for #<MainController:0x00000000007af8>
+Did you mean?  params
+               params=):
+  
+app/controllers/main_controller.rb:4:in `cubbed'
+Started GET "/cubbed/3" for ::1 at 2021-03-16 14:23:25 -0700
+Processing by MainController#cubbed as HTML
+  Parameters: {"number"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubbed.html.erb within layouts/application
+  Rendered main/cubbed.html.erb within layouts/application (Duration: 0.8ms | Allocations: 126)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.10
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+  Rendered layout layouts/application.html.erb (Duration: 2290.9ms | Allocations: 15212)
+Completed 500 Internal Server Error in 2295ms (ActiveRecord: 0.0ms | Allocations: 16390)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /Users/learnacademy/Desktop/rails-challenges/params-elyse-fernando/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2021-03-16 14:24:34 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.0ms | Allocations: 415)
+Completed 200 OK in 20ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 3086)
+
+
+Started GET "/cubbed/3" for ::1 at 2021-03-16 14:24:49 -0700
+Processing by MainController#cubbed as HTML
+  Parameters: {"number"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubbed.html.erb within layouts/application
+  Rendered main/cubbed.html.erb within layouts/application (Duration: 0.9ms | Allocations: 127)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.10
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+  Rendered layout layouts/application.html.erb (Duration: 1485.4ms | Allocations: 8191)
+Completed 500 Internal Server Error in 1492ms (ActiveRecord: 0.0ms | Allocations: 9431)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /Users/learnacademy/Desktop/rails-challenges/params-elyse-fernando/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/cubbed/3" for ::1 at 2021-03-16 14:26:31 -0700
+Processing by MainController#cubbed as HTML
+  Parameters: {"number"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubbed.html.erb within layouts/application
+  Rendered main/cubbed.html.erb within layouts/application (Duration: 0.1ms | Allocations: 41)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.10
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+  Rendered layout layouts/application.html.erb (Duration: 1429.8ms | Allocations: 5219)
+Completed 500 Internal Server Error in 1432ms (ActiveRecord: 0.0ms | Allocations: 5775)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /Users/learnacademy/Desktop/rails-challenges/params-elyse-fernando/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/cubbed/" for ::1 at 2021-03-16 14:26:48 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/cubbed"):
+  
+Started GET "/cubbed/" for ::1 at 2021-03-16 14:29:02 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/cubbed"):
+  
+Started GET "/cubbed/" for ::1 at 2021-03-16 14:29:04 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/cubbed"):
+  
+Started GET "/main/cubbed/" for ::1 at 2021-03-16 14:29:59 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/main/cubbed"):
+  
+Started GET "/landing_page/cubbed/" for ::1 at 2021-03-16 14:30:17 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/landing_page/cubbed"):
+  
+Started GET "/landing_page/cubbed/" for ::1 at 2021-03-16 14:30:51 -0700
+  
+SyntaxError (/Users/learnacademy/Desktop/rails-challenges/params-elyse-fernando/config/routes.rb:6: syntax error, unexpected `end', expecting end-of-input):
+  
+config/routes.rb:6: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:6: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:6: syntax error, unexpected `end', expecting end-of-input
+Started GET "/landing_page/cubbed/" for ::1 at 2021-03-16 14:31:00 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/landing_page/cubbed"):
+  
+Started GET "/landing_page/cubbed/" for ::1 at 2021-03-16 14:31:21 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/landing_page/cubbed"):
+  
+Started GET "/landing_page/cubbed/" for ::1 at 2021-03-16 14:31:31 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/landing_page/cubbed"):
+  
+Started GET "/cubbed/3" for ::1 at 2021-03-16 14:31:46 -0700
+Processing by MainController#cubbed as HTML
+  Parameters: {"number"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubbed.html.erb within layouts/application
+  Rendered main/cubbed.html.erb within layouts/application (Duration: 0.2ms | Allocations: 41)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.10
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+  Rendered layout layouts/application.html.erb (Duration: 1810.4ms | Allocations: 5240)
+Completed 500 Internal Server Error in 1814ms (ActiveRecord: 0.0ms | Allocations: 5792)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /Users/learnacademy/Desktop/rails-challenges/params-elyse-fernando/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/cubbed/3" for ::1 at 2021-03-16 14:34:26 -0700
+Processing by MainController#cubbed as HTML
+  Parameters: {"number"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubbed.html.erb within layouts/application
+  Rendered main/cubbed.html.erb within layouts/application (Duration: 0.1ms | Allocations: 41)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.10
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+  Rendered layout layouts/application.html.erb (Duration: 1931.2ms | Allocations: 5219)
+Completed 500 Internal Server Error in 1934ms (ActiveRecord: 0.0ms | Allocations: 5771)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /Users/learnacademy/Desktop/rails-challenges/params-elyse-fernando/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/cubbed/3" for ::1 at 2021-03-16 14:34:36 -0700
+Processing by MainController#cubbed as HTML
+  Parameters: {"number"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubbed.html.erb within layouts/application
+  Rendered main/cubbed.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.10
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+  Rendered layout layouts/application.html.erb (Duration: 1839.9ms | Allocations: 5178)
+Completed 500 Internal Server Error in 1843ms (ActiveRecord: 0.0ms | Allocations: 5540)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /Users/learnacademy/Desktop/rails-challenges/params-elyse-fernando/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/cubbed/" for ::1 at 2021-03-16 14:34:40 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/cubbed"):
+  
+Started GET "/cubbed/3" for ::1 at 2021-03-16 14:34:49 -0700
+Processing by MainController#cubbed as HTML
+  Parameters: {"number"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubbed.html.erb within layouts/application
+  Rendered main/cubbed.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.10
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+  Rendered layout layouts/application.html.erb (Duration: 1932.5ms | Allocations: 5176)
+Completed 500 Internal Server Error in 1934ms (ActiveRecord: 0.0ms | Allocations: 5538)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /Users/learnacademy/Desktop/rails-challenges/params-elyse-fernando/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/cubbed/3" for ::1 at 2021-03-16 14:57:48 -0700
+Processing by MainController#cubbed as HTML
+  Parameters: {"number"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubbed.html.erb within layouts/application
+  Rendered main/cubbed.html.erb within layouts/application (Duration: 4.2ms | Allocations: 316)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/learnacademy/Desktop/rails-challenges/params-elyse-fernando/public/packs
+[Webpacker] Hash: e332c6419728fac579d5
+Version: webpack 4.46.0
+Time: 9625ms
+Built at: 03/16/2021 2:58:03 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-f826770d917d8a37c1d8.js    125 KiB  application  [emitted] [immutable]  application
+js/application-f826770d917d8a37c1d8.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-f826770d917d8a37c1d8.js js/application-f826770d917d8a37c1d8.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 15014.3ms | Allocations: 7521)
+Completed 200 OK in 15075ms (Views: 15032.8ms | ActiveRecord: 0.0ms | Allocations: 10602)
+
+
+Started GET "/cubbed/3" for ::1 at 2021-03-16 14:58:18 -0700
+Processing by MainController#cubbed as HTML
+  Parameters: {"number"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubbed.html.erb within layouts/application
+  Rendered main/cubbed.html.erb within layouts/application (Duration: 0.3ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.8ms | Allocations: 3503)
+Completed 200 OK in 48ms (Views: 46.5ms | ActiveRecord: 0.0ms | Allocations: 4176)
+
+
+Started GET "/cubbed/3" for ::1 at 2021-03-16 14:58:21 -0700
+Processing by MainController#cubbed as HTML
+  Parameters: {"number"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubbed.html.erb within layouts/application
+  Rendered main/cubbed.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 3446)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 3902)
+
+
+Started GET "/cubbed/3" for ::1 at 2021-03-16 14:59:26 -0700
+  
+SyntaxError (/Users/learnacademy/Desktop/rails-challenges/params-elyse-fernando/app/controllers/main_controller.rb:4: syntax error, unexpected '=', expecting `end'
+    @number.to_i ** 3 = params[:number]
+                      ^
+):
+  
+app/controllers/main_controller.rb:4: syntax error, unexpected '=', expecting `end'
+app/controllers/main_controller.rb:4: syntax error, unexpected '=', expecting `end'
+app/controllers/main_controller.rb:4: syntax error, unexpected '=', expecting `end'
+Started GET "/cubbed/3" for ::1 at 2021-03-16 15:00:15 -0700
+Processing by MainController#cubbed as HTML
+  Parameters: {"number"=>"3"}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 3040)
+
+
+  
+NameError (undefined local variable or method `number' for #<MainController:0x0000000000a028>
+Did you mean?  @number):
+  
+app/controllers/main_controller.rb:5:in `cubbed'
+Started GET "/cubbed/3" for ::1 at 2021-03-16 15:00:58 -0700
+Processing by MainController#cubbed as HTML
+  Parameters: {"number"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubbed.html.erb within layouts/application
+  Rendered main/cubbed.html.erb within layouts/application (Duration: 0.1ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 3501)
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 4139)
+
+
+Started GET "/cubbed/3" for ::1 at 2021-03-16 15:01:06 -0700
+Processing by MainController#cubbed as HTML
+  Parameters: {"number"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubbed.html.erb within layouts/application
+  Rendered main/cubbed.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3446)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 3902)
+
+
+Started GET "/cubbed/3" for ::1 at 2021-03-16 15:04:55 -0700
+  
+SyntaxError (/Users/learnacademy/Desktop/rails-challenges/params-elyse-fernando/app/controllers/main_controller.rb:9: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/main_controller.rb:9: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/main_controller.rb:9: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/main_controller.rb:9: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/cubbed/3" for ::1 at 2021-03-16 15:05:13 -0700
+Processing by MainController#cubbed as HTML
+  Parameters: {"number"=>"3"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1062)
+
+
+  
+NoMethodError (undefined method `**' for nil:NilClass):
+  
+app/controllers/main_controller.rb:5:in `cubbed'
+Started GET "/cubbed/3" for ::1 at 2021-03-16 15:05:55 -0700
+Processing by MainController#cubbed as HTML
+  Parameters: {"number"=>"3"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1102)
+
+
+  
+NoMethodError (undefined method `**' for :number:Symbol):
+  
+app/controllers/main_controller.rb:5:in `cubbed'
+Started GET "/cubbed/3" for ::1 at 2021-03-16 15:06:07 -0700
+Processing by MainController#cubbed as HTML
+  Parameters: {"number"=>"3"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1035)
+
+
+  
+NoMethodError (undefined method `**' for nil:NilClass):
+  
+app/controllers/main_controller.rb:5:in `cubbed'
+Started GET "/cubbed/3" for ::1 at 2021-03-16 15:06:29 -0700
+Processing by MainController#cubbed as HTML
+  Parameters: {"number"=>"3"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1015)
+
+
+  
+NoMethodError (undefined method `+' for nil:NilClass):
+  
+app/controllers/main_controller.rb:5:in `cubbed'
+Started GET "/cubbed/3" for ::1 at 2021-03-16 15:09:40 -0700
+Processing by MainController#cubbed as HTML
+  Parameters: {"number"=>"3"}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 2956)
+
+
+  
+NameError (undefined local variable or method `number' for #<MainController:0x00000000010810>):
+  
+app/controllers/main_controller.rb:5:in `cubbed'
+Started GET "/cubbed/3" for ::1 at 2021-03-16 15:10:53 -0700
+Processing by MainController#cubbed as HTML
+  Parameters: {"number"=>"3"}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 2956)
+
+
+  
+NameError (undefined local variable or method `number' for #<MainController:0x00000000011738>):
+  
+app/controllers/main_controller.rb:5:in `cubbed'
+Started GET "/cubbed/3" for ::1 at 2021-03-16 15:17:15 -0700
+  
+SyntaxError (/Users/learnacademy/Desktop/rails-challenges/params-elyse-fernando/app/controllers/main_controller.rb:8: syntax error, unexpected `end'):
+  
+app/controllers/main_controller.rb:8: syntax error, unexpected `end'
+app/controllers/main_controller.rb:8: syntax error, unexpected `end'
+app/controllers/main_controller.rb:8: syntax error, unexpected `end'
+Started GET "/cubbed/3" for ::1 at 2021-03-16 15:17:36 -0700
+Processing by MainController#cubbed as HTML
+  Parameters: {"number"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/cubbed.html.erb within layouts/application
+  Rendered main/cubbed.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.0ms | Allocations: 3523)
+Completed 200 OK in 41ms (Views: 39.5ms | Allocations: 4158)
+
+
+Started GET "/divisable/4,2" for ::1 at 2021-03-16 15:31:56 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/divisable/4,2"):
+  
+Started GET "/divisable/4/2" for ::1 at 2021-03-16 15:32:11 -0700
+Processing by MainController#divisable as HTML
+  Parameters: {"number1"=>"4", "number2"=>"2"}
+Completed 500 Internal Server Error in 4ms (Allocations: 1589)
+
+
+  
+ActionView::MissingTemplate (Missing template main/#{@number1} is divisable by #{@number2}, application/#{@number1} is divisable by #{@number2} with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/learnacademy/Desktop/rails-challenges/params-elyse-fernando/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actiontext-6.1.3/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actionmailbox-6.1.3/app/views"
+):
+  
+app/controllers/main_controller.rb:12:in `divisable'
+Started GET "/divisable/4/2" for ::1 at 2021-03-16 15:33:00 -0700
+Processing by MainController#divisable as HTML
+  Parameters: {"number1"=>"4", "number2"=>"2"}
+Completed 500 Internal Server Error in 3ms (Allocations: 990)
+
+
+  
+ActionView::MissingTemplate (Missing template main/#{@number1} is divisable by #{@number2}, application/#{@number1} is divisable by #{@number2} with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/learnacademy/Desktop/rails-challenges/params-elyse-fernando/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actiontext-6.1.3/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actionmailbox-6.1.3/app/views"
+):
+  
+app/controllers/main_controller.rb:12:in `divisable'
+Started GET "/divisable/4/2" for ::1 at 2021-03-16 15:35:25 -0700
+  
+SyntaxError (/Users/learnacademy/Desktop/rails-challenges/params-elyse-fernando/app/controllers/main_controller.rb:14: syntax error, unexpected string literal, expecting `end'
+        @result_string '#{@number1} is not divisable ...
+                       ^
+):
+  
+app/controllers/main_controller.rb:14: syntax error, unexpected string literal, expecting `end'
+app/controllers/main_controller.rb:14: syntax error, unexpected string literal, expecting `end'
+app/controllers/main_controller.rb:14: syntax error, unexpected string literal, expecting `end'
+Started GET "/divisable/4/2" for ::1 at 2021-03-16 15:36:30 -0700
+Processing by MainController#divisable as HTML
+  Parameters: {"number1"=>"4", "number2"=>"2"}
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/divisable.html.erb (called from divisable at /Users/learnacademy/Desktop/rails-challenges/params-elyse-fernando/app/controllers/main_controller.rb:16)
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisable.html.erb within layouts/application
+  Rendered main/divisable.html.erb within layouts/application (Duration: 0.4ms | Allocations: 128)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 3740)
+Completed 200 OK in 18ms (Views: 17.2ms | Allocations: 5168)
+
+
+Started GET "/divisable/4/2" for ::1 at 2021-03-16 15:39:17 -0700
+Processing by MainController#divisable as HTML
+  Parameters: {"number1"=>"4", "number2"=>"2"}
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/divisable.html.erb (called from divisable at /Users/learnacademy/Desktop/rails-challenges/params-elyse-fernando/app/controllers/main_controller.rb:16)
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisable.html.erb within layouts/application
+  Rendered main/divisable.html.erb within layouts/application (Duration: 0.6ms | Allocations: 150)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 3774)
+Completed 200 OK in 21ms (Views: 19.9ms | Allocations: 5118)
+
+
+Started GET "/divisable/4/2" for ::1 at 2021-03-16 15:39:28 -0700
+Processing by MainController#divisable as HTML
+  Parameters: {"number1"=>"4", "number2"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisable.html.erb within layouts/application
+  Rendered main/divisable.html.erb within layouts/application (Duration: 0.1ms | Allocations: 45)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 3476)
+Completed 200 OK in 10ms (Views: 9.7ms | Allocations: 4091)
+
+
+Started GET "/divisable/7/2" for ::1 at 2021-03-16 15:39:48 -0700
+Processing by MainController#divisable as HTML
+  Parameters: {"number1"=>"7", "number2"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/divisable.html.erb within layouts/application
+  Rendered main/divisable.html.erb within layouts/application (Duration: 0.2ms | Allocations: 43)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.7ms | Allocations: 3429)
+Completed 200 OK in 23ms (Views: 21.8ms | Allocations: 3860)
+
+
+Started GET "/stringcharacters/helloworld" for ::1 at 2021-03-16 15:46:52 -0700
+  
+SyntaxError (/Users/learnacademy/Desktop/rails-challenges/params-elyse-fernando/app/controllers/main_controller.rb:23: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/main_controller.rb:23: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/main_controller.rb:23: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/main_controller.rb:23: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/stringcharacters/helloworld" for ::1 at 2021-03-16 15:47:07 -0700
+Processing by MainController#stringcharacters as HTML
+  Parameters: {"string"=>"helloworld"}
+Completed 406 Not Acceptable in 5ms (Allocations: 1936)
+
+
+  
+ActionController::MissingExactTemplate (MainController#stringcharacters is missing a template for request formats: text/html):
+  
+actionpack (6.1.3) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.1.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.3) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.3) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.3) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.3) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.3) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.3) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.3) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.3) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.3) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.3) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.3) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.3) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.3) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.3) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.3) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.3) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.3) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/stringcharacters/helloworld" for ::1 at 2021-03-16 15:48:42 -0700
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/stringcharacters.html.erb (called from <class:MainController> at /Users/learnacademy/Desktop/rails-challenges/params-elyse-fernando/app/controllers/main_controller.rb:24)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/stringcharacters.html.erb (called from <class:MainController> at /Users/learnacademy/Desktop/rails-challenges/params-elyse-fernando/app/controllers/main_controller.rb:24)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/stringcharacters.html.erb (called from <class:MainController> at /Users/learnacademy/Desktop/rails-challenges/params-elyse-fernando/app/controllers/main_controller.rb:24)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/stringcharacters.html.erb (called from <class:MainController> at /Users/learnacademy/Desktop/rails-challenges/params-elyse-fernando/app/controllers/main_controller.rb:24)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/stringcharacters.html.erb (called from <class:MainController> at /Users/learnacademy/Desktop/rails-challenges/params-elyse-fernando/app/controllers/main_controller.rb:24)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/stringcharacters.html.erb (called from <class:MainController> at /Users/learnacademy/Desktop/rails-challenges/params-elyse-fernando/app/controllers/main_controller.rb:24)
+  
+ActionView::MissingTemplate (Missing template main/stringcharacters.html.erb, application/stringcharacters.html.erb with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/learnacademy/Desktop/rails-challenges/params-elyse-fernando/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actiontext-6.1.3/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actionmailbox-6.1.3/app/views"
+):
+  
+app/controllers/main_controller.rb:24:in `<class:MainController>'
+app/controllers/main_controller.rb:1:in `<main>'
+Started GET "/stringcharacters/helloworld" for ::1 at 2021-03-16 15:49:04 -0700
+Processing by MainController#stringcharacters as HTML
+  Parameters: {"string"=>"helloworld"}
+Completed 406 Not Acceptable in 22ms (Allocations: 1921)
+
+
+  
+ActionController::MissingExactTemplate (MainController#stringcharacters is missing a template for request formats: text/html):
+  
+actionpack (6.1.3) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.1.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.3) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.3) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.3) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.3) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.3) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.3) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.3) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.3) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.3) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.3) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.3) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.3) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.3) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.3) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.3) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.3) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.3) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/stringcharacters/helloworld" for ::1 at 2021-03-16 15:49:45 -0700
+  
+SyntaxError (/Users/learnacademy/Desktop/rails-challenges/params-elyse-fernando/app/controllers/main_controller.rb:26: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/main_controller.rb:26: syntax error, unexpected `end', expecting end-of-input
+app/controllers/main_controller.rb:26: syntax error, unexpected `end', expecting end-of-input
+app/controllers/main_controller.rb:26: syntax error, unexpected `end', expecting end-of-input
+Started GET "/stringcharacters/helloworld" for ::1 at 2021-03-16 15:53:09 -0700
+Processing by MainController#stringcharacters as HTML
+  Parameters: {"string"=>"helloworld"}
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/stringcharacters.html.erb (called from stringcharacters at /Users/learnacademy/Desktop/rails-challenges/params-elyse-fernando/app/controllers/main_controller.rb:22)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/stringcharacters.html.erb (called from stringcharacters at /Users/learnacademy/Desktop/rails-challenges/params-elyse-fernando/app/controllers/main_controller.rb:22)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/stringcharacters.html.erb (called from stringcharacters at /Users/learnacademy/Desktop/rails-challenges/params-elyse-fernando/app/controllers/main_controller.rb:22)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/stringcharacters.html.erb (called from stringcharacters at /Users/learnacademy/Desktop/rails-challenges/params-elyse-fernando/app/controllers/main_controller.rb:22)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/stringcharacters.html.erb (called from stringcharacters at /Users/learnacademy/Desktop/rails-challenges/params-elyse-fernando/app/controllers/main_controller.rb:22)
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: application/stringcharacters.html.erb (called from stringcharacters at /Users/learnacademy/Desktop/rails-challenges/params-elyse-fernando/app/controllers/main_controller.rb:22)
+Completed 500 Internal Server Error in 6ms (Allocations: 2508)
+
+
+  
+ActionView::MissingTemplate (Missing template main/stringcharacters.html.erb, application/stringcharacters.html.erb with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/learnacademy/Desktop/rails-challenges/params-elyse-fernando/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actiontext-6.1.3/app/views"
+  * "/Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/actionmailbox-6.1.3/app/views"
+):
+  
+app/controllers/main_controller.rb:22:in `stringcharacters'
+Started GET "/stringcharacters/helloworld" for ::1 at 2021-03-16 15:53:58 -0700
+Processing by MainController#stringcharacters as HTML
+  Parameters: {"string"=>"helloworld"}
+Completed 406 Not Acceptable in 7ms (Allocations: 1900)
+
+
+  
+ActionController::MissingExactTemplate (MainController#stringcharacters is missing a template for request formats: text/html):
+  
+actionpack (6.1.3) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.1.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.3) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.3) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.3) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.3) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.3) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.3) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.3) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.3) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.3) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.3) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.3) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.3) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.3) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.3) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.3) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.3) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.3) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/stringcharacters/%22helloworld%22" for ::1 at 2021-03-16 15:54:27 -0700
+Processing by MainController#stringcharacters as HTML
+  Parameters: {"string"=>"\"helloworld\""}
+Completed 406 Not Acceptable in 2ms (Allocations: 670)
+
+
+  
+ActionController::MissingExactTemplate (MainController#stringcharacters is missing a template for request formats: text/html):
+  
+actionpack (6.1.3) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.1.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.3) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.3) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.3) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.3) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.3) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.3) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.3) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.3) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.3) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.3) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.3) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.3) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.3) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.3) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.3) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.3) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.3) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/stringcharacters/helloworld" for ::1 at 2021-03-16 15:54:33 -0700
+Processing by MainController#stringcharacters as HTML
+  Parameters: {"string"=>"helloworld"}
+Completed 406 Not Acceptable in 2ms (Allocations: 670)
+
+
+  
+ActionController::MissingExactTemplate (MainController#stringcharacters is missing a template for request formats: text/html):
+  
+actionpack (6.1.3) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.1.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.3) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.3) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.3) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.3) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.3) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.3) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.3) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.3) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.3) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.3) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.3) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.3) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.3) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.3) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.3) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.3) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.3) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/stringcharacters/helloworld" for ::1 at 2021-03-16 15:54:35 -0700
+Processing by MainController#stringcharacters as HTML
+  Parameters: {"string"=>"helloworld"}
+Completed 406 Not Acceptable in 2ms (Allocations: 670)
+
+
+  
+ActionController::MissingExactTemplate (MainController#stringcharacters is missing a template for request formats: text/html):
+  
+actionpack (6.1.3) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.1.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.3) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.3) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.3) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.3) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.3) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.3) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.3) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.3) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.3) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.3) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.3) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.3) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.3) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.3) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.3) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.3) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.3) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.3) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/stringcharacters/helloworld" for ::1 at 2021-03-16 15:55:25 -0700
+Processing by MainController#stringcharacters as HTML
+  Parameters: {"string"=>"helloworld"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/stringcharacters.html.erb within layouts/application
+  Rendered main/stringcharacters.html.erb within layouts/application (Duration: 1.2ms | Allocations: 126)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.5ms | Allocations: 3778)
+Completed 200 OK in 32ms (Views: 29.9ms | Allocations: 4996)
+
+
+Started GET "/palindrome/level" for ::1 at 2021-03-16 16:01:51 -0700
+  
+SyntaxError (/Users/learnacademy/Desktop/rails-challenges/params-elyse-fernando/app/controllers/main_controller.rb:33: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/main_controller.rb:33: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/main_controller.rb:33: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/main_controller.rb:33: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/palindrome/level" for ::1 at 2021-03-16 16:02:19 -0700
+Processing by MainController#palindrome as HTML
+  Parameters: {"string"=>"level"}
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: main/palindrome.html.erb (called from palindrome at /Users/learnacademy/Desktop/rails-challenges/params-elyse-fernando/app/controllers/main_controller.rb:31)
+  Rendering layout layouts/application.html.erb
+  Rendering main/palindrome.html.erb within layouts/application
+  Rendered main/palindrome.html.erb within layouts/application (Duration: 1.0ms | Allocations: 137)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 3770)
+Completed 200 OK in 20ms (Views: 19.6ms | Allocations: 5152)
+
+
+Started GET "/palindrome/hello" for ::1 at 2021-03-16 16:02:30 -0700
+Processing by MainController#palindrome as HTML
+  Parameters: {"string"=>"hello"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/palindrome.html.erb within layouts/application
+  Rendered main/palindrome.html.erb within layouts/application (Duration: 0.2ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 3426)
+Completed 200 OK in 12ms (Views: 11.3ms | Allocations: 3855)
+
+
+Started GET "/madlib/newyork/jump/soft/warmly" for ::1 at 2021-03-16 16:13:35 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/madlib/newyork/jump/soft/warmly"):
+  
+Started GET "/madlib/newyork/jump/soft/warmly" for ::1 at 2021-03-16 16:14:02 -0700
+  
+SyntaxError (/Users/learnacademy/Desktop/rails-challenges/params-elyse-fernando/app/controllers/main_controller.rb:41: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/main_controller.rb:41: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/main_controller.rb:41: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/main_controller.rb:41: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/madlib/newyork/jump/soft/warmly" for ::1 at 2021-03-16 16:14:11 -0700
+Processing by MainController#madlib as HTML
+  Parameters: {"noun"=>"newyork", "verb"=>"jump", "adjective"=>"soft", "adverb"=>"warmly"}
+Completed 500 Internal Server Error in 1ms (Allocations: 574)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/main_controller.rb:36:in `madlib'
+Started GET "/madlib/newyork/jump/soft/warmly" for ::1 at 2021-03-16 16:15:02 -0700
+Processing by MainController#madlib as HTML
+  Parameters: {"noun"=>"newyork", "verb"=>"jump", "adjective"=>"soft", "adverb"=>"warmly"}
+Completed 500 Internal Server Error in 1ms (Allocations: 569)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/main_controller.rb:36:in `madlib'
+Started GET "/madlib/newyork/jump/soft/warmly" for ::1 at 2021-03-16 16:15:58 -0700
+Processing by MainController#madlib as HTML
+  Parameters: {"noun"=>"newyork", "verb"=>"jump", "adjective"=>"soft", "adverb"=>"warmly"}
+Completed 500 Internal Server Error in 1ms (Allocations: 569)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/main_controller.rb:36:in `madlib'
+Started GET "/madlib/newyork/jump/soft/warmly" for ::1 at 2021-03-16 16:17:01 -0700
+Processing by MainController#madlib as HTML
+  Parameters: {"noun"=>"newyork", "verb"=>"jump", "adjective"=>"soft", "adverb"=>"warmly"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/madlib.html.erb within layouts/application
+  Rendered main/madlib.html.erb within layouts/application (Duration: 1.3ms | Allocations: 215)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 3846)
+Completed 200 OK in 33ms (Views: 29.0ms | Allocations: 5092)
+
+
